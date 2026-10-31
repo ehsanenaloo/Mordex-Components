@@ -18,7 +18,7 @@ Free and open source under the MIT License.
 
 </div>
 
-![Mordex Components: themed WinForms controls for .NET 10](assets/screenshots/hero.png)
+![Mordex Components: themed WinForms controls for .NET 10](assets/screenshots/hero.webp)
 
 ## Controls
 
@@ -35,9 +35,9 @@ Free and open source under the MIT License.
 
 ## Screenshots
 
-![Ribbon, data grid, scheduler, timeline, docking and more](assets/screenshots/controls.png)
+![Ribbon, data grid, scheduler, timeline, docking and more](assets/screenshots/controls.webp)
 
-![The ribbon and the data grid in six of the 35 themes](assets/screenshots/themes.png)
+![The ribbon and the data grid in six of the 35 themes](assets/screenshots/themes.webp)
 
 ## Themes
 
