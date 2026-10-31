@@ -4,6 +4,10 @@ All notable changes to this project are listed here. The format follows [Keep a 
 
 ## [Unreleased]
 
+### Added
+
+- The NuGet package has a readme.
+
 ## [6.0.0] - 2026-10-31
 
 First public release.

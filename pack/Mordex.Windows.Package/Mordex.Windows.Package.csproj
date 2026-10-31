@@ -5,6 +5,7 @@
     <Authors>Ehsan Enaloo</Authors>
     <Copyright>Copyright (c) 2006 - 2026 Ehsan Enaloo.</Copyright>
     <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/ehsanenaloo/Mordex-Components</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ehsanenaloo/Mordex-Components</RepositoryUrl>
@@ -19,6 +20,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="icon.png" Pack="true" PackagePath="" Visible="false" />
+    <None Include="README.md" Pack="true" PackagePath="" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../../src/Mordex.Data/Mordex.Data.csproj" ReferenceOutputAssembly="false" />
