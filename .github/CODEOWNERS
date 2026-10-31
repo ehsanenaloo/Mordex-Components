@@ -1,0 +1,19 @@
+# Code owners are asked to review pull requests that touch the files they own.
+# Mordex Components has one maintainer, so every rule names the same person.
+# The last matching pattern wins, so keep the specific paths after the default.
+
+# Default owner for everything in the repository.
+* @ehsanenaloo
+
+# Control and designer source.
+/src/ @ehsanenaloo
+/designer/ @ehsanenaloo
+
+# Package definition and build files.
+/pack/ @ehsanenaloo
+/Directory.Build.props @ehsanenaloo
+/build.ps1 @ehsanenaloo
+/build.sh @ehsanenaloo
+
+# Community files and automation.
+/.github/ @ehsanenaloo

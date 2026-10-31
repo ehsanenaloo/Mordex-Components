@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IncludeWinFormsDesignReferences>true</IncludeWinFormsDesignReferences>
+    <AssemblyName>Mordex.Windows.Navigation.Design</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Mordex.Windows.Common.Design/Mordex.Windows.Common.Design.csproj" />
+    <ProjectReference Include="../Mordex.Windows.Navigation/Mordex.Windows.Navigation.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WinForms.Designer.SDK" Version="1.6.0" PrivateAssets="all" />
+  </ItemGroup>
+</Project>

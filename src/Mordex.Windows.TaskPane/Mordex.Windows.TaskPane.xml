@@ -1,0 +1,3185 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mordex.Windows.TaskPane</name>
+    </assembly>
+    <members>
+        <member name="T:Mordex.Windows.TaskPane.BorderControl">
+            <summary>
+            Summary description for BorderControl.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.BorderControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.BorderControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.BorderControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.ResourceFile">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.ResourceFile.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.ResourceFile.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.ResourceFile2.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.ResourceFile2.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.ControlStyle">
+            <summary>
+            Represent the style of the scroll bar control in the TaskPane control.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.ControlStyle.Reset">
+            <summary>
+            Resets the all the properties of the ControlStyle object to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.ControlStyle.ResetControlColor">
+            <summary>
+            Resets the ControlColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.ControlStyle.ShouldSerializeControlColor">
+            <summary>
+            Indicates whether the ControlColor property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.ControlStyle.ResetControlTextColor">
+            <summary>
+            Resets the ControlTextColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.ControlStyle.ShouldSerializeControlTextColor">
+            <summary>
+            Indicates whether the ControlTextColor property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.ControlStyle.ResetScrollBarColor">
+            <summary>
+            Resets the ScrollBarColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.ControlStyle.ShouldSerializeScrollBarColor">
+            <summary>
+            Indicates whether the ScrollBarColor property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.ControlStyle.ResetHoverBaseColor">
+            <summary>
+            Resets the HoverBaseColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.ControlStyle.ShouldSerializeHoverBaseColor">
+            <summary>
+            Indicates whether the HoverBaseColor property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.ControlStyle.ResetHoverBlendColor">
+            <summary>
+            Resets the HoverBlendColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.ControlStyle.ShouldSerializeHoverBlendColor">
+            <summary>
+            Indicates whether the HoverBlendColor property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.ControlStyle.ButtonAppearance">
+            <summary>
+            Gets or sets a value that determines the appearance of the buttons of the scroll bar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.ControlStyle.ControlColor">
+            <summary>
+            Gets or sets a value specifying the background color of the buttons of the scroll bar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.ControlStyle.ControlTextColor">
+            <summary>
+            Gets or sets a value specifying the foreground color of the buttons of the scroll bar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.ControlStyle.ScrollBarColor">
+            <summary>
+            Gets or sets a value that represent the background color of the scroll bar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.ControlStyle.HoverBaseColor">
+            <summary>
+            Gets or sets the color that will be blended with the HoverBlendColor when a flat apperance is used.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.ControlStyle.HoverBlendColor">
+            <summary>
+            Gets or sets the color that will be blended with the HoverBaseColor when a flat appearance is used.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.ControlStyle.HoverBlend">
+            <summary>
+            Gets or sets a value indicating the percentage of the HoverBlendColor to blend whit the HoverBaseColor.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.ControlStyle.HoverSelectedBlend">
+            <summary>
+            Gets or sets the percentage of the HoverBlendColor to blend with the HoverBaseColor when the mouse is captured by the button.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.Design.AboutBox">
+            <summary>
+            Summary description for Form1.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.Design.AboutBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.AboutBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.AboutBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.AboutBox.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.AboutBox.OnLoad(System.EventArgs)">
+            <summary>
+            Overrides Form.OnLoad
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.FlagsEnumConverter">
+            <summary>
+            Provides a type converter to convert enums to a string representation.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.FlagsEnumConverter.#ctor">
+            <summary>
+            Initialize a new instance of the FlagsEnumConverter class
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.FlagsEnumConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Overrides TypeConverter.CanConvertTo
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.FlagsEnumConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Overrides TypeConverter.ConvertTo
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.FlagsEnumEditor">
+            <summary>
+            Provides a user interface for selecting flags in a Properties window.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.FlagsEnumEditor.#ctor">
+            <summary>
+            Initialize a new instance of the FlagsEnumEditor class
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.FlagsEnumEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Overrides UITypeEditor.EditValue
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.FlagsEnumEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Overrides UITypeEditor.GetEditStyle
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.Design.GroupEditor">
+            <summary>
+            Summary description for TaskPaneDesign.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.GroupEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Overrides UITypeEditor.EditValue
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.GroupEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.Design.GroupsDesigner">
+            <summary>
+            Summary description for GroupsDesigner.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.GroupsDesigner.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.GroupsDesigner.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.GroupsDesigner.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.GroupsDesigner.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.Design.GroupsDesigner.TaskPane">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.Design.ImageEditor">
+            <summary>
+            Summary description for ImageEditor.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            This class is not intended to be used directly from your code.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.Design.ImageIndexConverter">
+            <summary>
+            This class is not intended to be used directly from your code.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageIndexConverter.#ctor">
+            <summary>
+            Initialize a new instance of the ImageKeyConverter.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageIndexConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Overrides TypeConverter.CanConvertTo
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageIndexConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Overrides TypeConverter.ConvertTo
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.Design.ImageKeyConverter">
+            <summary>
+            This class is not intended to be used directly from your code.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageKeyConverter.#ctor">
+            <summary>
+            Initialize a new instance of the ImageKeyConverter.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageKeyConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Overrides TypeConverter.CanConvertTo
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageKeyConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Overrides TypeConverter.ConvertTo
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.Design.ImageIndexEditor">
+            <summary>
+            Provides a user interface for selecting images from an ImageList.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageIndexEditor.#ctor">
+            <summary>
+            Initialize a new instance of the ImageIndexEditor.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageIndexEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Overrides UITypeEditor.EditValue
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageIndexEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Overrides UITypeEditor.GetEditStyle
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageIndexEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Overrides UITypeEditor.GetPaintValueSupported
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageIndexEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)">
+            <summary>
+            Overrides UITypeEditor.PaintValue
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.Design.ImageKeyEditor">
+            <summary>
+            Provides a user interface for selecting images from an ImageList.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageKeyEditor.#ctor">
+            <summary>
+            Initialize a new instance of the ImageKeyEditor.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageKeyEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Overrides UITypeEditor.EditValue
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageKeyEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Overrides UITypeEditor.GetEditStyle
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageKeyEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Overrides UITypeEditor.GetPaintValueSupported
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.ImageKeyEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)">
+            <summary>
+            Overrides UITypeEditor.PaintValue
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.Design.LayoutNameDialog">
+            <summary>
+            Summary description for LayoutNameDialog.
+            </summary>
+            
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.Design.LayoutTreePage">
+            <summary>
+            Summary description for LayoutTreePage.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.LayoutTreePage.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.Design.LayoutTreePage.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.WashMode">
+            <summary>
+            Specified which color to apply when drawing a watermark image.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.WashMode.System">
+            <summary>
+            The predefined system color will be used as the wash color
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.WashMode.UseWashColor">
+            <summary>
+            The color defined in the WashColor property will be used as the wash color or none if the WashColor is empty.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.AlphaMode">
+            <summary>
+            Specifies the alpha level to use.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.AlphaMode.Empty">
+            <summary>
+            Indicates that the value for this property should be inherited from the parent object.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.AlphaMode.Opaque">
+            <summary>
+            Indicates an alpha level of 255.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.AlphaMode.Transparent">
+            <summary>
+            Indicates an alpha level of 0.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.AlphaMode.UseAlpha">
+            <summary>
+            Use the value of the Alpha property.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.VerticalScrollBar">
+            <summary>
+            Specifies when the vertical scroll bar will be visible.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.VerticalScrollBar.Automatic">
+            <summary>
+            The scroll bar is shown only when there are enough items to warrant displaying.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.VerticalScrollBar.Always">
+            <summary>
+            The scroll bar will be displayed even if the number of items in the TaskPane does not require displaying the vertical scroll bar.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.VerticalScrollBar.Never">
+            <summary>
+            The scroll bar won´t be displayed.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.TaskPaneArea">
+            <summary>
+            Specifies the type of an area in a TaskPane control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.TaskPaneArea.Border">
+            <summary>
+            Represents the border of the TaskPane control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.TaskPaneArea.Background">
+            <summary>
+            Represents the background of the TaskPane control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.TaskPaneArea.GroupHeader">
+            <summary>
+            Represents the header of a TaskPaneGroup.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.TaskPaneArea.Items">
+            <summary>
+            Represents a TaskPaneItem.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.OwnerDrawnArea">
+            <summary>
+            Specifies which area of a TaskPane control needs to be drawn manually.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.OwnerDrawnArea.None">
+            <summary>
+            The control won't be drawn manually.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.OwnerDrawnArea.Background">
+            <summary>
+            Specifies that the area to be manually drawn is the control's background.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.OwnerDrawnArea.GroupHeader">
+            <summary>
+            Specifies that the area to be manually drawn is the header of the groups.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.OwnerDrawnArea.Item">
+            <summary>
+            Specifies that the area to be manually drawn are the TaskPaneItem ojects of the control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.OwnerDrawnArea.All">
+            <summary>
+            All flags except None are set.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.ButtonAlignment">
+            <summary>
+            Specifies the alignment of the expand and close buttons relative to its layout rectangle.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.ButtonAlignment.Default">
+            <summary>
+            Unspecified. The value of the property is inherited from the settings specified in the TaskPane control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.ButtonAlignment.Left">
+            <summary>
+            Specifies that the expand and close buttons will be aligned to the left of its layout rectangle.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.ButtonAlignment.Right">
+            <summary>
+            Specifies that the expand and close buttons will be aligned to the right of its layout rectangle.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.HitTest">
+            <summary>
+            Determines which element of the TaskPane control is at a specified location.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.HitTest.TaskPaneItem">
+            <summary>
+            A TaskPaneItem in the TaskPane control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.HitTest.TaskPaneGroup">
+            <summary>
+            A TaskPaneGroup in the TaskPane control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.HitTest.ScrollBar">
+            <summary>
+            The scroll bar in the TaskPane control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.HitTest.CollapseHeaderButton">
+            <summary>
+            The expand/collapse button in the group's header.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.HitTest.CloseHeaderButton">
+            <summary>
+            The close button in the group's header.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.HitTest.None">
+            <summary>
+            The background area, visible when the control contains few TaskPaneGroup objects, or when the TaskPane is scrolled to its bottom.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.BackgroundGradientMode">
+            <summary>
+            Specifies how the background of an object will be filled.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.BackgroundGradientMode.Empty">
+            <summary>
+            Indicates that the value for this property should be inherited from the parent object.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.BackgroundGradientMode.Solid">
+            <summary>
+            Specifies a solid background.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.BackgroundGradientMode.Horizontal">
+            <summary>
+            Specifies a gradient from left to right. 
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.BackgroundGradientMode.Vertical">
+            <summary>
+            Specifies a gradient from top to bottom.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.BackgroundGradientMode.Diagonal">
+            <summary>
+            Specifies a gradient from upper left to lower right.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.BackgroundGradientMode.DiagonalBackwards">
+            <summary>
+            Specifies a gradient from upper right to lower left. 
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.Effect">
+            <summary>
+            Specifies which effect is used when groups are expanded/collapsed.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.Effect.Fade">
+            <summary>
+            Groups are fade-in when expanding and disolved when collapsing
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.Effect.Scroll">
+            <summary>
+            Groups are expanded/collapsed using smoth scrolling.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.Effect.None">
+            <summary>
+            No effect is used when a group is expanded/collapsed
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.TriState">
+            <summary>
+            Represents a boolean value for a property that can inherit its value from a base or parent object.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.TriState.Empty">
+            <summary>
+            Indicates that the value for this property should be inherited from the parent object.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.TriState.False">
+            <summary>
+            Specifies that False should be used in a property ignoring settings in the parent object.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.TriState.True">
+            <summary>
+            Specifies that True should be used in a property ignoring settings in the parent object.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.ImageDrawMode">
+            <summary>
+            Specifies how the background image is positioned within the TaskPane control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.ImageDrawMode.Stretched">
+            <summary>
+            The image is stretched or shrunk to fit the size of the layout rectangle.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.ImageDrawMode.Tiled">
+            <summary>
+            The image is tiled.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.ImageDrawMode.Centered">
+            <summary>
+            The image is displayed in the center if the layout rectangle is larger than the image. If the image is larger than the layout rectangle, the picture is placed in the center of the rectangle and the outside edges are clipped. 
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.BorderStyle">
+            <summary>
+            Specify the border style for the TaskPane control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.BorderStyle.None">
+            <summary>
+            The TaskPane control has no border.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.BorderStyle.Flat">
+            <summary>
+            The border has no three-dimensional effects.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.BorderStyle.RaisedLight3D">
+            <summary>
+            The border has a raised outer edge and no inner edge.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.BorderStyle.Raised">
+            <summary>
+            The border has raised inner and outer edges.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.BorderStyle.SunkenLight3D">
+            <summary>
+            The border has a sunken outer edge and no inner edge.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.BorderStyle.Sunken">
+            <summary>
+            The border has sunken inner and outer edges.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.ScrollBarAppearance">
+            <summary>
+            Specifies the appearance of the vertical scroll bar.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.ScrollBarAppearance.Regular">
+            <summary>
+            The border has raised inner and outer edges.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.ScrollBarAppearance.Light3D">
+            <summary>
+            The border has a raised inner edge and no outer edge.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.ScrollBarAppearance.Flat">
+            <summary>
+            The border has no three-dimensional effects.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.ScrollBarAppearance.FlatBorderless">
+            <summary>
+            The vertical scroll bar has no border.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.ScrollBarAppearance.PopUp">
+            <summary>
+            The border appears flat until the mouse pointer moves over it, at which point it appears three-dimensional.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.ItemType">
+            <summary>
+            Specifies the type of an item in a TaskPane control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.ItemType.LinkButton">
+            <summary>
+            Displays the item in a hyperlink style.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.ItemType.Description">
+            <summary>
+            Displays the item as a label.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.ItemType.Separator">
+            <summary>
+            A separator between items in a TaskPane control. 
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.Alignment">
+            <summary>
+            Specifies the alignment of a text or an image relative to its layout rectangle.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.Alignment.Near">
+            <summary>
+            Specifies that the text or the image is aligned in near of the layout rectangle.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.Alignment.Center">
+            <summary>
+            Specifies that the text or the image is aligned in the center of the layout rectangle.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.Alignment.Far">
+            <summary>
+            Specifies that the text or the image is aligned far from the origin position of the layout rectangle.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.GroupEventArgs">
+            <summary>
+            Provides data for the GroupClick, GroupCollapsed and GroupExpanded events.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.GroupEventArgs.#ctor(Mordex.Windows.TaskPane.TaskPaneGroup)">
+            <summary>
+            Initialize a new instance of the GroupEventArgs class
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.GroupEventArgs.Group">
+            <summary>
+            Gets the TaskPaneGroup containing the data.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.GroupCancelEventArgs">
+            <summary>
+            Provides data for the GroupExpanding and GroupCollapsing events.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.GroupCancelEventArgs.Group">
+            <summary>
+            Gets the TaskPaneGroup containing the data.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.GroupCancelEventArgs.Cancel">
+            <summary>
+            Gets or sets a value indicating whether the event should be canceled.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.ItemEventArgs">
+            <summary>
+            Provides data for the ItemClick event.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.ItemEventArgs.#ctor(Mordex.Windows.TaskPane.TaskPaneItem)">
+            <summary>
+            Initialize a new instance of the ItemEventArgs class
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.ItemEventArgs.Item">
+            <summary>
+            Gets the TaskPaneItem containing the data.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.DrawTaskPaneAreaEventArgs">
+            <summary>
+            Provides data for the DrawTaskPaneArea event.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.DrawTaskPaneAreaEventArgs.PaintBackground">
+            <summary>
+            Draws the background of the area being painted.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.DrawTaskPaneAreaEventArgs.Graphics">
+            <summary>
+            Gets the graphics surface to draw the TaskPane area on.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.DrawTaskPaneAreaEventArgs.Bounds">
+            <summary>
+            Gets the rectangle that represents the bounds of the area being drawn.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.DrawTaskPaneAreaEventArgs.Group">
+            <summary>
+            Gets the TaskPaneGroup object being painted.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.DrawTaskPaneAreaEventArgs.Item">
+            <summary>
+            Gets the TaskPaneItem object being painted.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.DrawTaskPaneAreaEventArgs.BackBrush">
+            <summary>
+            Gets a Brush object that can be used to draw the background.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.DrawTaskPaneAreaEventArgs.ForeBrush">
+            <summary>
+            Gets a Brush object that can be used to draw the foreground.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.DrawTaskPaneAreaEventArgs.BackColor">
+            <summary>
+            Gets the background color of the area being draw.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.DrawTaskPaneAreaEventArgs.ForeColor">
+            <summary>
+            Gets the foreground color of the area being drawn.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.DrawTaskPaneAreaEventArgs.TaskPaneArea">
+            <summary>
+            Gets the type of the TaskPane area being drawn.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.DrawTaskPaneAreaEventArgs.Handled">
+            <summary>
+            Gets or sets a value that specifies whether the area was drawn by the owner.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.ItemEventHandler">
+            <summary>
+            Represents the method that will handle the ItemClick event of the TaskPane.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.GroupEventHandler">
+            <summary>
+            Represents the method that will handle the GroupClick, GroupCollapsed and GroupExpanded events of the TaskPane.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.GroupCancelEventHandler">
+            <summary>
+            Represents the method that will handle the GroupCollapsing and GroupExpanding events of the TaskPane.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.DrawTaskPaneAreaEventHandler">
+            <summary>
+            Represents the method that will handle the DrawTaskPaneArea event of the TaskPane.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.MxTaskPane">
+            <summary>
+            Summary description for TaskPane.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.MxTaskPane.AlphaEmpty">
+            <summary>
+            Represents the empty alpha value. This field is read-only.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.#ctor">
+            <summary>
+            Initializes a new instance of the TaskPane class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.FindLayout(System.String)">
+            <summary>
+            Finds the first layout with the key specified in the layout hierarchy.
+            </summary>
+            <param name="key">A String that specifies the key to search.</param>
+            <returns>The first layout which key is equal to the key specified or null if no layout is found.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.LoadLayout(Mordex.Windows.TaskPane.TaskPaneLayout)">
+            <summary>
+            Loads the settings preserved in a TaskPaneLayout object without setting it as the current layout.
+            </summary>
+            <param name="layout">The TaskPaneLayout with the TaskPane control settings.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.GetLayout">
+            <summary>
+            Creates a TaskPaneLayout object containing settings of the TaskPane control.
+            </summary>
+            <returns>The TaskPaneLayout created.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.LoadLayoutFile(System.IO.Stream)">
+            <summary>
+            Loads a TaskPane control settings persisted in a stream.
+            </summary>
+            <param name="stream">A Stream object with the TaskPane control settings.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.SaveLayoutFile(System.IO.Stream)">
+            <summary>
+            Persist in a stream all the TaskPane control settings.
+            </summary>
+            <param name="stream">A Stream object where settings will be persisted.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ShouldSerializeBackgroundFormatStyle">
+            <summary>
+            Gets a value indicating whether the BackgroundFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ResetBackgroundFormatStyle">
+            <summary>
+            Resets the BackgroundFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ShouldSerializeGroupsFormatStyle">
+            <summary>
+            Gets a value indicating whether the GroupsFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ResetGroupsFormatStyle">
+            <summary>
+            Resets the GroupsFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ShouldSerializeSpecialGroupsFormatStyle">
+            <summary>
+            Gets a value indicating whether the SpecialGroupsFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ResetSpecialGroupsFormatStyle">
+            <summary>
+            Resets the SpecialGroupsFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ShouldSerializeItemsFormatStyle">
+            <summary>
+            Gets a value indicating whether the ItemsFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ResetItemsFormatStyle">
+            <summary>
+            Resets the ItemsFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ShouldSerializeSelectedtemFormatStyle">
+            <summary>
+            Gets a value indicating whether the SelectedItemFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ResetSelectedItemFormatStyle">
+            <summary>
+            Resets the SelectedItemFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ShouldSerializeHoverItemFormatStyle">
+            <summary>
+            Gets a value indicating whether the HoverItemFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ResetHoverItemFormatStyle">
+            <summary>
+            Resets the HoverItemFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ResetHoverGroupFormatStyle">
+            <summary>
+            Resets the HoverGroupFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ShouldSerializeHoverGroupFormatStyle">
+            <summary>
+            Gets a value indicating whether the HoverGroupFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ResetHoverSpecialGroupFormatStyle">
+            <summary>
+            Resets the HoverSpecialGroupFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ShouldSerializeHoverSpecialGroupFormatStyle">
+            <summary>
+            Gets a value indicating whether the HoverSpecialGroupFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.LoadComponentSettings">
+            <summary>
+            Reads the control's application settings into their corresponding properties and updates the control's state.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ResetComponentSettings">
+            <summary>
+            Resets the control's application settings properties to their default values. 
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.SaveComponentSettings">
+            <summary>
+            Persists the control's application settings properties. 
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.GetTaskPaneVersion">
+            <summary>
+            Gets a string representing with the version number.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ShouldSerializeBlendColor">
+            <summary>
+            Gets a value indicating whether the BlendColor property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ResetBlendColor">
+            <summary>
+            Resets the BlendColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ShouldSerializeFlatBorderColor">
+            <summary>
+            Gets a value indicating whether the FlatBorderColor property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ResetFlatBorderColor">
+            <summary>
+            Resets the FlatBorderColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ShouldSerializeWatermarkImage">
+            <summary>
+            Indicates whether the WatermarkImage property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ResetWatermarkImage">
+            <summary>
+            Resets the WatermarkImage property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ShouldSerializeImageSize">
+            <summary>
+            Gets a value indicating whether the ImageSize property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ResetImageSize">
+            <summary>
+            Resets the ImageSize property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ResetUseCompatibleTextRendering">
+            <summary>
+            Resets the UseCompatibleTextRendering property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ShouldSerializeUseCompatibleTextRendering">
+            <summary>
+            Gets a value indicating whether the UseCompatibleTextRendering property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.EnsureVisible(Mordex.Windows.TaskPane.TaskPaneGroup)">
+            <summary>
+            Ensures that the specified TaskPaneGroup is visible within the control, scrolling the contents of the control if necessary.
+            </summary>
+            <param name="group">The TaskPaneGroup to scroll into view.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.EnsureVisible(Mordex.Windows.TaskPane.TaskPaneItem)">
+            <summary>
+            Ensures that the specified TaskPaneItem is visible within the control, scrolling the contents of the control if necessary.
+            </summary>
+            <param name="item">The TaskPaneItem to scroll into view.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnMouseWheel(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Overrides Control.OnMouseWheel
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.IsInputKey(System.Windows.Forms.Keys)">
+            <summary>
+            Overrides Control.IsInputKey
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Overrides Control.OnKeyDown.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.CreateAccessibilityInstance">
+            <summary>
+            Overrides Control.CreateAccessibilityInstance
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            Overrides Control.ProcessDialogKey.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnControlRemoved(System.Windows.Forms.ControlEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.ControlRemoved event.
+            </summary>
+            <param name="e">A System.Windows.Forms.ControlEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnLostFocus(System.EventArgs)">
+            <summary>
+            Overrides Control.OnLostFocus.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnRightToLeftChanged(System.EventArgs)">
+            <summary>
+            Overrides Control.OnRightToLeftChanged
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnGotFocus(System.EventArgs)">
+            <summary>
+            Overrides Control.OnGotFocus.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.Select(System.Boolean,System.Boolean)">
+            <summary>
+            Overrides Control.Select
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnParentChanged(System.EventArgs)">
+            <summary>
+            Overrides Control.OnParentChanged.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnParentVisibleChanged(System.EventArgs)">
+            <summary>
+            Overrides Control.OnParentChanged.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnControlAdded(System.Windows.Forms.ControlEventArgs)">
+            <summary>
+            Overrides Control.OnControlAdded.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ProcessMnemonic(System.Char)">
+            <summary>
+            Overrides Control.ProcessMnemonic
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnResize(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.Resize event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnFontChanged(System.EventArgs)">
+            <summary>
+            Overrides Control.OnFontChanged
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnVisibleChanged(System.EventArgs)">
+            <summary>
+            Overrides Control.OnVisibleChanged.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnSystemColorsChanged(System.EventArgs)">
+            <summary>
+            Overrides Control.OnSystemColorsChanged.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ShouldSerializeBackColor">
+            <summary>
+            Gets a value indicating whether the BackColor property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.ResetBackColor">
+            <summary>
+            Resets the BackColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.Paint event.
+            </summary>
+            <param name="e">A System.Windows.Forms.PintEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnMouseLeave(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseLeave event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseUp event.
+            </summary>
+            <param name="e">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseDown event.
+            </summary>
+            <param name="e">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseMove event.
+            </summary>
+            <param name="e">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.HitTest">
+            <summary>
+            Determines which element of the TaskPane control is at the current position of the cursor.
+            </summary>
+            <returns>One of the HitTest values that contains information about the specified location in the TaskPane.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.HitTest(System.Int32,System.Int32)">
+            <summary>
+            Determines which element of the TaskPane control is at the specified coordinates.
+            </summary>
+            <param name="x">The x coordinate of the point to be hit-tested.</param>
+            <param name="y">The y coordinate of the point to be hit-tested.</param>
+            <returns>One of the HitTest values that contains information about the specified location in the TaskPane.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.HitTest(System.Drawing.Point)">
+            <summary>
+            Determines which element of the TaskPane control is at the specified point.
+            </summary>
+            <param name="pt">A Point containing the x and y coordinates of the point to be hit-tested.</param>
+            <returns>One of the HitTest values that contains information about the specified point in the TaskPane.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.GetItemAt">
+            <summary>
+            Retrieves the TaskPaneItem object that is located at the current position of the cursor.
+            </summary>
+            <returns>A TaskPaneItem object that represents the item that is located at the curren position of the cursor.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.GetItemAt(System.Int32,System.Int32)">
+            <summary>
+            Retrieves the TaskPaneItem object that is located at the specified coordinates.
+            </summary>
+            <param name="x">Represents the x-coordinate where you want to look for the TaskPaneItem. Coordinates are expressed relative to the upper-left corner of the control's client area.</param>
+            <param name="y">Represents the y-coordinate where you want to look for the TaskPaneItem. Coordinates are expressed relative to the upper-left corner of the control's client area.</param>
+            <returns>A TaskPaneItem object that represents the item that is located at the specified coordinates.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.GetItemAt(System.Drawing.Point)">
+            <summary>
+            Retrieves the TaskPaneItem object that is located at the specified point.
+            </summary>
+            <param name="point">Represents the point where you want to look for the TaskPaneItem. Coordinates are expressed relative to the upper-left corner of the control's client area.</param>
+            <returns>A TaskPaneItem object that represents the item that is located at the specified point.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.GetGroupAt">
+            <summary>
+            Retrieves the TaskPaneGroup object that is located at the current position of the cursor.
+            </summary>
+            <returns>A TaskPaneGroup object that represents the group that is located at the current position of the cursors.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.GetGroupAt(System.Int32,System.Int32)">
+            <summary>
+            Retrieves the TaskPaneGroup object that is located at the specified coordinates.
+            </summary>
+            <param name="x">Represents the x-coordinate where you want to look for the TaskPaneGroup. Coordinates are expressed relative to the upper-left corner of the control's client area.</param>
+            <param name="y">Represents the x-coordinate where you want to look for the TaskPaneGroup. Coordinates are expressed relative to the upper-left corner of the control's client area.</param>
+            <returns>A TaskPaneGroup object that represents the group that is located at the specified coordinates.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.GetGroupAt(System.Drawing.Point)">
+            <summary>
+            Retrieves the TaskPaneGroup object that is located at the specified point.
+            </summary>
+            <param name="point">Represents the point where you want to look for the TaskPaneGroup. Coordinates are expressed relative to the upper-left corner of the control's client area.</param>
+            <returns>A TaskPaneGroup object that represents the group that is located at the specified point.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnGroupExpanding(Mordex.Windows.TaskPane.GroupCancelEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.TaskPane.MxTaskPane.GroupExpanding event
+            </summary>
+            <param name="e">A Mordex.Windows.TaskPane.GroupCancelEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnGroupClosing(Mordex.Windows.TaskPane.GroupCancelEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.TaskPane.MxTaskPane.GroupClosing event
+            </summary>
+            <param name="e">A Mordex.Windows.TaskPane.GroupCancelEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnGroupClosed(Mordex.Windows.TaskPane.GroupEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.TaskPane.MxTaskPane.GroupClosed event
+            </summary>
+            <param name="e">A Mordex.Windows.TaskPane.GroupEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnGroupCollapsing(Mordex.Windows.TaskPane.GroupCancelEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.TaskPane.MxTaskPane.GroupCollapsing event
+            </summary>
+            <param name="e">A Mordex.Windows.TaskPane.GroupCancelEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnGroupExpanded(Mordex.Windows.TaskPane.GroupEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.TaskPane.MxTaskPane.GroupExpanded event
+            </summary>
+            <param name="e">A Mordex.Windows.TaskPane.GroupEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnGroupCollapsed(Mordex.Windows.TaskPane.GroupEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.TaskPane.MxTaskPane.GroupCollapsed event
+            </summary>
+            <param name="e">A Mordex.Windows.TaskPane.GroupEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnLayoutLoad(System.EventArgs)">
+            <summary>
+            Raises the LayoutLoad event.
+            </summary>
+            <param name="e">An EventArgs that contain the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnCurrentLayoutChanged(System.EventArgs)">
+            <summary>
+            Raises the CurrentLayoutChanged event.
+            </summary>
+            <param name="e">A CancelEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnCurrentLayoutChanging(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Raises the CurrentLayoutChanging event.
+            </summary>
+            <param name="e">A CancelEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnItemClick(Mordex.Windows.TaskPane.ItemEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.TaskPane.MxTaskPane.ItemClick event
+            </summary>
+            <param name="e">A Mordex.Windows.TaskPane.ItemEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnDrawTaskPaneArea(Mordex.Windows.TaskPane.DrawTaskPaneAreaEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.TaskPane.MxTaskPane.DrawTaskPaneArea event.
+            </summary>
+            <param name="e">A Mordex.Windows.TaskPane.DrawTaskPaneAreaEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.MxTaskPane.OnGroupClick(Mordex.Windows.TaskPane.GroupEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.TaskPane.MxTaskPane.GroupClick event
+            </summary>
+            <param name="e">A Mordex.Windows.TaskPane.GroupEventArgs that contains the event data.</param>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.Layouts">
+            <summary>
+            Gets the collection of TaskPaneLayout objects in the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.CurrentLayout">
+            <summary>
+            Gets or sets the current TaskPaneLayout.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.BackgroundFormatStyle">
+            <summary>
+            Returns the TaskPaneFormatStyle object used to draw the background of the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.GroupsFormatStyle">
+            <summary>
+            Returns the TaskPaneFormatStyle object used to draw the groups' header in the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.SpecialGroupsFormatStyle">
+            <summary>
+            Returns the TaskPaneFormatStyle object used to draw the header of the TaskPaneGroup marked as special in the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.ItemsFormatStyle">
+            <summary>
+            Returns the TaskPaneFormatStyle object used to draw the items in the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.SelectedItemFormatStyle">
+            <summary>
+            Returns the TaskPaneFormatStyle object used to draw the selected item in the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.HoverItemFormatStyle">
+            <summary>
+            Returns the TaskPaneFormatStyle object used to draw the items in the TaskPane control when the mouse is over them.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.HoverGroupFormatStyle">
+            <summary>
+            Returns the TaskPaneFormatStyle object used to draw the groups' header in the TaskPane control when the mouse is over them.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.HoverSpecialGroupFormatStyle">
+            <summary>
+            Returns the TaskPaneFormatStyle object used to draw the header of TaskPaneGroup marked as special when the mouse is over them.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.ItemsStateStyles">
+            <summary>
+            Gets the TaskPaneStateStyles that holds the format styles used to draw the items in their different states.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.GroupsStateStyles">
+            <summary>
+            Gets the TaskPaneStateStyles that holds the format styles used to draw the groups' header in their different states.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.SpecialGroupsStateStyles">
+            <summary>
+            Gets the TaskPaneStateStyles that holds the format styles used to draw the special groups' header in their different states.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.SaveSettings">
+            <summary>
+            Gets or sets a value indicating whether the control should automatically persist its application settings properties.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.SettingsKey">
+            <summary>
+            Gets or sets the value of the application settings key for the current instance of the control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.Site">
+            <summary>
+            Overrides Component.Site
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.ShowFocusRectangle">
+            <summary>
+            Gets a value indicating whether the control should display focus rectangles.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.Selectable">
+            <summary>
+            Gets or sets a value specifying whether the control can recieve focus
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.ScrollBarStyle">
+            <summary>
+            Gets an object representing the style used to draw the vertical scroll bar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.BorderStyle">
+            <summary>
+            Gets or sets the TaskPane's border style.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.Groups">
+            <summary>
+            Gets an object representing the collection of the TaskPaneGroup objects contained in this TaskPane.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.BlendColor">
+            <summary>
+            Gets or sets the color that blends with the BackColor and BackColorGradient properties of the TaskPaneFormatStyle when its Blend or BlendGradient properties are not zero.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.FlatBorderColor">
+            <summary>
+            Gets or sets the color of the control's border when its style is flat.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.DefaultBlend">
+            <summary>
+            Gets or sets a value indicating the default percentage of the BlendColor to use with the TaskPaneFormatStyle objects associated with this TaskPane.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.BackgroundImageDrawMode">
+            <summary>
+            Gets or sets a value specifiying how the background image of the TaskPane is drawn.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.WatermarkImage">
+            <summary>
+            Gets a ExplorerWatermarkImage that contains the information used to draw a watermark image in the background.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.ImageSize">
+            <summary>
+            Gets or sets a System.Drawing.Size that determines the size that images will have when drawing a group or an item.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.ImageList">
+            <summary>
+            Gets or sets the ImageList that contains the Image objects used by the TaskPaneGroup and TaskPaneItem objects.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.SelectedItem">
+            <summary>
+            Gets or sets the TaskPaneItem object currently selected.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.KeepSelection">
+            <summary>
+            Gets or sets a value indicating if the TaskPaneItem appears selected when the user clicks on it.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.ColumnSeparation">
+            <summary>
+            Gets or sets the space, in pixels, between columns of groups.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.GroupSeparation">
+            <summary>
+            Gets or sets the vertical space, in pixels, between groups.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.LeftMargin">
+            <summary>
+            Gets or sets the left margin for the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.RightMargin">
+            <summary>
+            Gets or sets the right margin for the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.TopMargin">
+            <summary>
+            Gets or sets the top margin for the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.UseMnemonic">
+            <summary>
+            Gets or sets a value indicating whether an ampersand is included in the text of the control. 
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.UseCompatibleTextRendering">
+            <summary>
+            Gets or sets a value specifying whether the text rendering should be compatible with previous release of Windows Forms.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.VerticalScrollPosition">
+            <summary>
+            Gets or sets a numeric value that represents the current position of the scroll box on the scroll bar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.InnerHeight">
+            <summary>
+            Gets the inner height of the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.Columns">
+            <summary>
+            Gets or sets the number of groups displayed horizontally across the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.VerticalScrollBar">
+            <summary>
+            Gets or sets a value specifyng when the vertical scroll bar will be visible.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.BackColor">
+            <summary>
+            Gets or sets the background color for the control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.Text">
+            <summary>
+            Gets or sets the text associated with this Schedule.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.ShowGroupBorder">
+            <summary>
+            Gets or sets a value that indicates whether a border is drawn around a group.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.Effect">
+            <summary>
+            Gets or sets a value that indicates which effect to use when groups are expanded/collapsed.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.DefaultItemImageIndex">
+            <summary>
+            Gets or sets a value specifying the default image list index value of the image displayed in the items.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.DefaultItemImageKey">
+            <summary>
+            Gets or sets a value specifying the key accessor for the default image in the ImageList displayed in the items.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.DefaultGroupImageIndex">
+            <summary>
+            Gets or sets a value specifying the default image list index value of the image displayed in the groups.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.DefaultGroupImageKey">
+            <summary>
+            Gets or sets a value specifying the key accessor for the default image in the ImageList displayed in the groups.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.OwnerDrawnArea">
+            <summary>
+            Gets or sets a value specifying which area of a TaskPane control needs to be drawn manually.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.ActiveItem">
+            <summary>
+            Gets the TaskPaneGroup that contains the input focus.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.ActiveGroup">
+            <summary>
+            Gets the TaskPaneGroup that contains the input focus.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.ShowToolTips">
+            <summary>
+            Gets or sets a value indicating whether a ToolTip is shown when the mouse passes over a group or item.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.Alpha">
+            <summary>
+            Gets or sets a value specifying the level of alpha (transparency) used to draw the objects in the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.AlphaMode">
+            <summary>
+            Gets or sets a value specifying the level of alpha to use in the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.BackColorAlphaMode">
+            <summary>
+            Gets or sets a value specifying the level of alpha (transparency) to use in the background.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.MxTaskPane.ForeColorAlphaMode">
+            <summary>
+            Gets or sets a value specifying the level of alpha (transparency) to use in the foreground.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.TaskPane.MxTaskPane.GroupExpanding">
+            <summary>
+            Occurs when an TaskPaneGroup is about to be expanded by either a programmatic modification or user interaction.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.TaskPane.MxTaskPane.GroupClosing">
+            <summary>
+            Occurs when an TaskPaneGroup is about to be closed by user interaction.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.TaskPane.MxTaskPane.GroupClosed">
+            <summary>
+            Occurs when an TaskPaneGroup is closed by user interaction.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.TaskPane.MxTaskPane.GroupCollapsing">
+            <summary>
+            Occurs when an TaskPaneGroup is about to be collapsed by either a programmatic modification or user interaction.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.TaskPane.MxTaskPane.GroupExpanded">
+            <summary>
+            Occurs when an TaskPaneGroup was expanded by either a programmatic modification or user interaction.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.TaskPane.MxTaskPane.GroupCollapsed">
+            <summary>
+            Occurs when an TaskPaneGroup was collapsed by either a programmatic modification or user interaction.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.TaskPane.MxTaskPane.LayoutLoad">
+            <summary>
+            Occurs after a layout is loaded.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.TaskPane.MxTaskPane.CurrentLayoutChanged">
+            <summary>
+            Occurs after the CurrentLayout property has changed.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.TaskPane.MxTaskPane.CurrentLayoutChanging">
+            <summary>
+            Occurs after the CurrentLayout property changes.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.TaskPane.MxTaskPane.ItemClick">
+            <summary>
+            Occurs when the user clicks on an TaskPaneItem.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.TaskPane.MxTaskPane.DrawTaskPaneArea">
+            <summary>
+            Occurs when a visual owner draw area needs to be painted.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.TaskPane.MxTaskPane.GroupClick">
+            <summary>
+            Occurs when the user clicks on a TaskPaneGroup.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.TaskPaneContainerControl">
+            <summary>
+            Summary description for TaskPaneContainerControl.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.TaskPaneContainerControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneContainerControl.#ctor">
+            <summary>
+            Initialize a new instance of the TaskPaneContainerControl class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneContainerControl.OnResize(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.Resize event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneContainerControl.OnPaintBackground(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.PaintBackground event.
+            </summary>
+            <param name="e">A System.Windows.Forms.PaintEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneContainerControl.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.Paint event.
+            </summary>
+            <param name="e">A System.Windows.Forms.PaintEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneContainerControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneContainerControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneContainerControl.TaskPane">
+            <summary>
+            Gets the TaskPane control that this TaskPaneContainerControl is assigned to.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneContainerControl.Group">
+            <summary>
+            Gets the TaskPaneGroup object that this TaskPaneContainerControl is assigned to.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneContainerControl.Item">
+            <summary>
+            Gets the TaskPaneItem object that this TaskPaneContainerControl is assigned to.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.TaskPaneFormatStyle">
+            <summary>
+               Summary description for FormatStyle.
+            </summary>
+            
+        </member>
+        <member name="F:Mordex.Windows.TaskPane.TaskPaneFormatStyle.AlphaEmpty">
+            <summary>
+            Represents the empty alpha value. This field is read-only.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneFormatStyle.Reset">
+            <summary>
+            Resets all the properties of this TaskPaneFormatStyle to its default values.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneFormatStyle.ShouldSerialize">
+            <summary>
+            Indicates whether the TaskPaneFormatStyle object has changed from its default value.
+            </summary>
+            <returns>true if the one of the properties of the TaskPaneFormatStyle has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneFormatStyle.#ctor(Mordex.Windows.TaskPane.TaskPaneFormatStyle)">
+            <summary>
+            Initializes a new instance of the TaskPaneFormatStyle class based on the given TaskPaneFormatStyle.
+            </summary>
+            <param name="baseStyle">A TaskPaneFormatStyle which properties will be copied to create a new TaskPaneFormatStyle class.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneFormatStyle.ResetBackColor">
+            <summary>
+            Resets the BackColor property to its default color.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneFormatStyle.ShouldSerializeBackColor">
+            <summary>
+            Indicates whether the BackColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneFormatStyle.ResetForeColor">
+            <summary>
+            Resets the ForeColor property to its default color.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneFormatStyle.ShouldSerializeForeColor">
+            <summary>
+            Indicates whether the ForeColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneFormatStyle.ShouldSerializeFontBold">
+            <summary>
+            Indicates whether the FontBold property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneFormatStyle.ResetFontBold">
+            <summary>
+            Resets the FontBold property to its default color.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneFormatStyle.ResetBackColorGradient">
+            <summary>
+            Resets the BackColorGradient property to its default color.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneFormatStyle.ShouldSerializeBackColorGradient">
+            <summary>
+            Indicates whether the BackColorGradient property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneFormatStyle.ShouldSerializeForegroundThemeStyle">
+            <summary>
+            Indicates whether the ForegroundThemeStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneFormatStyle.ResetForegroundThemeStyle">
+            <summary>
+            Resets the ForegroundThemeStyle property to its default color.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneFormatStyle.ShouldSerializeBackgroundThemeStyle">
+            <summary>
+            Indicates whether the BackgroundThemeStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneFormatStyle.ResetBackgroundThemeStyle">
+            <summary>
+            Resets the BackgroundThemeStyle property to its default color.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneFormatStyle.ShouldSerializeBackgroundGradientMode">
+            <summary>
+            Indicates whether the BackgroundGradientMode property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneFormatStyle.ResetBackgroundGradientMode">
+            <summary>
+            Resets the BackgroundGradientMode property to its default color.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneFormatStyle.TaskPane">
+            <summary>
+            Get the TaskPane control that this TaskPaneFormatStyle is assigned to. 
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneFormatStyle.Alpha">
+            <summary>
+            Gets or sets a value specifying the level of alpha (transparency).
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneFormatStyle.BackColor">
+            <summary>
+            Gets or sets the background color for this TaskPaneFormatStyle.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneFormatStyle.BackColorAlphaMode">
+            <summary>
+            Gets or sets a value specifying the level of alpha (transparency) to use in the background.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneFormatStyle.ForeColor">
+            <summary>
+            Gets or sets the foreground color for this TaskPaneFormatStyle.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneFormatStyle.ForeColorAlphaMode">
+            <summary>
+            Gets or sets a value specifying the level of alpha (transparency) to use in the foreground.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneFormatStyle.Font">
+            <summary>
+            Gets or sets the Font object used by this TaskPaneFormatStyle.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneFormatStyle.FontBold">
+            <summary>
+            Gets or sets a value indicating whether the Font object of this TaskPaneFormatStyle is bold.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneFormatStyle.FontItalic">
+            <summary>
+            Gets or sets a value indicating whether the Font object of this TaskPaneFormatStyle is italic.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneFormatStyle.FontUnderline">
+            <summary>
+            Gets or sets a value indicating whether the Font object of this TaskPaneFormatStyle is underlined.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneFormatStyle.FontStrikeout">
+            <summary>
+            Gets or sets a value indicating whether the Font object of this TaskPaneFormatStyle specifies a horizontal line through the font.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneFormatStyle.FontName">
+            <summary>
+            Gets or sets the face name of the font used by the TaskPaneFormatSrtyle class.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneFormatStyle.FontSize">
+            <summary>
+            Gets or sets the size of the Font object used by this TaskPaneFormatStyle object.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneFormatStyle.BackColorGradient">
+            <summary>
+            Gets or sets a value specifying the background color used in a linear gradient pathern.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneFormatStyle.BackColorGradientAlphaMode">
+            <summary>
+            Gets or sets a value specifying the level of alpha (transparency) to use in the background of the second color in a linear gradient pattern.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneFormatStyle.BlendGradient">
+            <summary>
+            Gets or sets a value indicating the percentage of the BlendColor to blend with the BackColorGradient.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneFormatStyle.Blend">
+            <summary>
+            Gets or sets a value indicating the percentage of the BlendColor to blend with the BackColor.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneFormatStyle.BackgroundGradientMode">
+            <summary>
+            Gets or sets a value specifying if a linear gradient will be applied and its direction.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.TaskPaneGroup">
+            <summary>
+            Represents a group in the TaskPane control.
+            </summary>
+            
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroup.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the TaskPaneGroup class and displays the assigned text on the group.
+            </summary>
+            <param name="text">The text to display on the new TaskPaneGroup.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroup.#ctor">
+            <summary>
+            Initializes a new instance of the TaskPaneGroup class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroup.ShouldSerializeWatermarkImage">
+            <summary>
+            Indicates whether the WatermarkImage property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroup.ResetWatermarkImage">
+            <summary>
+            Resets the WatermarkImage property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroup.ResetFormatStyle">
+            <summary>
+            Resets the FormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroup.ShouldSerializeFormatStyle">
+            <summary>
+            Indicates whether the FormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroup.ResetItemsFormatStyle">
+            <summary>
+            Resets the ItemsFormatStyle property to its default value. 
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroup.ShouldSerializeItemsFormatStyle">
+            <summary>
+            Indicates whether the ItemsFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.ColumnSpan">
+            <summary>
+            Gets or sets the number of columns in the TaskPane control that the group spans.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.AccessibleRole">
+            <summary>
+            Gets or sets a value representing the role that will be reported to accessibility clients.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.AccessibleName">
+            <summary>
+            Gets or sets a string representing the name that will be reported to accessibility clients.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.AccessibleDescription">
+            <summary>
+            Gets or sets a string representing the description that will be reported to accessibility clients.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.Container">
+            <summary>
+            Gets or sets a value that indicates whether the group should act as a container for other controls.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.HeaderHeight">
+            <summary>
+            Gets or sets the height of the header of TaskPaneGroup in pixels.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.ContainerHeight">
+            <summary>
+            Gets or sets the height of the TaskPaneContainerControl in pixels.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.ContainerControl">
+            <summary>
+            Gets or sets the TaskPaneContainerControl associated to a TaskPaneGroup acting as container for other controls.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.Tag">
+            <summary>
+            Gets or sets an object that contains data to associate with the TaskPaneGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.Icon">
+            <summary>
+            Gets or sets the icon that is displayed on the TaskPaneGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.TagString">
+            <summary>
+            Gets or sets a string that contains data to associate with the TaskPaneGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.Index">
+            <summary>
+            Gets the position of the TaskPaneGroup in the TaskPaneGroupCollection.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.Key">
+            <summary>
+            Gets or sets a string that uniquely identifies this TaskPaneGroup in a collection.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.TextAlignment">
+            <summary>
+            Gets or sets the alignment of the text in the TaskPaneGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.ImageAlignment">
+            <summary>
+            Gets or sets the alignment of the image in the TaskPaneGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.Enabled">
+            <summary>
+            Gets or sets a value indicating whether the TaskPaneGroup is enabled.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.Visible">
+            <summary>
+            Gets or sets a value indicating whether the TaskPaneGroup is visble.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.HeaderBounds">
+            <summary>
+            Gets or sets the size and location of the group's header in the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.ButtonAlignment">
+            <summary>
+            Gets or sets the alignment of the expand and close buttons on the TaskPaneGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.CloseButtonAlignment">
+            <summary>
+            Gets or sets the alignment of the close button on the TaskPaneGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.ExpandButtonAlignment">
+            <summary>
+            Gets or sets the alignment of the expand button on the TaskPaneGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.Cursor">
+            <summary>
+            Gets or sets the cursor that is displayed when the mouse pointer is over the group.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.Expandable">
+            <summary>
+            Gets or sets a value indicating whether the expand button is displayed on the group.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.CollapsedButtonImageIndex">
+            <summary>
+            Gets or sets the image list index value of the image displayed instead of the default collapsed button image.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.CollapsedButtonImageKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed instead of the default collapsed button image.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.ExpandButtonImageIndex">
+            <summary>
+            Gets or sets the image list index value of the image displayed instead of the default expand button image.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.ExpandButtonImageKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed instead of the default expand button image.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.ShowCloseButton">
+            <summary>
+            Gets or sets a value indicating whether the close button is displayed on the group.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.Items">
+            <summary>
+            Gets a collection containing all the items in this group.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.Image">
+            <summary>
+            Gets or sets the image displayed on the TaskPaneGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.FocusImageIndex">
+            <summary>
+            Gets or sets the index value of the image displayed by the TaskPaneGroup when the mouse moves over it.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.FocusImageKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the TaskPaneGroup when the mouse moves over it.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.DisabledImageIndex">
+            <summary>
+            Gets or sets the index value of the image displayed by the TaskPaneGroup when it is disabled.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.DisabledImageKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the TaskPaneGroup when it is disabled.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.ImageIndex">
+            <summary>
+            Gets or sets the index value of the image displayed by the TaskPaneGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.ImageKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the TaskPaneGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.ShowGroupBorder">
+            <summary>
+            Gets or sets a value that indicates whether a border is drawn around the group.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.WatermarkImage">
+            <summary>
+            Gets a ExplorerWatermarkImage that contains the information used to draw a watermark image in the background.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.Text">
+            <summary>
+            Gets or sets the text displayed on the TaskPaneGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.ToolTipText">
+            <summary>
+            Gets or sets the text that appears as a ToolTip for the TaskPaneGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.SpecialGroup">
+            <summary>
+            Gets or a value that indicates whether the group should be displayed as a special group.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.BackgroundImage">
+            <summary>
+            Gets or sets the background image displayed in the background of the group.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.BackgroundImageDrawMode">
+            <summary>
+            Gets or sets a value specifying how the background image is draw in the TaskPane.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.TaskPane">
+            <summary>
+            Gets the TaskPane control that this TaskPaneGroup object is assigned to.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.FormatStyle">
+            <summary>
+            Gets the TaskPaneFormatStyle used to draw this TaskPaneGroup in the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.Expanded">
+            <summary>
+            Gets or sets a value indicating whether the TaskPaneGroup is expanded.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.ShowGroupCaption">
+            <summary>
+            Gets or sets a value that indicates whether the header section is displayed in the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.ItemsStateStyles">
+            <summary>
+            Gets the TaskPaneStateStyles that holds the format styles used to draw the items whitin this group in their different states.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.StateStyles">
+            <summary>
+            Gets the TaskPaneStateStyles that holds the format styles used to draw the header in its different states.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroup.ItemsFormatStyle">
+            <summary>
+            Gets the TaskPaneFormatStyle used to draw the TaskPaneItem objects whitin this group.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.TaskPaneGroupConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroupConverter.#ctor">
+            <summary>
+            Initialize a new instance of the TaskPaneGroupConverter class
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroupConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Overrides TypeConverter.CanConvertTo		
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroupConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Overrides TypeConverter.ConvertTo
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.TaskPaneGroupCollection">
+            <summary>
+            Encapsulates a collection of TaskPaneGroup objects for use by the TaskPane control.
+            </summary>
+            
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroupCollection.Contains(Mordex.Windows.TaskPane.TaskPaneGroup)">
+            <summary>
+            Determines if the specified TaskPaneGroup object is a member of the collection.
+            </summary>
+            <param name="group">The TaskPaneGroup object to locate in the collection.</param>
+            <returns>true if the group is found in the TaskPaneGroupCollection; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroupCollection.Insert(System.Int32,Mordex.Windows.TaskPane.TaskPaneGroup)">
+            <summary>
+            Inserts a new TaskPaneGroup object in the collection at the specified location.
+            </summary>
+            <param name="index">The indexed location within the collection to insert the TaskPaneGroup object.</param>
+            <param name="group">The TaskPaneGroup object to insert.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroupCollection.AddRange(Mordex.Windows.TaskPane.TaskPaneGroup[])">
+            <summary>
+            Adds an array of TaskPaneGroup objects to the collection.
+            </summary>
+            <param name="groups">An array of TaskPaneGroup objects to add to the collection.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroupCollection.Add(Mordex.Windows.TaskPane.TaskPaneGroup)">
+            <summary>
+            Adds the TaskPaneGroup object to the end of the TaskPaneGroupCollection.
+            </summary>
+            <param name="group">The TaskPaneGroup to be added after all existing groups.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroupCollection.Add(System.String)">
+            <summary>
+            Creates a new TaskPaneGroup using the specified value and adds it to the end of the TaskPaneGroupCollection.
+            </summary>
+            <param name="text">The text of the new TaskPaneGroup.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroupCollection.Remove(Mordex.Windows.TaskPane.TaskPaneGroup)">
+            <summary>
+            Removes a given TaskPaneGroup from the collection.
+            </summary>
+            <param name="group">The TaskPaneGroup object to remove from the collection.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroupCollection.RemoveAt(System.Int32)">
+            <summary>
+            Removes the TaskPaneGroup at the specified index of the collection.
+            </summary>
+            <param name="index">The indexed location of the TaskPaneGroup object in the collection.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroupCollection.MoveAt(System.Int32,Mordex.Windows.TaskPane.TaskPaneGroup)">
+            <summary>
+            Moves the TaskPaneGroup to the specified index in the collection
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroupCollection.OnClear">
+            <summary>
+            Performs additional custom processes when clearing the contents of the TaskPaneGroupCollection class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneGroupCollection.OnClearComplete">
+            <summary>
+            Performs additional custom processes after clearing the contents of the TaskPaneGroupCollection class.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroupCollection.Item(System.Int32)">
+            <summary>
+            Gets the TaskPaneGroup object at the specified indexed location in the TaskPaneGroupCollection.
+            </summary>
+            <param name="index">The indexed location of the TaskPaneGroup in the collection.</param>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneGroupCollection.Item(System.String)">
+            <summary>
+            Gets the TaskPaneGroup object with the specified key in the TaskPaneGroupCollection.
+            </summary>
+            <param name="key">The key of the TaskPaneGroup in the collection.</param>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.TaskPaneItem">
+            <summary>
+            Represents an item in the TaskPane control.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItem.#ctor">
+            <summary>
+            Initializes a new instance of the TaskPaneItem class. 
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItem.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the TaskPaneItem class and displays the assigned text on the item.
+            </summary>
+            <param name="text">The text to display on the new TaskPaneItem.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItem.#ctor(System.String,Mordex.Windows.TaskPane.ItemType)">
+            <summary>
+            Initializes a new instance of the TaskPaneItem class. 
+            </summary>
+            <param name="text">The text to display on the new TaskPaneItem.</param>
+            <param name="itemType">The type of the new TaskPaneItem</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItem.#ctor(System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the TaskPaneItem class and sets the Text and ImageIndex properties to the specified values.
+            </summary>
+            <param name="text">The text of the new TaskPaneItem.</param>
+            <param name="imageIndex">The index value of the image displayed by the TaskPaneItem.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItem.InvokeOnClick">
+            <summary>
+            Raises the ItemClick event
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItem.ResetFormatStyle">
+            <summary>
+            Resets the FormatStyle property to its default value. 
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItem.ShouldSerializeFormatStyle">
+            <summary>
+            Indicates whether the FormatStyle property should be persisted. 
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItem.OnClick(Mordex.Windows.TaskPane.ItemEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.TaskPane.TaskPaneItem.Click event
+            </summary>
+            <param name="e">A ItemEventArgs that contains the event data</param>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.AccessibleRole">
+            <summary>
+            Gets or sets a value representing the role that will be reported to accessibility clients.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.AccessibleName">
+            <summary>
+            Gets or sets a string representing the name that will be reported to accessibility clients.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.AccessibleDescription">
+            <summary>
+            Gets or sets a string representing the description that will be reported to accessibility clients.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.Key">
+            <summary>
+            Gets or sets a string that uniquely identifies this TaskPaneItem in a collection.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.Shortcut">
+            <summary>
+            Gets or sets a value indicating the shortcut key associated with the item. 
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.Selected">
+            <summary>
+            Gets or sets a value indicating whether this TaskPaneItem is selected.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.Indent">
+            <summary>
+            Gets or sets the distance to indent the item.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.Height">
+            <summary>
+            Gets or sets the height of the TaskPaneItem in pixels.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.Cursor">
+            <summary>
+            Gets or sets the cursor that is displayed when the mouse pointer is over the item.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.Tag">
+            <summary>
+            Gets or sets an object that contains data to associate with the TaskPaneItem.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.TagString">
+            <summary>
+            Gets or sets a string that contains data to associate with the TaskPaneItem.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.Icon">
+            <summary>
+            Gets or sets the icon that is displayed on the TaskPaneItem.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.Text">
+            <summary>
+            Gets or sets the text displayed on the TaskPaneItem.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.WordWrap">
+            <summary>
+            Gets or sets a value indicating whether the item should wrap words to the beginning of the next line when necessary.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.ToolTipText">
+            <summary>
+            Gets or sets the text that appears as a ToolTip for the TaskPaneItem.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.Index">
+            <summary>
+            Gets the position of the TaskPaneItem in the TaskPaneItemCollection.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.Enabled">
+            <summary>
+            Gets or sets a value indicating whether the TaskPaneItem is enabled.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.Visible">
+            <summary>
+            Gets or sets a value indicating whether the TaskPaneItem is visible.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.ImageAlignment">
+            <summary>
+            Gets or sets the alignment of the image in the TaskPaneItem.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.TextAlignment">
+            <summary>
+            Gets or sets the alignment of the text in the TaskPaneItem.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.Bounds">
+            <summary>
+            Gets or sets the size and location of the item in the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.ContainerControl">
+            <summary>
+            Gets or sets the TaskPaneContainerControl associated to the item acting as container for other controls.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.Container">
+            <summary>
+            Gets or sets a value that indicates whether the item should act as a container for other controls.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.ContainerHeight">
+            <summary>
+            Gets or sets the height of the TaskPaneContainerControl in pixels.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.Image">
+            <summary>
+            Gets or sets the image that is displayed on the TaskPaneItem.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.ImageDisabledIndex">
+            <summary>
+            Gets or sets the index value of the image displayed by the TaskPaneGroup when it is disabled.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.ImageDisabledKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the TaskPaneGroup when it is disabled.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.ImageSelectedIndex">
+            <summary>
+            Gets or sets the index value of the image displayed by the TaskPaneItem when the item is selected.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.ImageSelectedKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the TaskPaneItem when the item is selected.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.ImageFocusIndex">
+            <summary>
+            Gets or sets the index value of the image displayed by the TaskPaneItem when the mouse moves over it.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.ImageFocusKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the TaskPaneItem when the mouse moves over it.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.ItemType">
+            <summary>
+            Gets the type of the item represented by the TaskPaneItem object in the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.ImageIndex">
+            <summary>
+            Gets or sets the index value of the image displayed by the TaskPaneItem.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.ImageKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the TaskPaneItem.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.TaskPane">
+            <summary>
+            Gets the TaskPane control that this TaskPaneItem object is assigned to.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.Group">
+            <summary>
+            Gets the TaskPaneGroup object that this TaskPaneItem is assigned to.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.StateStyles">
+            <summary>
+            Gets the TaskPaneStateStyles that holds the format styles used to draw the item in its different states.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItem.FormatStyle">
+            <summary>
+            Gets the TaskPaneFormatStyle object used to draw this item in the TaskPane control.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.TaskPane.TaskPaneItem.Click">
+            <summary>
+            Occurs when the TaskPaneItem is clicked.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.TaskPaneItemConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItemConverter.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItemConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItemConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.TaskPaneItemCollection">
+            <summary>
+            Represents a collection of TaskPaneItem objects.
+            </summary>
+            
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItemCollection.OnClear">
+            <summary>
+            Performs additional custom processes when clearing the contents of the TaskPaneItemCollection class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItemCollection.OnClearComplete">
+            <summary>
+            Performs additional custom processes after clearing the contents of the TaskPaneItemCollection class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItemCollection.Contains(Mordex.Windows.TaskPane.TaskPaneItem)">
+            <summary>
+            Determines if the specified TaskPaneItem object is a member of the collection. 
+            </summary>
+            <param name="item">The TaskPaneItem object to locate in the collection.</param>
+            <returns>true if the item is found in the TaskPaneItemCollection; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItemCollection.Insert(System.Int32,Mordex.Windows.TaskPane.TaskPaneItem)">
+            <summary>
+            Inserts a new TaskPaneItem object in the TaskPaneItemCollection at the specified location.
+            </summary>
+            <param name="index">The indexed location within the collection to insert the TaskPaneItem object.</param>
+            <param name="item">The TaskPaneItem object to insert.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItemCollection.Remove(Mordex.Windows.TaskPane.TaskPaneItem)">
+            <summary>
+            Removes a given TaskPaneItem from the collection.
+            </summary>
+            <param name="item">The TaskPaneItem object to remove from the collection.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItemCollection.RemoveAt(System.Int32)">
+            <summary>
+            Removes the TaskPaneItem at the specified index of the collection.
+            </summary>
+            <param name="index">The indexed location of the TaskPaneItem object in the collection.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItemCollection.Clear">
+            <summary>
+            Overrides CollectionBase.Clear
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItemCollection.Add(Mordex.Windows.TaskPane.TaskPaneItem)">
+            <summary>
+            Adds the TaskPaneItem object to the end of the TaskPaneItemCollection.
+            </summary>
+            <param name="item">The TaskPaneItem to be added after all existing items.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItemCollection.AddRange(Mordex.Windows.TaskPane.TaskPaneItem[])">
+            <summary>
+            Adds an array of TaskPaneItem objects to the collection.
+            </summary>
+            <param name="items">An array of TaskPaneItem objects to add to the collection.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItemCollection.Add(System.String)">
+            <summary>
+            Creates a new TaskPaneItem using the specified value and adds it to the end of the TaskPaneItemCollection. 
+            </summary>
+            <param name="text">The text of the new TaskPaneItem.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItemCollection.Add(System.String,System.Int32)">
+            <summary>
+            Creates a new TaskPaneItem using the specified value and adds it to the end of the TaskPaneItemCollection.
+            </summary>
+            <param name="text">The text of the new TaskPaneItem.</param>
+            <param name="imageIndex">The index for the ImageIndex property of the new TaskPaneItem.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneItemCollection.Add(System.String,Mordex.Windows.TaskPane.ItemType)">
+            <summary>
+            Creates a new TaskPaneItem using the specified value and adds it to the end of the TaskPaneItemCollection.
+            </summary>
+            <param name="text">The text of the new TaskPaneItem. </param>
+            <param name="itemType">The type of the new TaskPaneItem.</param>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItemCollection.Item(System.Int32)">
+            <summary>
+            Gets the TaskPaneItem  object at the specified indexed location in the TaskPaneItemCollection.
+            </summary>
+            <param name="index">The indexed location of the TaskPaneItem in the collection.</param>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneItemCollection.Item(System.String)">
+            <summary>
+            Gets the TaskPaneItem object with the specified key in the TaskPaneItemCollection.
+            </summary>
+            <param name="key">The key of the TaskPaneItem in the collection.</param>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.TaskPaneLayout">
+            <summary>
+            Contains persisted properties of a TaskPane control.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayout.FromStream(System.IO.Stream)">
+            <summary>
+            Creates an TaskPaneLayout object from the specified data stream.
+            </summary>
+            <param name="stream">A Stream object that contains the data for this TaskPaneLayout object.</param>
+            <returns>The TaskPaneLayout object created.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayout.FromXMLString(System.String)">
+            <summary>
+            Creates an TaskPaneLayout object from the specified string.
+            </summary>
+            <param name="xmlString">A string that contains the data for this TaskPaneLayout object.</param>
+            <returns>The TaskPaneLayout object created.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayout.FromXMLReader(System.Xml.XmlReader)">
+            <summary>
+            Creates an TaskPaneLayout object from the specified Xml reader.
+            </summary>
+            <param name="xmlReader">An XmlReader object that contains the data for this TaskPaneLayout object.</param>
+            <returns>The TaskPaneLayout object created.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayout.#ctor">
+            <summary>
+            Initializes a new instance of tho TaskPaneLayout class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayout.Update">
+            <summary>
+            Updates the layout with the changes in the TaskPane properties when it is the current layout.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayout.Save(System.IO.Stream)">
+            <summary>
+            Saves this TaskPaneLayout object to the specified Stream object.
+            </summary>
+            <param name="stream">The Stream object to which to save this TaskPaneLayout object.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayout.Save(System.Xml.XmlWriter)">
+            <summary>
+            Saves this TaskPaneLayout object to the specified XmlWriter object.
+            </summary>
+            <param name="xmlWriter">The XmlWriter object to which to save this TaskPaneLayout object.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayout.GetXmlString">
+            <summary>
+            Saves this TaskPaneLayout object as an Xml string.
+            </summary>
+            <returns>A Xml string containing the TaskPaneLayout object persisted properties.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayout.Clone">
+            <summary>
+            Creates a new object that is a copy of the current instance.
+            </summary>
+            <returns>A TaskPaneLayout that is the copy of the current instance.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayout.CloneLayout(System.Boolean)">
+            <summary>
+            Creates a new object that is a copy of the current instance.
+            </summary>
+            <param name="includeChildren">A Boolean that specifies whether the ChildLayouts are copied or not.</param>
+            <returns>A TaskPaneLayout that is the copy of the current instance.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayout.IsDirty">
+            <summary>
+            Indicates whether the properties in the TaskPane control differ from the persisted information.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayout.ConvertToStandAlone">
+            <summary>
+            Creates a new TaskPaneLayout that can be used as a stand alone layout.
+            </summary>
+            <returns>A TaskPaneLayout that can be used a stand alone layout</returns>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneLayout.ParentLayout">
+            <summary>
+            Gets the parent TaskPaneLayout instance.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneLayout.Key">
+            <summary>
+            Gets or sets the key used to identify an object in a collection.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneLayout.Tag">
+            <summary>
+            Gets or sets an object that contains data to associate with the field.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneLayout.LayoutString">
+            <summary>
+            Gets or sets an Xml string containing the persisted properties in a TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneLayout.IsCurrentLayout">
+            <summary>
+            Gets or sets a value indicating whether this instance is the current layout in the TaskPane control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneLayout.Description">
+            <summary>
+            Gets or sets a string that can be used to store an informational description in the layout.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneLayout.ChildLayouts">
+            <summary>
+            Gets the collection of TaskPaneLayout objects that inherit their values from the layout.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneLayout.StandAlone">
+            <summary>
+            Gets a value that determines whether the layout is a stand alone layout or if it is a child of another layout.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneLayout.LayoutReferences">
+            <summary>
+            Design Time support property.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.TaskPaneLayoutConverter">
+            <summary>
+            TaskPaneLayoutConverter class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayoutConverter.#ctor">
+            <summary>
+            Initializes a new instance of the TaskPaneLayoutConverter class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayoutConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Overrides TypeConverter.CanConvertTo
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayoutConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Overrides TypeConverter.ConvertTo
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.TaskPaneLayoutCollection">
+            <summary>
+            Summary description for TaskPaneLayoutCollection.
+            </summary>
+            
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayoutCollection.Add(Mordex.Windows.TaskPane.TaskPaneLayout)">
+            <summary>
+            Appends the specified TaskPaneLayout object at the end of the collection.
+            </summary>
+            <param name="layout">The TaskPaneLayout object to add.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayoutCollection.AddRange(Mordex.Windows.TaskPane.TaskPaneLayout[])">
+            <summary>
+            Copies the elements of the specified TaskPaneLayout array to the end of the collection.
+            </summary>
+            <param name="layouts">The array of TaskPaneLayout objects to add to the collection.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayoutCollection.OnInsert(System.Int32,System.Object)">
+            <summary>
+            Overrides CollectionBase.OnInsert
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayoutCollection.OnInsertComplete(System.Int32,System.Object)">
+            <summary>
+            Overrides CollectionBase.OnInsertComplete
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayoutCollection.Remove(Mordex.Windows.TaskPane.TaskPaneLayout)">
+            <summary>
+            Removes the specified TaskPaneLayout object from the collection.
+            </summary>
+            <param name="layout">The TaskPaneLayout object to remove.</param>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayoutCollection.OnRemoveComplete(System.Int32,System.Object)">
+            <summary>
+            Overrides CollectionBase.OnRemoveComplete
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayoutCollection.OnClear">
+            <summary>
+            Overrides CollectionBase.OnClear
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayoutCollection.IndexOf(Mordex.Windows.TaskPane.TaskPaneLayout)">
+            <summary>
+            Retrieves the index of the specified TaskPaneLayout in the collection.
+            </summary>
+            <param name="layout">The TaskPaneLayout to locate in the collection.</param>
+            <returns>A zero-based index value that represents the position of the specified TaskPaneLayout in the collection.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayoutCollection.Contains(Mordex.Windows.TaskPane.TaskPaneLayout)">
+            <summary>
+            Determines whether a TaskPaneLayout is in the collection.
+            </summary>
+            <param name="layout">The TaskPaneLayout to locate in the collection.</param>
+            <returns>true if item is found in the collection; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneLayoutCollection.Contains(System.String)">
+            <summary>
+            Determines whether a TaskPaneLayout with the specified key is in the collection.
+            </summary>
+            <param name="layoutKey">The Key of the TaskPaneLayout to locate in the collection.</param>
+            <returns>true if item is found in the collection; otherwise, false.</returns>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneLayoutCollection.Item(System.Int32)">
+            <summary>
+            Gets a TaskPaneLayout object from the collection at the specified index.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneLayoutCollection.Item(System.String)">
+            <summary>
+            Gets a TaskPaneLayout object from the collection with the specified key.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.TaskPaneWatermarkImage">
+            <summary>
+            Summary description for ExplorerWatermarkImage.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneWatermarkImage.ShouldSerialize">
+            <summary>
+            Indicates whether the TaskPaneWatermarkImage object has changed from its default value.
+            </summary>
+            <returns>true if the one of the properties of the SchedulerWatermarkImage has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneWatermarkImage.Reset">
+            <summary>
+            Resets all the properties of the TimelineWatermarkImage object to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneWatermarkImage.ShouldSerializeSize">
+            <summary>
+            Indicates whether the Size property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneWatermarkImage.ResetSize">
+            <summary>
+            Resets the Size property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneWatermarkImage.ShouldSerializeWashColor">
+            <summary>
+            Indicates whether the WashColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneWatermarkImage.ResetWashColor">
+            <summary>
+            Resets the WashColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneWatermarkImage.ShouldSerializeMaskColor">
+            <summary>
+            Indicates whether the MaskColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneWatermarkImage.ResetMaskColor">
+            <summary>
+            Resets the MaskColor property to its default value.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneWatermarkImage.Image">
+            <summary>
+            Gets or sets the System.Drawing.Image object to use as watermark.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneWatermarkImage.Size">
+            <summary>
+            Gets or sets the size of the image. If empty, the size of the image will be used.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneWatermarkImage.ImageAlign">
+            <summary>
+            Gets or sets the alignment of the image on the control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneWatermarkImage.WashMode">
+            <summary>
+            Gets or sets a value that determines which color to use to wash the image;
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneWatermarkImage.Alpha">
+            <summary>
+            Gets or sets the alpha component that is applied when drawing the image.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneWatermarkImage.WashColor">
+            <summary>
+            Gets or sets the color to apply to the image when WashMode is UseWashColor
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneWatermarkImage.MaskColor">
+            <summary>
+            Gets or sets the color to treat as transparent. 
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.Global">
+            <summary>
+            Summary description for Global.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.ON">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.ON.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.ON.Object">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.ON.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.ThemeHeader">
+            <summary>
+            Summary description for ThemeHeader.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.Internal.ThemePaint">
+            <summary>
+            Summary description for ThemePaint.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.ScrollBar">
+            <summary>
+               Summary description for ScrollBarBase.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.ScrollBar.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.ScrollBar.CreateAccessibilityInstance">
+            <summary>
+            Overrides Control.CreateAccessibilityInstance
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.TaskPane.TaskPaneStateStyles">
+            <summary>
+            Encapsulates the TaskPaneFormatStyle for the different states of an item.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneStateStyles.#ctor">
+            <summary>
+            Initialize a new instance of the TaskPaneStateStyles class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneStateStyles.ShouldSerialize">
+            <summary>
+            Indicates whether the TaskPaneFormatStateStyle class should be persisted.
+            </summary>
+            <returns>true if the class has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.TaskPane.TaskPaneStateStyles.Reset">
+            <summary>
+            Resets all the property values in the object to their default values.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneStateStyles.FormatStyle">
+            <summary>
+            Gets the TaskPaneFormatStyle used to draw the items.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneStateStyles.HotFormatStyle">
+            <summary>
+            Gets the TaskPaneFormatStyle used to draw the items when the mouse is over them.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneStateStyles.DisabledFormatStyle">
+            <summary>
+            Gets the TaskPaneFormatStyle used to draw the disabled items.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneStateStyles.SelectedFormatStyle">
+            <summary>
+            Returns the TaskPaneFormatStyle object used to draw the selected items.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.TaskPane.TaskPaneStateStyles.PressedFormatStyle">
+            <summary>
+            Gets the TaskPaneFormatStyle used to draw the items when they are pressed or when the item is selected and the mouse is over them.
+            </summary>
+        </member>
+    </members>
+</doc>

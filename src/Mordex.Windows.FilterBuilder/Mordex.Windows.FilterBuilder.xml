@@ -1,0 +1,760 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mordex.Windows.FilterBuilder</name>
+    </assembly>
+    <members>
+        <member name="T:Mordex.Windows.FilterBuilder.BuiltInTextEditor">
+            <summary>
+            Editor used to edit the BuiltInText list of the FilterBuilder at design time
+            </summary>
+            <summary>
+            Editor used to edit the BuiltInText list of the FilterBuilder at design time
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.BuiltInTextEditor.#ctor(Mordex.Windows.FilterBuilder.BuiltInTextList)">
+            <summary>
+            Initialize a new instance of the BuiltInTextEditor.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInTextEditor.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.BuiltInTextEditor.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.BuiltInTextEditor.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.FilterBuilder.BuiltInTextList">
+            <summary>
+            Encapsulates a collection of texts used by the FilterBuilder control.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.BuiltInTextList.Reset(Mordex.Windows.FilterBuilder.BuiltInText)">
+            <summary>
+            Resets the given built-in text to its default value
+            </summary>
+            <param name="textID">The built-in text to be reset</param>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.BuiltInTextList.Reset">
+            <summary>
+            Resets all the built-in texts in the collection their default values.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.BuiltInTextList.Item(Mordex.Windows.FilterBuilder.BuiltInText)">
+            <summary>
+            Gets or sets a string value that represents the text for the given built-in text.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.FilterBuilder.BuiltInTextListEditor">
+            <summary>
+            Summary description for BuiltInTextListEditor.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.BuiltInTextListEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Overrides UITypeEditor.EditValue
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.BuiltInTextListEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Overrides UITypeEditor.GetEditStyle
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.EditControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.EditControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.EditControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.FilterBuilder.BuiltInText">
+            <summary>
+            Represent the index of a text in a FilterBuilder control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.EmptyConditionText">
+            <summary>
+            Identifier for the text used when no FilterCondition is applied to the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.BeginsWith">
+            <summary>
+            Identifier for the text used for the BeginsWith condition operator.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.Between">
+            <summary>
+            Identifier for the text used for the Between condition operator.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.Contains">
+            <summary>
+            Identifier for the text used for the Contains condition operator.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.EndsWith">
+            <summary>
+            Identifier for the text used for the EndsWidth condition operator.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.Equal">
+            <summary>
+            Identifier for the text used for the Equal condition operator.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.GreaterThan">
+            <summary>
+            Identifier for the text used for the GreaterThan condition operator.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.GreaterThanOrEqualTo">
+            <summary>
+            Identifier for the text used for the GreaterThanOrEqualTo condition operator.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.In">
+            <summary>
+            Identifier for the text used for the In condition operator.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.IsEmpty">
+            <summary>
+            Identifier for the text used for the IsEmpty condition operator.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.IsNull">
+            <summary>
+            Identifier for the text used for the IsNull condition operator.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.LessThan">
+            <summary>
+            Identifier for the text used for the LessThan condition operator.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.LessThanOrEqualTo">
+            <summary>
+            Identifier for the text used for the LessThanOrEqualTo condition operator.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.NotBetween">
+            <summary>
+            Identifier for the text used for the NotBetween condition operator.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.NotContains">
+            <summary>
+            Identifier for the text used for the NotContains condition operator.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.NotEqual">
+            <summary>
+            Identifier for the text used for the NotEqual condition operator.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.NotIn">
+            <summary>
+            Identifier for the text used for the NotIn condition operator.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.NotIsEmpty">
+            <summary>
+            Identifier for the text used for the NotIsEmpty condition operator.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.NotIsNull">
+            <summary>
+            Identifier for the text used for the BeginsWith condition operator.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.AndOperator">
+            <summary>
+            Identifier for the text used for the And logical operator of the FilterCondition.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.AndNotOperator">
+            <summary>
+            Identifier for the text used for the AndNot logical operator of the FilterCondition.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.OrOperator">
+            <summary>
+            Identifier for the text used for the Or logical operator of the FilterCondition.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.OrNotOperator">
+            <summary>
+            Identifier for the text used for the OrNot logical operator of the FilterCondition.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.XorOperator">
+            <summary>
+            Identifier for the text used for the Xor logical operator of the FilterCondition.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.XorNotOperator">
+            <summary>
+            Identifier for the text used for the XorNot logical operator of the FilterCondition.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.AddCondition">
+            <summary>
+            Identifier for the text of the button used to add a new filter condition.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.Delete">
+            <summary>
+            Identifier for the text used in the Delete command.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.ChooseFieldText">
+            <summary>
+            Identifier for the text used in the Choose Fields button.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.NegationText">
+            <summary>
+            Identifier for the text of the button used to negate the condition.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.True">
+            <summary>
+            Identifier for the text used as the True value in a boolean field.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.False">
+            <summary>
+            Identifier for the text used as the False value in a boolean field.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.ShowFieldsButtonTooltip">
+            <summary>
+            Identifier for the tooltip text used in the Choose Fields button.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.NegateTooltip">
+            <summary>
+            Identifier for the tooltip text of the negate condition button.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.AssertTooltip">
+            <summary>
+            Identifier for the tooltip text of the negate condition button when the button is checked.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.AddConditionTooltip">
+            <summary>
+            Identifier for the tooltip text of the button used to add a new filter condition.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.RemoveConditionTooltip">
+            <summary>
+            Identifier for the tooltip text of the "Remove Condition" button.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.CalendarTodayText">
+            <summary>
+            Identifier for the text used in the Today button of a drop down Calendar.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.BuiltInText.AssertConditionText">
+            <summary>
+            Identifier for the text used in the Assert condition button of a drop down Calendar.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.FilterBuilder.AvailableLogicalOperators">
+            <summary>
+            Specifies which logical operators are available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableLogicalOperators.And">
+            <summary>
+            The And logical operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableLogicalOperators.AndNot">
+            <summary>
+            The AndNot logical operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableLogicalOperators.Or">
+            <summary>
+            The Or logical operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableLogicalOperators.OrNot">
+            <summary>
+            The OrNot logical operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableLogicalOperators.Xor">
+            <summary>
+            The Xor logical operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableLogicalOperators.XorNot">
+            <summary>
+            The XorNot logical operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableLogicalOperators.All">
+            <summary>
+            All the logical operators are available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.FilterBuilder.AvailableConditionOperators">
+            <summary>
+            Specifies which condition operators are available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.Default">
+            <summary>
+            The operators are filtered based on the type of the Filed being filtered.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.Equal">
+            <summary>
+            The Equal operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.NotEqual">
+            <summary>
+            The NotEqual operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.GreaterThan">
+            <summary>
+            The GreaterThan operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.LessThan">
+            <summary>
+            The LessThan operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.GreaterThanOrEqualTo">
+            <summary>
+            The GreaterThanOrEqualTo operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.LessThanOrEqualTo">
+            <summary>
+            The LessThanOrEqualTo operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.Between">
+            <summary>
+            The Between operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.NotBetween">
+            <summary>
+            The NotBetween operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.Contains">
+            <summary>
+            The Contains operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.NotContains">
+            <summary>
+            The NotContains operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.BeginsWith">
+            <summary>
+            The BeginsWith operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.EndsWith">
+            <summary>
+            The EndsWith operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.IsNull">
+            <summary>
+            The IsNull operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.NotIsNull">
+            <summary>
+            The NotIsNull operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.IsEmpty">
+            <summary>
+            The IsEmpty operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.NotIsEmpty">
+            <summary>
+            The NotIsEmpty operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.AnyOf">
+            <summary>
+            The AnyOf operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.NoneOf">
+            <summary>
+            The NoneOf operator is available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.AvailableConditionOperators.All">
+            <summary>
+            All the operators are available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.FilterBuilder.TriState">
+            <summary>
+            Represents a boolean value for a property that can inherit its value from a base or parent object.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.TriState.Default">
+            <summary>
+            Indicates that the value for this property should be inherited from the parent object.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.TriState.False">
+            <summary>
+            Specifies that False should be used in a property ignoring settings in the parent object.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.TriState.True">
+            <summary>
+            Specifies that True should be used in a property ignoring settings in the parent object.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.FilterBuilder.FetchFieldValuesEventArgs">
+            <summary>
+            Provides data for the FetchFieldValues event.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.FetchFieldValuesEventArgs.HasValueList">
+            <summary>
+            Gets or sets a value indicating whether the field shold have a ValueList.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.FetchFieldValuesEventArgs.FilterCondition">
+            <summary>
+            Gets the associated FilterCondition.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.FetchFieldValuesEventArgs.ValueList">
+            <summary>
+            Gets a list of values for the filtered field.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.FilterContainer.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.FilterContainer.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.FilterContainer.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.FilterBuilder.MxFilterBuilder">
+            <summary>
+            Represents a control used to create FilterConditions that can be applied to a DataGrid or Timeline control
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.MxFilterBuilder.#ctor">
+            <summary>
+            Initialize a new instance of the FilterBuilder class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.MxFilterBuilder.OnResize(System.EventArgs)">
+            <summary>
+            Overrides Control.OnResize
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.MxFilterBuilder.GetCurrentCondition">
+            <summary>
+            Returns the IMordexCondition that contains the input focus
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.MxFilterBuilder.ShouldSerializeBuiltInTextsData">
+            <summary>
+            Indicates whether the BuiltInTextsData property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.MxFilterBuilder.ResetBuiltInTextsData">
+            <summary>
+            Resets the BuiltInTextsData property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.MxFilterBuilder.Reload">
+            <summary>
+            Reloads the FiltedCondition applied to the control
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.MxFilterBuilder.OnFontChanged(System.EventArgs)">
+            <summary>
+            Overrides Control.OnFontChanged
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.MxFilterBuilder.OnRightToLeftChanged(System.EventArgs)">
+            <summary>
+            Overrides Control.OnRightToLeftChanged
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.MxFilterBuilder.OnVisibleChanged(System.EventArgs)">
+            <summary>
+            Overrides Control.OnVisibleChanged
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.MxFilterBuilder.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Overrides Control.OnMouseUp
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.MxFilterBuilder.OnSystemColorsChanged(System.EventArgs)">
+            <summary>
+            Overrides Control.OnSystemColorsChanged
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.MxFilterBuilder.OnFetchFieldValues(Mordex.Windows.FilterBuilder.FetchFieldValuesEventArgs)">
+            <summary>
+            Raises the FetchFieldValues event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.MxFilterBuilder.OnFilterConditionChanged(System.EventArgs)">
+            <summary>
+            Raises the FilterConditionChanged event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.MxFilterBuilder.ApplyFilter">
+            <summary>
+            Applies the FilterCondition in the FilterBuilder to the SourceControl.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.MxFilterBuilder.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.MxFilterBuilder.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.MxFilterBuilder.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.ChildControl">
+            <summary>
+            Overrides UIPager.ChildControl
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.AutoApply">
+            <summary>
+            Gets or sets a value specifying whether the FilterCondition will be automaically applied to the SourceControl when it changes
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.MinSize">
+            <summary>
+            Gets or sets the minimum size that the control should have before displaying the scrollbar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.SortFieldList">
+            <summary>
+            Gets or sets a value specifying whether the field list should be alphabetically sorted.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.AutomaticHeightResize">
+            <summary>
+            Gets or sets a value specifying whether the height of the control automatically adjusts when the FilterCondition assigned to the control is changed.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.VisualStyle">
+            <summary>
+            Gets or sets a value specifying the appearance for the control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.FilterConditionOperators">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.SourceControl">
+            <summary>
+            Gets or set the associated control from where the FilterBuilder will fill its Fields and FilterCondition properties. Available options for this property are the DataGrid and Timeline controls.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.Site">
+            <summary>
+            See Component.Site
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.ShowChildTables">
+            <summary>
+            Gets or sets a value specifying whether the user can choose a field from a child table to filter the SourceControl
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.Table">
+            <summary>
+            Gets or sets the Table of the DataGrid control that is going to be filtered
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.FilterCondition">
+            <summary>
+            Gets or sets the filter condition that should be applied to the SourceControl.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.BuiltInTextList">
+            <summary>
+            Returns a collection of strings that allows you to customize any of the texts used by built-in elements of the FilterBuilder
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.BuiltInTextsData">
+            <summary>
+            Gets or sets an XML string that preserves the information in the BuiltInTexts property.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.AvailableLogicalOperators">
+            <summary>
+            Gets or sets a value indicating which logical operators are available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.AvailableConditionOperators">
+            <summary>
+            Gets or sets a value indicating which condition operators are available in the FilterBuilder.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.DefaultConditionOperator">
+            <summary>
+            Gets or sets a value specifying the default condition operator for a new FilterCondition .
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.AllowNegateRootCondition">
+            <summary>
+            Gets or sets a value indicating whether a button will be pressent in the FilterBuilder to indicate that the whole condition should be negated.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.EditControlWidth">
+            <summary>
+            Gets or sets a value specifying the width of the control used to edit the value of the FilterCondition.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.MxFilterBuilder.AllowFilterByFieldValue">
+            <summary>
+            Gets or sets a value specifying whether the user can choose another field to compare the value in the FilterCondition
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.FilterBuilder.MxFilterBuilder.FetchFieldValues">
+            <summary>
+            Event fired when a new field was selected for the FilterCondition. Use this event to populate a ValueList with a list of possible values.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.FilterBuilder.MxFilterBuilder.FilterConditionChanged">
+            <summary>
+            Occurs when the FilterCondition property of the FilterBuilder is changed.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.FilterBuilder.MxFilterBuilder.FetchFieldValuesEventHandler">
+            <summary>
+            Represents the method that will handle the FetchFieldValues event of the FilterBuilder.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.FilterBuilder.ResourceFile">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.ResourceFile.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.ResourceFile.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.FilterBuilder.ResourceFile2">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.ResourceFile2.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.FilterBuilder.ResourceFile2.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.FilterBuilder.TransparentTableLayoutPanel">
+            <summary>
+            A TableLayoutPanel that supports transparent background
+            </summary>
+            <summary>
+            A TableLayoutPanel that supports transparent background
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.TransparentTableLayoutPanel.#ctor">
+            <summary>
+            Initialize a new instance of the TransparentTableLayoutPanel
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.FilterBuilder.TransparentTableLayoutPanel.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.TransparentTableLayoutPanel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Mordex.Windows.FilterBuilder.TransparentTableLayoutPanel.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

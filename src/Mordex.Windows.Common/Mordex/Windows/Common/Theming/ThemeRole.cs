@@ -1,0 +1,65 @@
+namespace Mordex.Windows.Common
+{
+	/// <summary>
+	/// A named color slot of a theme. A state of a control (hot, pressed, disabled) has its own role, so a control reads
+	/// the color it needs without computing one.
+	/// </summary>
+	public enum ThemeRole
+	{
+		Surface,
+		SurfaceAlt,
+		SurfaceRaised,
+		SurfaceHot,
+		SurfacePressed,
+		SurfaceDisabled,
+		InputBack,
+		InputBackDisabled,
+		Text,
+		TextMuted,
+		TextDisabled,
+		TextOnAccent,
+		TextLink,
+		Border,
+		BorderStrong,
+		BorderHot,
+		BorderPressed,
+		BorderFocus,
+		BorderDisabled,
+		Accent,
+		AccentHot,
+		AccentPressed,
+		AccentSubtle,
+		Selection,
+		SelectionText,
+		SelectionInactive,
+		SelectionInactiveText,
+		Header,
+		HeaderHot,
+		HeaderPressed,
+		HeaderText,
+		GridLine,
+		RowAlt,
+		ScrollTrack,
+		ScrollThumb,
+		ScrollThumbHot,
+		ScrollThumbPressed,
+		TabActive,
+		TabInactive,
+		TabHot,
+		ToolbarBack,
+		StatusBarBack,
+		StatusBarText,
+		TooltipBack,
+		TooltipText,
+		Caption,
+		CaptionInactive,
+		Success,
+		Warning,
+		Error,
+		Info,
+		Shadow,
+		Overlay,
+		/// <summary>Text and glyphs on <see cref="ToolbarBack"/>. An empty color in the array of a theme gives <see cref="Text"/>.</summary>
+		ToolbarText
+	}
+}

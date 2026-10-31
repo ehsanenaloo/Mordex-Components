@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Mordex.Windows.Common</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources/*" Exclude="Resources/*.resx" LogicalName="%(Filename)%(Extension)" />
+    <EmbeddedResource Include="Resources/*.resx" LogicalName="%(Filename).resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Mordex.Windows.Common.xml" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

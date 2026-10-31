@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Mordex.Windows.Scheduler</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Mordex.Windows.Common/Mordex.Windows.Common.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources/*" Exclude="Resources/*.resx" LogicalName="%(Filename)%(Extension)" />
+    <EmbeddedResource Include="Resources/*.resx" LogicalName="%(Filename).resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Mordex.Windows.Scheduler.xml" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

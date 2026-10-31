@@ -1,0 +1,8 @@
+<Project>
+  <!-- The only place the release version is set. AssemblyVersion stays fixed for binary compatibility. -->
+  <PropertyGroup>
+    <MordexVersion>6.0.0</MordexVersion>
+    <MordexFileVersion>$(MordexVersion).0</MordexFileVersion>
+    <MordexAssemblyVersion>4.0.52.0</MordexAssemblyVersion>
+  </PropertyGroup>
+</Project>

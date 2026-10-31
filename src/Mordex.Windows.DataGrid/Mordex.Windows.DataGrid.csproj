@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Mordex.Windows.DataGrid</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Mordex.Windows.Common/Mordex.Windows.Common.csproj" />
+    <ProjectReference Include="../Mordex.Data/Mordex.Data.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources/*" Exclude="Resources/*.resx" LogicalName="%(Filename)%(Extension)" />
+    <EmbeddedResource Include="Resources/*.resx" LogicalName="%(Filename).resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Mordex.Windows.DataGrid.xml" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

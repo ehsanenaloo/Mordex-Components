@@ -1,0 +1,1919 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mordex.Windows.DatePicker</name>
+    </assembly>
+    <members>
+        <member name="T:Mordex.Windows.DatePicker.DatePickerCalendar">
+            <summary>
+            Mordex Calendar control for Microsoft.Net.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.OnParentFontChanged(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.ParentFontChanged event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ShouldSerializeHeaderFont">
+            <summary>
+            Indicates whether the HeaderFont property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ResetHeaderFont">
+            <summary>
+            Resets the HeaderFont property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.OnMouseLeave(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseLeave event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ResetBlendColor">
+            <summary>
+            Resets the BlendColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ShouldSerializeBlendColor">
+            <summary>
+            Indicates whether the BlendColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseUp event.
+            </summary>
+            <param name="e">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            Overrides Control.WndProc
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseMove event.
+            </summary>
+            <param name="e">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseDown event.
+            </summary>
+            <param name="e">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.Paint event.
+            </summary>
+            <param name="e">A System.Windows.Forms.PintEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.OnFontChanged(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.FontChanged event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ResetBoldedDates">
+            <summary>
+            Resets the BoldedDates property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ShouldSerializeBoldedDates">
+            <summary>
+            Indicates whether the BoldedDates property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ShouldSerializeAnnuallyBoldedDates">
+            <summary>
+            Indicates whether the AnnuallyBoldedDates property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ResetAnnuallyBoldedDates">
+            <summary>
+            Resets the AnnuallyBoldedDates property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.GetDateAt(System.Int32,System.Int32)">
+            <summary>
+            Retrieves the DateTime value that is located at the specified location.
+            </summary>
+            <param name="x">An int that contains the x-coordinate where you want to look for the DateTime.</param>
+            <param name="y">An int that contains the y-coordinate where you want to look for the DateTime.</param>
+            <returns>A DateTime value that represents the DateTime that is located at the specified location.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.GetDateAt(System.Drawing.Point)">
+            <summary>
+            Retrieves the DateTime value that is located at the specified point.
+            </summary>
+            <param name="pt">A Point that contains the coordinates where you want to look for the DateTime.</param>
+            <returns>A DateTime value that represents the DateTime that is located at the cursor current location.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.GetDateAt">
+            <summary>
+            Retrieves the DateTime value that is located at the current position of the cursor.
+            </summary>
+            <returns>A DateTime value that represents the DateTime that is located at the cursor current location.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.IsInputKey(System.Windows.Forms.Keys)">
+            <summary>
+            Determines whether the specified key is a regular input key or a special key that requires preprocessing.
+            </summary>
+            <param name="keyData">One of the System.Windows.Forms.Keys values.</param>
+            <returns>true if the specified key is a regular input key; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ShouldSerializeSelectedFormatStyle">
+            <summary>
+            Indicates whether the SelectedFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ResetSelectedFormatStyle">
+            <summary>
+            Resets the SelectedFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ShouldSerializeTrailingFormatStyle">
+            <summary>
+            Indicates whether the TrailingFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ResetTrailingFormatStyle">
+            <summary>
+            Resets the TrailingFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ShouldSerializeDaysFormatStyle">
+            <summary>
+            Indicates whether the DaysFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ResetDaysFormatStyle">
+            <summary>
+            Resets the DaysFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ShouldSerializeHeaderFormatStyle">
+            <summary>
+            Indicates whether the HeadersFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ResetHeaderFormatStyle">
+            <summary>
+            Resets the HeadersFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ShouldSerializeDayHeadersFormatStyle">
+            <summary>
+            Indicates whether the DayHeadersFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ResetDayHeadersFormatStyle">
+            <summary>
+            Resets the DayHeadersFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ShouldSerializeMonthBackgroundStyle">
+            <summary>
+            Indicates whether the MonthBackgroundStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ResetMonthBackgroundStyle">
+            <summary>
+            Resets the MonthBackgroundStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.KeyDown event.
+            </summary>
+            <param name="e">A System.Windows.Forms.KeyEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ShouldSerializeTodayRectColor">
+            <summary>
+            Indicates whether the TodayRectColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ResetTodayRectColor">
+            <summary>
+            Resets the TodayRectColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ShouldSerializeBackColor">
+            <summary>
+            Indicates whether the BackColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ResetBackColor">
+            <summary>
+            Resets the BackColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ShouldSerializeFirstMonth">
+            <summary>
+            Indicates whether the FirstMonth property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ResetFirstMonth">
+            <summary>
+            Resets the FirstMonth property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ShouldSerializeForeColor">
+            <summary>
+            Indicates whether the ForeColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ResetForeColor">
+            <summary>
+            Resets the ForeColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            Processes a dialog key.
+            </summary>
+            <param name="keyData">One of the System.Windows.Forms.Keys values that represents the key to process.</param>
+            <returns>true if the key was processed by the control; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DatePickerCalendar.ComputeDroppedControlSize(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.Name">
+            <summary>
+            Represents the name used in code to identify this object
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.HeaderFormat">
+            <summary>
+            Gets or sets a value representing the date format string of the header.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.HeaderFont">
+            <summary>
+            Gets or sets the font of the text displayed in the header by the Calendar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.BlendColor">
+            <summary>
+            Gets or sets the color that blends with the BackColor and BackColorGradient properties of the CalendarFormatStyle and CalendarBackgroundStyle when its Blend property is not zero.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.DefaultBlend">
+            <summary>
+            Gets or sets a value indicating the default percentage of the BlendColor to use.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.HeaderAppearance">
+            <summary>
+            Gets or sets the value that determines the appearance of the headers in the Calendar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.WeekRule">
+            <summary>
+            Gets or sets a value that specifies which rule is used to determine the first calendar week of the year.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.WeekNumbers">
+            <summary>
+            Gets or sets a value indicating whether the Calendar control displays week numbers (1-52) to the left of each row of days.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.BorderStyle">
+            <summary>
+            Gets or sets the Calendar´s border style.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.FirstDayOfWeek">
+            <summary>
+            Gets or sets the first day of the week as displayed in the Calendar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.DayOfWeekAbbreviation">
+            <summary>
+            Gets or sets a value indicating the format for the days of the week.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.FirstMonth">
+            <summary>
+            Gets or sets a value indicating the first month displayed by the Calendar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.ScrollChange">
+            <summary>
+            Gets or sets the scroll rate for Calendar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.BoldedDates">
+            <summary>
+            Gets or sets the array of DateTime objects that determines which nonrecurring dates are displayed in bold.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.AnnuallyBoldedDates">
+            <summary>
+            Gets or sets the array of DateTime objects that determines which annual days are displayed in bold.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.SelectedFormatStyle">
+            <summary>
+            Returns the CalendarFormatStyle object used to draw the selected days in the Calendar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.TrailingFormatStyle">
+            <summary>
+            Returns the CalendarFormatStyle used to draw the trailing days.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.BackgroundImage">
+            <summary>
+            Not supported.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.TabIndex">
+            <summary>
+            See Control.TabIndex
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.TabStop">
+            <summary>
+            See Control.TabStop
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.Size">
+            <summary>
+            See Control.Size
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.Location">
+            <summary>
+            See Control.Location
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.Text">
+            <summary>
+            Gets or sets the text associated with this Calendar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.Dock">
+            <summary>
+            Not supported.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.DaysFormatStyle">
+            <summary>
+            Returns the CalendarFormatStyle object used to draw the days of the months.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.HeaderFormatStyle">
+            <summary>
+            Gets the CalendarFormatStyle used to draw the header in the Calendar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.DayHeadersFormatStyle">
+            <summary>
+            Returns the CalendarFormatStyle object used to draw the section that displays the day of the week.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.MonthBackgroundStyle">
+            <summary>
+            Returns the CalendarBackgroundStyle object used to draw the background of the months in the Calendar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.TodayRectColor">
+            <summary>
+            Gets or sets a value indicating the color of the frame in today´s date.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.TodayRect">
+            <summary>
+            Gets or sets a value indicating whether today's date its framed.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.ShowTrailingDays">
+            <summary>
+            Gets or sets a value specifying whether the first days of the previous and next month will be displayed in the Calendar
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.BackColor">
+            <summary>
+            Gets or sets the background color for the Calendar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.ForeColor">
+            <summary>
+            Gets or sets the foreground color for the Calendar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.CreateParams">
+            <summary>
+            Overrides Control.CreateParams
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DatePickerCalendar.Visible">
+            <summary>
+            Gets or sets a value indicating whether the control is displayed.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.CalendarBackgroundStyle">
+            <summary>
+            Specifies how to draw the background of the month in the Calendar control.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarBackgroundStyle.#ctor">
+            <summary>
+            Initialize a new instance of the CalendarBackgroundStyle class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarBackgroundStyle.Reset">
+            <summary>
+            Resets all the properties of the CalendarBackgroundStyle object to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarBackgroundStyle.ShouldSerialize">
+            <summary>
+            Indicates whether the SchedulerBackgroundStyle object has changed from its default value.
+            </summary>
+            <returns>true if the one of the properties of the CalendarBackgroundStyle has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarBackgroundStyle.#ctor(Mordex.Windows.DatePicker.CalendarBackgroundStyle)">
+            <summary>
+            Initializes a new instance of the CalendarBackgroundStyle class based on the given CalendarBackgroundStyle. 
+            </summary>
+            <param name="baseStyle">A CalendarBackgroundStyle which properties will be copied to create a new CalendarBackgroundStyle class.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarBackgroundStyle.ResetBackColorGradient">
+            <summary>
+            Resets the BackColorGradient property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarBackgroundStyle.ShouldSerializeBackColorGradient">
+            <summary>
+            Indicates whether the BackColorGradient property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarBackgroundStyle.ResetBackColor">
+            <summary>
+            Resets the BackColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarBackgroundStyle.ShouldSerializeBackColor">
+            <summary>
+            Indicates whether the BackColorGradient property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.CalendarBackgroundStyle.Calendar">
+            <summary>
+            Gets the Calendar control associated with this CalendarBackgroundStyle.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.CalendarBackgroundStyle.BackColor">
+            <summary>
+            Gets or sets the background color of this CalendarBackgroundStyle.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.CalendarBackgroundStyle.BackColorGradient">
+            <summary>
+            Gets or sets a value specifying the background color used in a linear gradient pathern.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.CalendarBackgroundStyle.BackgrodunGradientMode">
+            <summary>
+            Gets or sets a value specifying if a linear gradient will be applied and its direction.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.CalendarBackgroundStyle.Blend">
+            <summary>
+            Gets or sets a value indicating the percentage of the BlendColor to blend with the BackColor.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.CalendarBackgroundStyle.BlendGradient">
+            <summary>
+            Gets or sets a value indicating the percentage of the BlendColor to blend with the BackColorGradient.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.MxDatePicker">
+            <summary>
+            Summary description for DatePicker.
+            </summary>
+            
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.#ctor">
+            <summary>
+            Mordex DatePicker control for Microsoft.Net.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.GetDatePickerVersion">
+            <summary>
+            Gets a string representing with the version number.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.ShouldSerializeBackColor">
+            <summary>
+            Indicates whether the BackColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.ResetBackColor">
+            <summary>
+            Resets the BackColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.ShouldSerializeDisabledBackColor">
+            <summary>
+            Indicates whether the DisabledBackColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.ResetDisabledBackColor">
+            <summary>
+            Resets the DisabledBackColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.ShouldSerializeDisabledForeColor">
+            <summary>
+            Indicates whether the DisabledForeColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.ResetDisabledForeColor">
+            <summary>
+            Resets the DisabledForeColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.Dispose(System.Boolean)">
+            <summary>
+            Releases the unmanaged resources used by the System.ComponentModel.Component and optionally releases the managed resources.
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.EndEdit">
+            <summary>
+            Requests an end to an edit operation taking place on the DatePicker control.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.ResetUseCompatibleTextRendering">
+            <summary>
+            Resets the UseCompatibleTextRendering property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.ShouldSerializeUseCompatibleTextRendering">
+            <summary>
+            Gets a value indicating whether the UseCompatibleTextRendering property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.ResetValue">
+            <summary>
+            Resets the value property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.ShouldSerializeValue">
+            <summary>
+            Indicates whether the Value property should be persisted. 
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnForeColorChanged(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.ForeColor event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnResize(System.EventArgs)">
+            <summary>
+            Raises the Resize event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnVisibleChanged(System.EventArgs)">
+            <summary>
+            Raises the VisibleChanged event
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnFontChanged(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.FontChanged event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnEnabledChanged(System.EventArgs)">
+            <summary>
+            Overrides Control.OnEnabledChanged
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnBackColorChanged(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.BackColorChanged event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.Paint event.
+            </summary>
+            <param name="e">A System.Windows.Forms.PintEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnDoubleClick(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.DoubleClick event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.ResetMaxDate">
+            <summary>
+            Resets the MaxDate property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.ShouldSerializeMaxDate">
+            <summary>
+            Indicates whether the MaxDate property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.ShouldSerializeMinDate">
+            <summary>
+            Indicates whether the MinDate property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.ResetMinDate">
+            <summary>
+            Resets the MinDate property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.IsInputKey(System.Windows.Forms.Keys)">
+            <summary>
+            Determines whether the specified key is a regular input key or a special key that requires preprocessing.
+            </summary>
+            <param name="keyData">One of the System.Windows.Forms.Keys values.</param>
+            <returns>true if the specified key is a regular input key; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.IsInputChar(System.Char)">
+            <summary>
+            Determines if a character is an input character that the control recognizes.
+            </summary>
+            <param name="charCode">charCode: The character to test.</param>
+            <returns>true if the character should be sent directly to the control and not preprocessed; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.KeyDown event.
+            </summary>
+            <param name="e">A System.Windows.Forms.KeyEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.KeyDown event.
+            </summary>
+            <param name="e">A System.Windows.Forms.KeyEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseDown event.
+            </summary>
+            <param name="e">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseUp event.
+            </summary>
+            <param name="e">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseMove event.
+            </summary>
+            <param name="e">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnMouseEnter(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseEnter event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnMouseLeave(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseLeave event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnGotFocus(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.GotFocus event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnLostFocus(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.LostFocus event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnEnter(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.Enter event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnLeave(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.Leave event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnRightToLeftChanged(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.RightToLeftChangedevent.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.ResetFlatBorderColor">
+            <summary>
+            Resets the FlatBorderColor property to its default value. 
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.ShouldSerializeFlatBorderColor">
+            <summary>
+            Indicates whether the FlatBorderColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnCheckedChanged(System.EventArgs)">
+            <summary>
+            Raises the Mordex.Windows.DatePicker.MxDatePicker.CheckedChanged event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnBindableValueChanged(System.EventArgs)">
+            <summary>
+            Raises the Mordex.Windows.DatePicker.MxDatePicker.BindableValueChanged event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnParse(Mordex.Windows.DatePicker.ParseEventArgs)">
+            <summary>
+            Raises the Parse event.
+            </summary>
+            <param name="e">A ParseEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnTodayButtonClick(System.EventArgs)">
+            <summary>
+            Raises the Mordex.Windows.DatePicker.MxDatePicker.TodayButtonClick event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnReadOnlyChanged(System.EventArgs)">
+            <summary>
+            Raises the Mordex.Windows.DatePicker.MxDatePicker.ReadOnlyChanged event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnNoneButtonClick(System.EventArgs)">
+            <summary>
+            Raises the Mordex.Windows.DatePicker.MxDatePicker.NoneButtonClick event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnValueChanged(System.EventArgs)">
+            <summary>
+            Raises the Mordex.Windows.DatePicker.MxDatePicker.ValueChanged event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnSystemColorsChanged(System.EventArgs)">
+            <summary>
+            Overrides Control.OnSystemColorsChanged.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnDropDown(System.EventArgs)">
+            <summary>
+            Raises the Mordex.Windows.DatePicker.MxDatePicker.DropDown event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnDroppingDown(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.DatePicker.MxDatePicker.DroppingDown event.
+            </summary>
+            <param name="e">A CancelEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnCloseUp(System.EventArgs)">
+            <summary>
+            Raises the Mordex.Windows.DatePicker.MxDatePicker.CloseUp event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            Processes a dialog key.
+            </summary>
+            <param name="keyData">One of the System.Windows.Forms.Keys values that represents the key to process.</param>
+            <returns>true if the key was processed by the control; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.OnMouseWheel(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Overrides Control.OnMouseWheel
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.MxDatePicker.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            Overrides Control.WndProc
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.AutoScroll">
+            <summary>
+            Overrides ContainerControl.AutoScroll
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.BackgroundImageLayout">
+            <summary>
+            Overrides ContainerControl.BackgroundImageLayout
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.AutoScrollMinSize">
+            <summary>
+            Overrides ContainerControl.AutoScrollMinSize
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.AutoScrollMargin">
+            <summary>
+            Overrides ContainerControl.AutoScrollMargin
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.Padding">
+            <summary>
+            Overrides Control.Padding
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.BackColor">
+            <summary>
+            Gets or sets the background color for the DatePicker control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.ContextMenuStrip">
+            <summary>
+            Overrides Control.ContextMenuStrip
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.DisabledBackColor">
+            <summary>
+            Gets or sets the background color of the control when it is disabled
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.DisabledForeColor">
+            <summary>
+            Gets or sets the foreground color of the control when it is disabled
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.NullValue">
+            <summary>
+            Gets or sets an object value representing the value that will be consider as a null value.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.BindableValue">
+            <summary>
+            Gets or sets an object value that represents a date, or null (Nothing in Visual Basic), associated with the control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.IsNullDate">
+            <summary>
+            Gets or sets a value indicating whether the Value property is null.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.Value">
+            <summary>
+            Gets or sets the date-time value assigned to the control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.UseCompatibleTextRendering">
+            <summary>
+            Gets or sets a value specifying whether the text rendering should be compatible with previous release of Windows Forms.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.CustomFormat">
+            <summary>
+            Gets or sets the custom date-time format string.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.DateFormat">
+            <summary>
+            Gets or sets the format of the date and time displayed in the control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.BackgroundImage">
+            <summary>
+            Not supported.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.MinDate">
+            <summary>
+            Gets or sets the minimum allowable date.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.MaxDate">
+            <summary>
+            Gets or sets the maximum allowable date.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.ActiveDatePortion">
+            <summary>
+            Gets or sets a value speciying the selected date part in the control
+            </summary>
+            <remarks>This property has only effect if the EditStyle is set to Masked</remarks>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.HoverMode">
+            <summary>
+            Gets or sets a value specifying the effect of the control when the mouse hovers over it.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.BorderStyle">
+            <summary>
+            Gets or sets the DatePicker´s border style.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.AutoSize">
+            <summary>
+            Gets or sets a value indicating whether the height of the control automatically adjusts when the font assigned to the control is changed.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.ShowDropDown">
+            <summary>
+            Gets or sets a value indicating whether the drop-down button is showed.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.ShowUpDown">
+            <summary>
+            Gets or sets a value indicating whether an up-down control is used to adjust the date-time value.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.FlatBorderColor">
+            <summary>
+            Gets or sets the color of the border of the headers and the control when it´s border is Flat.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.ButtonsStyle">
+            <summary>
+            Gets an object representing the style used to draw the buttons in the DatePicker and drop-down Calendar controls.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.Checked">
+            <summary>
+            Gets or sets a value indicating whether the Value property has been set with a valid date-time value and the displayed value is able to be updated.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.DatePicker.MxDatePicker.CheckedChanged">
+            <summary>
+            Occurs when the Checked property changes.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.ShowCheckBox">
+            <summary>
+            Gets or sets a value indicating whether a check box is displayed to the left of the selected date.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.Nullable">
+            <summary>
+            Gets or sets a value indicating whether the DatePicker control can accept null values.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.DropDownColumns">
+            <summary>
+            Gets or sets a value specifying the number of columns for the DropDownCalendar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.DropDownRows">
+            <summary>
+            Gets or sets a value specifying the number of rows for the DropDownCalendar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.Text">
+            <summary>
+            Gets or sets the text associated with this Calendar.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.DatePicker.MxDatePicker.BindableValueChanged">
+            <summary>
+            Occurs when the BindabledValue property changes.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.DatePicker.MxDatePicker.Parse">
+             <summary>
+             Occurs when the Text in the control changes and before setting the value.
+             </summary>
+            <remarks>This event is only fired when the EditStyle of the control is set to Free</remarks>
+        </member>
+        <member name="E:Mordex.Windows.DatePicker.MxDatePicker.TodayButtonClick">
+            <summary>
+            Occurs when the TodayButton is clicked.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.DatePicker.MxDatePicker.ReadOnlyChanged">
+            <summary>
+            Occurs when the ReadOnly property has changed.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.DatePicker.MxDatePicker.NoneButtonClick">
+            <summary>
+            Occurs when the NoneButton is clicked.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.DatePicker.MxDatePicker.ValueChanged">
+            <summary>
+            Occurs when the Value property changes.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.DatePicker.MxDatePicker.DropDown">
+            <summary>
+            Occurs when the drop-down Calendar is shown.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.DatePicker.MxDatePicker.DroppingDown">
+            <summary>
+            Occurs when the DropDownCalendar is about to be displayed
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.DatePicker.MxDatePicker.CloseUp">
+            <summary>
+            Occurs when the drop-down Calendar is dismissed and disappears.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.DroppedDown">
+            <summary>
+            Gets or sets a value indicating whether the DropDownCalendar is visible.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.DropDownCalendar">
+            <summary>
+            Get the drop-down Calendar control associated with this DatePicker control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.TodayButtonText">
+            <summary>
+            Gets or sets the text displayed in the Today button.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.NullButtonText">
+            <summary>
+            Gets or sets the text displayed in the Null button.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.YearIncrement">
+            <summary>
+            Gets or sets a value indicating the number of years to increase/decrease when the user clicks on the up-down buttons.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.MonthIncrement">
+            <summary>
+            Gets or sets a value indicating the number of months to increase/decrease when the user clicks on the up-down buttons.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.DayIncrement">
+            <summary>
+            Gets or sets a value indicating the number of days to increase/decrease when the user clicks on the up-down buttons.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.HourIncrement">
+            <summary>
+            Gets or sets a value indicating the number of hours to increase/decrease when the user clicks on the up-down buttons.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.MinuteIncrement">
+            <summary>
+            Gets or sets a value indicating the number of minutes to increase/decrease when the user clicks on the up-down buttons.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.SecondIncrement">
+            <summary>
+            Gets or sets a value indicating the number of seconds to increase/decrease when the user clicks on the up-down buttons.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.ShowTodayButton">
+            <summary>
+            Gets or sets a value indicating whether the today button is showed.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.ShowNullButton">
+            <summary>
+            Gets or sets a value indicating whether the null button is showed.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.EditStyle">
+            <summary>
+            Gets or sets a value specifying the edition style for the control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.MaskedValidation">
+             <summary>
+             Gets or sets a value specifying when the control should validate the date in the control
+             </summary>
+            <remarks>This property has only effect when the EditStyle is set to Masked</remarks>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.TextBox">
+            <summary>
+            Gets the TextBox associated with this control
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.ContextMenu">
+            <summary>
+            Overrrides Control.ContextMenu
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.MxDatePicker.ReadOnly">
+            <summary>
+            Gets or sets a value indicating whether the contents of the control can be changed.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.CalendarFormatStyle">
+            <summary>
+            Specifies the styles applied to the background and foreground of some parts of the Calendar control.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarFormatStyle.#ctor">
+            <summary>
+            Initialize a new instance of the CalendarFormatStyle class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarFormatStyle.Reset">
+            <summary>
+            Resets all the properties of the CalendarFormatStyle object to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarFormatStyle.ShouldSerialize">
+            <summary>
+            Indicates whether the CalendarFormatStyle object has changed from its default value.
+            </summary>
+            <returns>true if the one of the properties of the CalendarFormatStyle has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarFormatStyle.#ctor(Mordex.Windows.DatePicker.CalendarFormatStyle)">
+            <summary>
+            Initializes a new instance of the CalendarFormatStyle class based on the given CalendarFormatStyle.
+            </summary>
+            <param name="baseStyle">A CalendarFormatStyle which properties will be copied to create a new CalendarFormatStyle class.</param>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarFormatStyle.ResetBackColorGradient">
+            <summary>
+            Resets the BackgroundGradientMode property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarFormatStyle.ShouldSerializeBackColorGradient">
+            <summary>
+            Indicates whether the BackColorGradient property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarFormatStyle.ShouldSerializeBackgrodunGradientMode">
+            <summary>
+            Indicates whether the BackgroundGradientMode property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarFormatStyle.ResetBackgrodunGradientMode">
+            <summary>
+            Resets the BackgroundGradientMode property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarFormatStyle.ResetBackColor">
+            <summary>
+            Resets the BackColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarFormatStyle.ShouldSerializeBackColor">
+            <summary>
+            Indicates whether the BackColor property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarFormatStyle.ResetForeColor">
+            <summary>
+            Resets the ForeColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.CalendarFormatStyle.ShouldSerializeForeColor">
+            <summary>
+            Indicates whether the ForeColor property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.CalendarFormatStyle.Calendar">
+            <summary>
+            Gets the Calendar control associated with this CalendarFormatStyle.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.CalendarFormatStyle.BackColor">
+            <summary>
+            Gets or sets the background color of this CalendarFormatStyle.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.CalendarFormatStyle.BackColorGradient">
+            <summary>
+            Gets or sets a value specifying the background color used in a linear gradient pathern.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.CalendarFormatStyle.BackgrodunGradientMode">
+            <summary>
+            Gets or sets a value specifying if a linear gradient will be applied and its direction.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.CalendarFormatStyle.ForeColor">
+            <summary>
+            Gets or sets a value specifying the foreground color of the CalendarFormatStyle.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.CalendarFormatStyle.FontBold">
+            <summary>
+            Gets a value that indicates whether the Font object used is bold.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.CalendarFormatStyle.FontItalic">
+            <summary>
+            Gets a value that indicates whether the Font object used is italic.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.CalendarFormatStyle.FontUnderline">
+            <summary>
+            Gets a value that indicates whether the Font object used is underlined.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.CalendarFormatStyle.FontStrikeout">
+            <summary>
+            Gets a value that indicates whether the Font object used has a horizontal line through the font.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.CalendarFormatStyle.Blend">
+            <summary>
+            Gets or sets a value indicating the percentage of the BlendColor to blend with the BackColor.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.CalendarFormatStyle.BlendGradient">
+            <summary>
+            Gets or sets a value indicating the percentage of the BlendColor to blend with the BackColorGradient.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.CalendarLayout">
+            <summary>
+               Summary description for CalendarLayout.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.CalendarPortion">
+            <summary>
+            Summary description for CalendarPortion.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.CellLayout">
+            <summary>
+               Summary description for CellLayout.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.ControlStyle">
+            <summary>
+            Represent the style of the buttons in the DatePicker and drop-down Calendar controls.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.ControlStyle.Reset">
+            <summary>
+            Resets the all the properties of the ControlStyle object to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.ControlStyle.ResetControlColor">
+            <summary>
+            Resets the ControlColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.ControlStyle.ShouldSerializeControlColor">
+            <summary>
+            Indicates whether the ControlColor property has changed from its default value.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.ControlStyle.ResetControlTextColor">
+            <summary>
+            Resets the ControlTextColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.ControlStyle.ShouldSerializeControlTextColor">
+            <summary>
+            Indicates whether the ControlTextColor property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.ControlStyle.ResetHoverBaseColor">
+            <summary>
+            Resets the HoverBaseColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.ControlStyle.ShouldSerializeHoverBaseColor">
+            <summary>
+            Indicates whether the HoverBaseColor property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.ControlStyle.ResetHoverBlendColor">
+            <summary>
+            Resets the HoverBlendColor property to its default value. 
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.ControlStyle.ShouldSerializeHoverBlendColor">
+            <summary>
+            Indicates whether the HoverBlendColor property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.ControlStyle.ButtonAppearance">
+            <summary>
+            Gets or sets a value that determines the appearance of the buttons in the DatePicker and drop-down Calendar controls.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.ControlStyle.ControlColor">
+            <summary>
+            Gets or sets a value specifying the background color of the buttons in the DatePicker and drop-down Calendar controls.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.ControlStyle.ControlTextColor">
+            <summary>
+            Gets or sets a value specifying the foreground color of the buttons in the DatePicker and drop-down Calendar controls.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.ControlStyle.HoverBaseColor">
+            <summary>
+            Gets or sets the color that will be blended with the HoverBlendColor when a flat apperance is used.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.ControlStyle.HoverBlendColor">
+            <summary>
+            Gets or sets the color that will be blended with the HoverBaseColor when a flat appearance is used.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.ControlStyle.HoverBlend">
+            <summary>
+            Gets or sets a value indicating the percentage of the HoverBlendColor to blend whit the HoverBaseColor.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.ControlStyle.HoverSelectedBlend">
+            <summary>
+            Gets or sets the percentage of the HoverBlendColor to blend with the HoverBaseColor when the mouse is captured by the button.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.ControlStyle.FormatStyle">
+            <summary>
+            Gets the CalendarFormatStyle used to draw the buttons in the control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.ControlStyle.HotFormatStyle">
+            <summary>
+            Gets the CalendarFormatStyle used to draw the buttons in the control when the mouse is over them.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.ControlStyle.PressedFormatStyle">
+            <summary>
+            Gets the CalendarFormatStyle used to draw the buttons in the control when they are pressed.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.ctMonths">
+            <summary>
+               Summary description for ctMonths.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.ctMonths.tmrScroll">
+            <summary> 
+               Required designer variable 
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.AboutBox">
+            <summary>
+            Summary description for Form1.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.AboutBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.AboutBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.AboutBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.AboutBox.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.AboutBox.OnLoad(System.EventArgs)">
+            <summary>
+            Overrides Form.OnLoad
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.Design.DateTimeConverter">
+            <summary>
+            This class is not intended to be used directly from your code.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.Design.DateTimeConverter.#ctor">
+            <summary>
+            Initialize a new instance of the DateTimeConverter.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.Design.DateTimeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.Design.DateTimeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.Design.DateTimeEditor">
+            <summary>
+            Provides a user interface for selecting DateTime values in a Properties window.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.Design.DateTimeEditor.#ctor">
+            <summary>
+            Initializes a new instance of the DateTime class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.Design.DateTimeEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Overrides UITypeEditor.EditValue.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.Design.DateTimeEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Overrides UITypeEditor.GetEditStyle
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.DropDownDesigner">
+            <summary>
+            Summary description for DropDownDesigner.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.DropDownDesigner.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DropDownDesigner.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DropDownDesigner.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DropDownDesigner.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.DropDownDesigner.Calendar">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.DropDownEditor">
+            <summary>
+            Summary description for NavigationBarDesign.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DropDownEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Overrides UITypeEditor.EditValue
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.DatePicker.DropDownEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Overrides UITypeEditor.GetEditStyle
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.DatePortion">
+            <summary>
+            Represents one of the date parts in the control
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.DatePortion.None">
+            <summary>
+            No date part specified
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.DatePortion.Month">
+            <summary>
+            Represents the month part in the date
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.DatePortion.Day">
+            <summary>
+            Represents the day part in the date
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.DatePortion.Year">
+            <summary>
+            Represents the year part in the date
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.DatePortion.Hour">
+            <summary>
+            Represents the hour part in the date
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.DatePortion.Minute">
+            <summary>
+            Represents the minute part in the date
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.DatePortion.Second">
+            <summary>
+            Represents the second part in the date
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.DatePortion.AMPM">
+            <summary>
+            Represents the am/pm part in the date
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.EditStyle">
+            <summary>
+            Specifies the edition style for the control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.EditStyle.Masked">
+            <summary>
+            The edition for the control behaves as a standard text box control with enhancements for optional masked input and formatted output		
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.EditStyle.Free">
+            <summary>
+            The edition for the control behaves like a standard text box.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.MaskedValidation">
+            <summary>
+            Specifies when the control will validate the date in the control
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.MaskedValidation.OnChange">
+            <summary>
+            The control updates its value when the active portion of the date changes
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.MaskedValidation.OnLeave">
+            <summary>
+            The control updates its value after it loses the focus.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.FlatBorderHoverBehavior">
+            <summary>
+             Determines the effect a control with a flat border will show when the mouse hovers over the control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.FlatBorderHoverBehavior.None">
+            <summary>
+            Mouse hovering over the control has no effect.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.FlatBorderHoverBehavior.HighLight">
+            <summary>
+            When Mouse hovers over the control a flat border will be painted using the selected color.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.FlatBorderHoverBehavior.PopUp">
+            <summary>
+            When Mouse hovers over the control a flat border will be painted sunken.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.DateFormat">
+            <summary>
+            Specifies the date and time format the DatePicker control displays.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.DateFormat.Long">
+            <summary>
+            The DatePicker control displays the date-time value in the long date format set by the user's operating system.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.DateFormat.Short">
+            <summary>
+            The DatePicker control displays the date-time value in the short date format set by the user's operating system.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.DateFormat.Time">
+            <summary>
+            The DatePicker control displays the date-time value in the time format set by the user's operating system.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.DateFormat.DateTime">
+            <summary>
+            The DatePicker control displays the date-time value in the date-time format set by the user's operating system.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.DateFormat.Custom">
+            <summary>
+            The DatePicker control displays the date-time value in the custom format specified by the CustomFormat property of the DatePicker.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.HoverMode">
+            <summary>
+            Determines the effect a control will show when the mouse hovers over it.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.HoverMode.Highlight">
+            <summary>
+            When mouse hovers over the control a flat border will be painted using the selected color or with a sunken border if ButtonAppearance is PopUp in the ControlStyle of the control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.HoverMode.None">
+            <summary>
+            Mouse hovering over the control has no effect.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.BorderStyle">
+            <summary>
+            Specify the border style for the DatePicker control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.BorderStyle.None">
+            <summary>
+            The control has no border.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.BorderStyle.Flat">
+            <summary>
+            The border has no three-dimensional effects.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.BorderStyle.RaisedLight3D">
+            <summary>
+            The border has a raised outer edge and no inner edge.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.BorderStyle.Raised">
+            <summary>
+            The border has raised inner and outer edges.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.BorderStyle.SunkenLight3D">
+            <summary>
+            The border has a sunken outer edge and no inner edge.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.BorderStyle.Sunken">
+            <summary>
+            The border has sunken inner and outer edges.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.ButtonAppearance">
+            <summary>
+            Specifies the appearance of the headers in the DatePicker control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.ButtonAppearance.Regular">
+            <summary>
+            The button's border has raised inner and outer edges.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.ButtonAppearance.Light3D">
+            <summary>
+            The button's border has a raised inner edge and no outer edge.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.ButtonAppearance.Flat">
+            <summary>
+            The buttons's border has no three-dimensional effects.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.ButtonAppearance.FlatBorderless">
+            <summary>
+            The buttons has no border.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.ButtonAppearance.PopUp">
+            <summary>
+            The button appears flat until the mouse pointer moves over it, at which point it appears three-dimensional. 
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.CalendarDayOfWeek">
+            <summary>
+            Specifies the day of the week.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.CalendarDayOfWeek.Sunday">
+            <summary>
+            Indicates Sunday.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.CalendarDayOfWeek.Monday">
+            <summary>
+            Indicates Monday.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.CalendarDayOfWeek.Tuesday">
+            <summary>
+            Indicates Tuesday.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.CalendarDayOfWeek.Wednesday">
+            <summary>
+            Indicates Wednesday.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.CalendarDayOfWeek.Thursday">
+            <summary>
+            Indicates Thursday.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.CalendarDayOfWeek.Friday">
+            <summary>
+            Indicates Friday.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.CalendarDayOfWeek.Saturday">
+            <summary>
+            Indicates Saturday. 
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.CalendarDayOfWeek.Default">
+            <summary>
+            Indicates the first day of week of the current culture.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.DayOfWeekAbbreviation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.DayOfWeekAbbreviation.UseFirstLetter">
+            <summary>
+            The days of the week displayed with just the first letter. For example, M.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.DayOfWeekAbbreviation.UseAbbreviatedName">
+            <summary>
+            The days of the week displayed in abbreviated format. For example, Mon.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.BackgroundGradientMode">
+            <summary>
+            Specifies how the background of an object will be filled.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.BackgroundGradientMode.Empty">
+            <summary>
+            Use the default.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.BackgroundGradientMode.Solid">
+            <summary>
+            Use solid background.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.BackgroundGradientMode.Horizontal">
+            <summary>
+            Specifies a gradient from left to right.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.BackgroundGradientMode.Vertical">
+            <summary>
+            Specifies a gradient from top to bottom.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.BackgroundGradientMode.Diagonal">
+            <summary>
+            Specifies a gradient from upper left to lower right.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.BackgroundGradientMode.DiagonalBackward">
+            <summary>
+            Specifies a gradient from upper right to lower left.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.TriState">
+            <summary>
+            Represents a boolean value for a property that can inherit its value from a base or parent object.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.TriState.Empty">
+            <summary>
+            Indicates that the value for this property should be inherited from the parent object.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.TriState.False">
+            <summary>
+            Specifies that False should be used in a property ignoring settings in the parent object.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.DatePicker.TriState.True">
+            <summary>
+            Specifies that True should be used in a property ignoring settings in the parent object.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.ParseEventArgs">
+            <summary>
+            Provides data for the Parse event. 
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.ParseEventArgs.IsNullDate">
+            <summary>
+            Gets or sets a value indicating whether the Value in the control is null.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.ParseEventArgs.Value">
+            <summary>
+            Gets or sets the DateTime value of the control
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.ParseEventArgs.Text">
+            <summary>
+            Gets the text of DatePicker control
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.ParseEventHandler">
+            <summary>
+            Represents the method that will handle the Parse event of the DatePicker.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.Global">
+            <summary>
+            Summary description for Global.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.NativeMethods">
+            <summary>
+            Summary description for NativeMethods.
+            </summary>
+            
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.ResourceFile">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.ResourceFile.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.ResourceFile.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.ResourceFile2.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.DatePicker.ResourceFile2.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.ThemeHeader">
+            <summary>
+            Summary description for ThemeHeader.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.DatePicker.ThemePainter">
+            <summary>
+            Summary description for ThemeHeader.
+            </summary>
+        </member>
+    </members>
+</doc>

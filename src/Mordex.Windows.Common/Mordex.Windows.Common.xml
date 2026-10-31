@@ -1,0 +1,546 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mordex.Windows.Common</name>
+    </assembly>
+    <members>
+        <member name="T:Mordex.Windows.Common.IImageListProvider">
+            <summary>
+            Provides an interface that supplies an ImageList component to be used in a ToolTip.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.IImageListProvider.ImageList">
+            <summary>
+            Gets the ImageList component to be used in tooltip associated to the provider.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Common.VisualStyle">
+            <summary>
+            Specifies which apperance style the controls are formatted after. 
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Common.VisualStyle.Standard">
+            <summary>
+            The control are formatted as its related control in Windows.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Common.VisualStyle.Office2003">
+            <summary>
+            The control are formatted as its related control in Office 2003. 
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Common.VisualStyle.VS2005">
+            <summary>
+            The control are formatted as its related control in VS 2005
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Common.VisualStyle.Office2007">
+            <summary>
+            The control are formatted as its related control in Office2007.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Common.MxSuperTip">
+            <summary>
+            Represents the component that contains tooltip settings for the 
+            controls associated to it.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.#ctor">
+            <summary>
+            Creates a new instance of MordexSuperTip class
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance of MordexSuperTip class
+            </summary>
+            <param name="container"></param>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.GetSuperTip(System.ComponentModel.Component)">
+            <summary>
+            Retrieves the SuperTipSettings associated with the specified control.
+            </summary>
+            <param name="component">The control for which to retrieve the SuperTipSettings</param>
+            <returns>The SuperTipSettings for the specified control.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.SetSuperTip(System.ComponentModel.Component,Mordex.Windows.Common.SuperTipSettings)">
+            <summary>
+            Associates the SuperTipSettings with the specified control.
+            </summary>
+            <param name="component">The Control to associate the tooltip with.</param>
+            <param name="value">The settings for the tooltip to display when the pointer is on the control. </param>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.OnToolTipPopUp(Mordex.Windows.Common.ToolTipPopUpEventArgs)">
+            <summary>
+            Raises the ToolTipPopUp event.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.ShouldSerializeBackColor">
+            <summary>
+            Indicates whether the BackColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.ResetBackColor">
+            <summary>
+            Resets the BackColor property to its default.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.ShouldSerializeForeColor">
+            <summary>
+            Indicates whether the ForeColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.ResetForeColor">
+            <summary>
+            Resets the ForeColor property to its default.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.ShouldSerializeHeaderForeColor">
+            <summary>
+            Indicates whether the HeaderForeColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.ResetHeaderForeColor">
+            <summary>
+            Resets the HeaderForeColor property to its default.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.ShouldSerializeFooterForeColor">
+            <summary>
+            Indicates whether the FooterForeColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.ResetFooterForeColor">
+            <summary>
+            Resets the FooterForeColor property to its default.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.Show(Mordex.Windows.Common.SuperTipSettings)">
+            <summary>
+            Creates a tooltip with the specified settings, and then displays the tooltip.
+            </summary>
+            <param name="settings">A SuperTipSettingsInstance that contains the settings for the tooltip to be shown.</param>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.Show(Mordex.Windows.Common.SuperTipSettings,System.Drawing.Point)">
+            <summary>
+            Creates a tooltip with the specified settings, and then displays the tooltip at the specified position.
+            </summary>
+            <param name="settings">A SuperTipSettingsInstance that contains the settings for the tooltip to be shown.</param>
+            <param name="position">A System.Drawing.Point containing the position, in pixels, of the tooltip.</param>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.Show(Mordex.Windows.Common.SuperTipSettings,System.Drawing.Point,System.Int32)">
+            <summary>
+            Creates a tooltip with the specified settings, and then displays the tooltip for the specified duration at the specified position.
+            </summary>
+            <param name="settings">A SuperTipSettingsInstance that contains the settings for the tooltip to be shown.</param>
+            <param name="position">A System.Drawing.Point containing the position, in pixels, of the tooltip.</param>
+            <param name="duration">The duration, in milliseconds, to diplay the tool tip.</param>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.Show(Mordex.Windows.Common.SuperTipSettings,System.Windows.Forms.Control)">
+            <summary>
+            Shows a tooltip with the specified settings.
+            </summary>
+            <param name="settings">A SuperTipSettingsInstance that contains the settings for the tooltip to be shown.</param>
+            <param name="tooltipOwner">The control that owns the toltip.</param>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.Show(Mordex.Windows.Common.SuperTipSettings,System.Windows.Forms.Control,System.Drawing.Point)">
+            <summary>
+            Creates a tooltip with the specified settings, and then displays the tooltip at the specified position.
+            </summary>
+            <param name="settings">A SuperTipSettingsInstance that contains the settings for the tooltip to be shown.</param>
+            <param name="tooltipOwner">The control that owns the toltip.</param>
+            <param name="position">A System.Drawing.Point containing the position, in pixels, of the tooltip.</param>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.Show(Mordex.Windows.Common.SuperTipSettings,System.Windows.Forms.Control,System.Drawing.Point,System.Int32)">
+            <summary>
+            Creates a tooltip with the specified settings, and then displays the tooltip for the specified duration at the specified position.
+            </summary>
+            <param name="settings">A SuperTipSettingsInstance that contains the settings for the tooltip to be shown.</param>
+            <param name="tooltipOwner">The control that owns the toltip.</param>
+            <param name="position">A System.Drawing.Point containing the position, in pixels, of the tooltip.</param>
+            <param name="duration">The duration, in milliseconds, to diplay the tool tip.</param>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.HideActiveToolTip">
+            <summary>
+            Hides the active tooltip.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Common.MxSuperTip.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Mordex.Windows.Common.MxSuperTip.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.MxSuperTip.BodyWidth">
+            <summary>
+            Gets or sets the width of the description area in a tool tip.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.MxSuperTip.RightToLeft">
+            <summary>
+            Gets or sets a value indicating whether tooltip elements are aligned to support locales using right-to-left fonts.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.MxSuperTip.AutoPopDelay">
+            <summary>
+            Gets or sets the period of time (in milliseconds) the tool tip remains visible if the pointer is stationary on a control with specified ToolTip text.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.MxSuperTip.InitialDelay">
+            <summary>
+            Gets or sets the time (in milliseconds) that passes before the ToolTip appears.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.MxSuperTip.ShowAlways">
+            <summary>
+            Gets or sets a value indicating whether a ToolTip window is displayed, even when its parent control is not active.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.MxSuperTip.ImageList">
+            <summary>
+            Gets or sets the ImageList to use when displaying tooltips.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.MxSuperTip.Font">
+            <summary>
+            Gets or sets the font of the text displayed in a tooltip.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.MxSuperTip.HeaderFont">
+            <summary>
+            Gets or sets the font of the text displayed in the header of a tooltip.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.MxSuperTip.FooterFont">
+            <summary>
+            Gets or sets the font of the text displayed in the footer of a tooltip.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.Common.MxSuperTip.ToolTipPopUp">
+            <summary>
+            Occurs when a tool tip is about to be shown.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.MxSuperTip.BackColor">
+            <summary>
+            Gets or sets the background color for the tooltip.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.MxSuperTip.ForeColor">
+            <summary>
+            Gets or set the froeground color for the tooltip.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.MxSuperTip.HeaderForeColor">
+            <summary>
+            Gets or sets the foreground color for the header in a tooltip.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.MxSuperTip.FooterForeColor">
+            <summary>
+            Gets or sets the foreground color for the footer in a tooltip.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.MxSuperTip.Active">
+            <summary>
+            Gets a value indicating whether the MordexSupertTip is currently active.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Common.ToolTipPopUpEventArgs">
+            <summary>
+            Contains the data for the ToolTipPopUp event.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.ToolTipPopUpEventArgs.AssociatedControl">
+            <summary>
+            Gets the control associated with the tooltip that is about to be displayed.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.ToolTipPopUpEventArgs.ToolTipSettings">
+            <summary>
+            Gets the settings of the tooltip that is about to be displayed.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.ToolTipPopUpEventArgs.Cancel">
+            <summary>
+            Gets or sets a value that determines whether the tooltip should be displayed or not.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Common.ToolTipPopUpEventHandler">
+            <summary>
+            Represents the method that handles the ToolTipPopUp event.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Common.Layouts.LayoutReader">
+            <summary>
+            Summary description for MordexLayoutReader.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Common.Layouts.LayoutReference">
+            <summary>
+            Constains objects instances to help in the design time serialization
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Common.Layouts.LayoutReference.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of MordexLayoutReference class with the specified ReferenceID
+            </summary>
+            <param name="referenceId">The ReferenceID for the MordexLayoutReference</param>
+        </member>
+        <member name="M:Mordex.Windows.Common.Layouts.LayoutReference.#ctor(System.String,System.Object)">
+            <summary>
+            Initializes a new instance of MordexLayoutReference class with the specified ReferenceID and Instance
+            </summary>
+            <param name="referenceId">The ReferenceID for the MordexLayoutReference.</param>
+            <param name="instance">The Instance to abe associated with the MordexLayoutReference.</param>
+        </member>
+        <member name="P:Mordex.Windows.Common.Layouts.LayoutReference.ReferenceId">
+            <summary>
+            Gets or sets an identifier for the MordexLayoutReference. This property supports design time serialization in mordex control. Do not use.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.Layouts.LayoutReference.Instance">
+            <summary>
+            Gets or sets the object reference associated to the MordexLayoutReference. This property supports design time serialization in mordex control. Do not use.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Common.Layouts.LayoutReferenceCollection">
+            <summary>
+            A collection of MordexLayoutReference objects associated to a layout at design time.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Common.Layouts.LayoutReferenceCollection.#ctor">
+            <summary>
+            Initializes a new instance of MordexLayoutRerence class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Common.Layouts.LayoutReferenceCollection.Add(System.Object)">
+            <summary>
+            Creates a new MordexLayoutReference instance with the specified instance property and appends it at the end of the collection.
+            </summary>
+            <param name="instance">The Instance property of MordexLayoutReference object added.</param>
+            <returns>The newly created MordexLayoutReference.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Common.Layouts.LayoutReferenceCollection.Add(System.String,System.Object)">
+            <summary>
+            Creates a new MordexLayoutReference instance with the specified id and instance properties and appends it at the end of the collection.
+            </summary>
+            <param name="instance">The Instance property of MordexLayoutReference object added.</param>
+            <returns>The newly created MordexLayoutReference.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Common.Layouts.LayoutReferenceCollection.Add(Mordex.Windows.Common.Layouts.LayoutReference)">
+            <summary>
+            Appends the specified MordexLayoutReference object at the end of the collection.
+            </summary>
+            <param name="reference">The MordexLayoutReference object to add.</param>
+        </member>
+        <member name="M:Mordex.Windows.Common.Layouts.LayoutReferenceCollection.AddRange(Mordex.Windows.Common.Layouts.LayoutReference[])">
+            <summary>
+            Copies the elements of the specified MordexLayoutReference array to the end of the collection.
+            </summary>
+            <param name="references">The array of MordexLayoutReference objects to add to the collection.</param>
+        </member>
+        <member name="M:Mordex.Windows.Common.Layouts.LayoutReferenceCollection.Contains(System.String)">
+            <summary>
+            Determines whether a MordexLayoutReference with the specified ReferenceID exist is in the list.
+            </summary>
+            <param name="referenceId">The ReferenceID to search</param>
+            <returns>True if a MordexLayoutReference with the specified ReferenceID is in the list; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Common.Layouts.LayoutReferenceCollection.Contains(Mordex.Windows.Common.Layouts.LayoutReference)">
+            <summary>
+            Determines whether a MordexLayoutReference instance belongs to this collection.
+            </summary>
+            <param name="reference">The MordexLayoutReference instance to search</param>
+            <returns>True if the MordexLayoutReference is in the collection; otherwise false</returns>
+        </member>
+        <member name="M:Mordex.Windows.Common.Layouts.LayoutReferenceCollection.IndexOf(Mordex.Windows.Common.Layouts.LayoutReference)">
+            <summary>
+            Gets the index of the specified MordexLayoutReference in the collection.
+            </summary>
+            <param name="dropDown">The MordexLayoutReference to locate in the collection.</param>
+            <returns>The index of the given MordexLayoutReference, if found; otherwise -1,</returns>
+        </member>
+        <member name="P:Mordex.Windows.Common.Layouts.LayoutReferenceCollection.Item(System.Int32)">
+            <summary>
+            Gets a MordexLayoutReference object from the collection at the specified index.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.Layouts.LayoutReferenceCollection.Item(System.String)">
+            <summary>
+            Gets a MordexLayoutReference object from the collection with the specified ReferenceID.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Common.Layouts.LayoutReferenceConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Overrides TypeConverter.CanConvertTo
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Common.Layouts.LayoutReferenceConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Overrides TypeConverter.ConvertTo
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Common.Layouts.LayoutWriter">
+            <summary>
+            Summary description for MordexLayoutWriter.
+            </summary>
+            
+        </member>
+        <member name="T:Mordex.Windows.Common.Layouts.PropertyValue">
+            <summary>
+            Summary description for PropertyValue.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Common.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Common.SuperTipSettings">
+            <summary>
+            Contains the MordexSuperTip settings associate of  associated
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Common.SuperTipSettings.#ctor">
+            <summary>
+            Initializes a new instance of Mordex.Windows.Common.SupperTipSettings class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Common.SuperTipSettings.Clone">
+            <summary>
+            Creates an exact copy of the SuperTipSettings instance
+            </summary>
+            <returns>The copied SuperTipSettings</returns>
+        </member>
+        <member name="P:Mordex.Windows.Common.SuperTipSettings.Text">
+            <summary>
+            Get or sets the text to display as tool tip for a control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.SuperTipSettings.ImageListProvider">
+            <summary>
+            Gets or sets the objects that contains the ImageList from which the tool tip gets its images.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.SuperTipSettings.WordWrap">
+            <summary>
+             Gets or sets a value that determines whether Text in a tooltip should be wrapped to the begining of the next line when necessary.
+            <remarks>
+            This option applies only when a tooltip has no header nor footer specified. If a header or a footer is specified, the text will be wrapped when necessary.
+            </remarks>
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.SuperTipSettings.HeaderText">
+            <summary>
+            Get or sets the text to display as the header in a tool tip associated to a control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.SuperTipSettings.FooterText">
+            <summary>
+            Get or sets the text to display as the footer in a tool tip associated to a control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.SuperTipSettings.IsEmpty">
+            <summary>
+            Gets a value that determines whether a SuperTipSettings contains data or is empty and should not be displayed.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.SuperTipSettings.ToolTipStyle">
+            <summary>
+            Gets or sets a value specifying the visual style of a tool tip.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.SuperTipSettings.Image">
+            <summary>
+            Get or sets the Image to display in a tool tip associated to a control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.SuperTipSettings.ImageIndex">
+            <summary>
+            Gets or sets the image list index value of the image displayed in a tool tip.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.SuperTipSettings.ImageKey">
+            <summary>
+            Gets or sets the key of the image displayed in a tool tip.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.SuperTipSettings.HeaderImage">
+            <summary>
+            Gets or sets the Image displayed in the header of a tool tip.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.SuperTipSettings.FooterImage">
+            <summary>
+            Gets or sets the Image displayed in the footer of a tool tip.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.SuperTipSettings.FooterImageIndex">
+            <summary>
+            Gets or sets the image list index value of the image displayed in the footer of a tool tip.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.SuperTipSettings.FooterImageKey">
+            <summary>
+            Gets or sets the key of the image displayed in the footer of a tool tip.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.SuperTipSettings.HeaderImageIndex">
+            <summary>
+            Gets or sets the image list index value of the image displayed in the header of a tool tip.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Common.SuperTipSettings.HeaderImageKey">
+            <summary>
+            Gets or sets the key of the image displayed in the header of a tool tip.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Common.ToolTipStyle">
+            <summary>
+            Determines the visual style of a tool tip.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Common.ToolTipStyle.Standard">
+            <summary>
+            Tool tip is drawn using system colors
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Common.ToolTipStyle.Office2007">
+            <summary>
+            Tool tip is drawn using Office 2007 color scheme.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Common.ToolTipStyle.Office2010">
+            <summary>
+            Tool tip is drawn using Office 2007 color scheme.
+            </summary>
+        </member>
+    </members>
+</doc>

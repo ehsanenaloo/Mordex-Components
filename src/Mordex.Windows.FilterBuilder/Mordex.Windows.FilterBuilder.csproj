@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Mordex.Windows.FilterBuilder</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Mordex.Windows.Common/Mordex.Windows.Common.csproj" />
+    <ProjectReference Include="../Mordex.Windows.UI/Mordex.Windows.UI.csproj" />
+    <ProjectReference Include="../Mordex.Windows.DataGrid/Mordex.Windows.DataGrid.csproj" />
+    <ProjectReference Include="../Mordex.Data/Mordex.Data.csproj" />
+    <ProjectReference Include="../Mordex.Windows.DatePicker/Mordex.Windows.DatePicker.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources/*" Exclude="Resources/*.resx" LogicalName="%(Filename)%(Extension)" />
+    <EmbeddedResource Include="Resources/*.resx" LogicalName="%(Filename).resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Mordex.Windows.FilterBuilder.xml" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,29 @@
+namespace Mordex.Data
+{
+	public enum OutlookDateRange
+	{
+		NullDate,
+		Older,
+		LastMonth,
+		EarlierThisMonth,
+		ThreeWeeksAgo,
+		TwoWeeksAgo,
+		LastWeek,
+		Yesterday,
+		Today,
+		FirstDayCurrentWeek,
+		SecondDayCurrentWeek,
+		ThirdDayCurrentWeek,
+		FourthDayCurrentWeek,
+		FifthDayCurrentWeek,
+		SixthDayCurrentWeek,
+		SeventhDayCurrentWeek,
+		Tomorrow,
+		NextWeek,
+		TwoWeeksAway,
+		ThreeWeeksAway,
+		LaterThisMonth,
+		NextMonth,
+		BeyondNextMonth
+	}
+}

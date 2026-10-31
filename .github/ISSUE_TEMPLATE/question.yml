@@ -1,0 +1,29 @@
+name: Question
+description: Ask how to use a Mordex control.
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a volunteer project, so replies are best effort. Do not paste secrets or personal data.
+  - type: textarea
+    id: question
+    attributes:
+      label: What do you want to do?
+      description: Say what you are trying to do and what you tried so far.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Package version
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues.
+          required: true
+        - label: I did not include secrets or personal data.
+          required: true

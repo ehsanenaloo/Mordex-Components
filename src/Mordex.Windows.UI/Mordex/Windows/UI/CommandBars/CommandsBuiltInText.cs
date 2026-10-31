@@ -1,0 +1,34 @@
+namespace Mordex.Windows.UI.CommandBars
+{
+	public enum CommandsBuiltInText
+	{
+		Minimize,
+		Maximize,
+		Close,
+		Restore,
+		Size,
+		Move,
+		Next,
+		CustomizeButtonToolTip,
+		Reset,
+		Delete,
+		Name,
+		DefaultStyle,
+		TextAlways,
+		ImageAndText,
+		BeginGroup,
+		Customize,
+		NoDescriptionAvailable,
+		ResetToolBarWarning,
+		DuplicatedNameErrorMessage,
+		EmptyNameErrorMessage,
+		ResetUsageDataMessage,
+		ExpandToolTipText,
+		AddRemoveButtons,
+		CutText,
+		CopyText,
+		PasteText,
+		UndoText,
+		SelectAllText
+	}
+}

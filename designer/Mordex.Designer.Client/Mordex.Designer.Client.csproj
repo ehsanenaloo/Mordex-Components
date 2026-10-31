@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>Mordex.Designer.Client</AssemblyName>
+    <RootNamespace>Mordex.Designer.Client</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Mordex.Designer.Protocol/Mordex.Designer.Protocol.csproj" />
+  </ItemGroup>
+</Project>

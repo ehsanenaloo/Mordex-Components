@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IncludeWinFormsDesignReferences>true</IncludeWinFormsDesignReferences>
+    <AssemblyName>Mordex.Windows.Scheduler.Design</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Mordex.Windows.Common.Design/Mordex.Windows.Common.Design.csproj" />
+    <ProjectReference Include="../Mordex.Windows.Scheduler/Mordex.Windows.Scheduler.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WinForms.Designer.SDK" Version="1.6.0" PrivateAssets="all" />
+  </ItemGroup>
+</Project>

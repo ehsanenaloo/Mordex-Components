@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net10.0-windows7.0": {
+      "mordex.data": {
+        "type": "Project"
+      },
+      "mordex.windows.common": {
+        "type": "Project"
+      },
+      "mordex.windows.datagrid": {
+        "type": "Project",
+        "dependencies": {
+          "Mordex.Data": "[1.0.0, )",
+          "Mordex.Windows.Common": "[1.0.0, )"
+        }
+      },
+      "mordex.windows.datepicker": {
+        "type": "Project",
+        "dependencies": {
+          "Mordex.Windows.Common": "[1.0.0, )"
+        }
+      },
+      "mordex.windows.filterbuilder": {
+        "type": "Project",
+        "dependencies": {
+          "Mordex.Data": "[1.0.0, )",
+          "Mordex.Windows.Common": "[1.0.0, )",
+          "Mordex.Windows.DataGrid": "[1.0.0, )",
+          "Mordex.Windows.DatePicker": "[1.0.0, )",
+          "Mordex.Windows.UI": "[1.0.0, )"
+        }
+      },
+      "mordex.windows.navigation": {
+        "type": "Project",
+        "dependencies": {
+          "Mordex.Windows.Common": "[1.0.0, )"
+        }
+      },
+      "mordex.windows.ribbon": {
+        "type": "Project",
+        "dependencies": {
+          "Mordex.Windows.Common": "[1.0.0, )",
+          "Mordex.Windows.UI": "[1.0.0, )"
+        }
+      },
+      "mordex.windows.scheduler": {
+        "type": "Project",
+        "dependencies": {
+          "Mordex.Windows.Common": "[1.0.0, )"
+        }
+      },
+      "mordex.windows.taskpane": {
+        "type": "Project",
+        "dependencies": {
+          "Mordex.Windows.Common": "[1.0.0, )"
+        }
+      },
+      "mordex.windows.timeline": {
+        "type": "Project",
+        "dependencies": {
+          "Mordex.Data": "[1.0.0, )",
+          "Mordex.Windows.Common": "[1.0.0, )"
+        }
+      },
+      "mordex.windows.ui": {
+        "type": "Project",
+        "dependencies": {
+          "Mordex.Windows.Common": "[1.0.0, )"
+        }
+      }
+    }
+  }
+}

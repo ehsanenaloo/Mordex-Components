@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IncludeWinFormsDesignReferences>true</IncludeWinFormsDesignReferences>
+    <AssemblyName>Mordex.Windows.DatePicker.Design</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Mordex.Windows.DatePicker/Mordex.Windows.DatePicker.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WinForms.Designer.SDK" Version="1.6.0" PrivateAssets="all" />
+  </ItemGroup>
+</Project>

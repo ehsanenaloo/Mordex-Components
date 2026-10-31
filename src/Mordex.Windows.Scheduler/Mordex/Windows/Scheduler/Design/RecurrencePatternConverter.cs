@@ -1,0 +1,36 @@
+﻿using System;
+using System.ComponentModel;
+using System.ComponentModel.Design.Serialization;
+using System.Globalization;
+using System.Reflection;
+
+namespace Mordex.Windows.Scheduler.Design
+{
+	[Browsable(false)]
+	[EditorBrowsable(EditorBrowsableState.Advanced)]
+	public class RecurrencePatternConverter : TypeConverter
+	{
+		public override bool CanConvertTo(ITypeDescriptorContext context, Type destinationType)
+		{
+			if (destinationType == typeof(InstanceDescriptor))
+			{
+				return true;
+			}
+			return base.CanConvertTo(context, destinationType);
+		}
+
+		public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)
+		{
+			if (destinationType == typeof(InstanceDescriptor))
+			{
+				ConstructorInfo constructor = typeof(WorkingHourRecurrencePattern).GetConstructor(new Type[0]);
+				return new InstanceDescriptor(constructor, new object[0], isComplete: false);
+			}
+			if (value is WorkingHourRecurrencePattern)
+			{
+				return SchedulerRenderer.GetRecurrenceDescription((WorkingHourRecurrencePattern)value);
+			}
+			return "(none)";
+		}
+	}
+}

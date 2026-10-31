@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ApplicationIcon>../../assets/mordex.ico</ApplicationIcon>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>Mordex.Demo</AssemblyName>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Mordex.Data/Mordex.Data.csproj" />
+    <ProjectReference Include="../../src/Mordex.Windows.Common/Mordex.Windows.Common.csproj" />
+    <ProjectReference Include="../../src/Mordex.Windows.Navigation/Mordex.Windows.Navigation.csproj" />
+    <ProjectReference Include="../../src/Mordex.Windows.DatePicker/Mordex.Windows.DatePicker.csproj" />
+    <ProjectReference Include="../../src/Mordex.Windows.TaskPane/Mordex.Windows.TaskPane.csproj" />
+    <ProjectReference Include="../../src/Mordex.Windows.DataGrid/Mordex.Windows.DataGrid.csproj" />
+    <ProjectReference Include="../../src/Mordex.Windows.FilterBuilder/Mordex.Windows.FilterBuilder.csproj" />
+    <ProjectReference Include="../../src/Mordex.Windows.Ribbon/Mordex.Windows.Ribbon.csproj" />
+    <ProjectReference Include="../../src/Mordex.Windows.Scheduler/Mordex.Windows.Scheduler.csproj" />
+    <ProjectReference Include="../../src/Mordex.Windows.Timeline/Mordex.Windows.Timeline.csproj" />
+    <ProjectReference Include="../../src/Mordex.Windows.UI/Mordex.Windows.UI.csproj" />
+  </ItemGroup>
+</Project>

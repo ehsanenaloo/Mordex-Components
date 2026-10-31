@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IncludeWinFormsDesignReferences>true</IncludeWinFormsDesignReferences>
+    <AssemblyName>Mordex.Windows.Common.Design</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Mordex.Windows.Common/Mordex.Windows.Common.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources/*" Exclude="Resources/*.resx" LogicalName="%(Filename)%(Extension)" />
+    <EmbeddedResource Include="Resources/*.resx" LogicalName="%(Filename).resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WinForms.Designer.SDK" Version="1.6.0" PrivateAssets="all" />
+  </ItemGroup>
+</Project>

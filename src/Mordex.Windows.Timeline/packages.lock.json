@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net10.0-windows7.0": {
+      "mordex.data": {
+        "type": "Project"
+      },
+      "mordex.windows.common": {
+        "type": "Project"
+      }
+    }
+  }
+}

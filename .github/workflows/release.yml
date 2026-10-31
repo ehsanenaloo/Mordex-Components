@@ -1,0 +1,88 @@
+name: Release
+
+# Runs when a version tag such as v6.0.0 is pushed.
+# It builds the solution, runs the smoke test, packs Mordex.Windows.<version>.nupkg and attaches the
+# package and its .sha256 file to a GitHub Release. It does NOT upload the package to NuGet; that stays a manual step.
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build and publish GitHub Release
+    runs-on: windows-latest
+    timeout-minutes: 30
+    env:
+      TAG: ${{ github.ref_name }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
+
+      - name: Set up .NET 10
+        uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9 # v4.3.1
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Assert tag matches the version
+        run: |
+          version="$(sed -n 's:.*<MordexVersion>\(.*\)</MordexVersion>.*:\1:p' build/Version.props)"
+          if [ "${TAG}" != "v${version}" ]; then
+            echo "::error::Tag '${TAG}' does not match build/Version.props version '${version}'. Expected tag 'v${version}'."
+            exit 1
+          fi
+          echo "VERSION=${version}" >> "$GITHUB_ENV"
+
+      - name: Restore with lock files
+        run: dotnet restore Mordex.sln --locked-mode
+
+      - name: Build
+        run: dotnet build Mordex.sln -c Release --no-restore
+
+      - name: Smoke test every control
+        run: dotnet run --project demo/Mordex.Demo -c Release --no-build -- --smoke
+
+      - name: Pack
+        run: |
+          dotnet pack pack/Mordex.Windows.Package -c Release -o artifacts/nuget --no-build
+          package="artifacts/nuget/Mordex.Windows.${VERSION}.nupkg"
+          [ -f "${package}" ] || { echo "::error::${package} was not built"; exit 1; }
+          (cd artifacts/nuget && sha256sum "Mordex.Windows.${VERSION}.nupkg" > "Mordex.Windows.${VERSION}.nupkg.sha256")
+
+      - name: Extract release notes from CHANGELOG
+        run: |
+          node - <<'NOTES'
+          const fs = require('fs');
+          const version = process.env.VERSION;
+          const lines = fs.readFileSync('CHANGELOG.md', 'utf8').replace(/^﻿/, '').split(/\r?\n/);
+          const start = lines.findIndex((line) => line === '## [' + version + ']' || line.startsWith('## [' + version + '] '));
+          let notes = '';
+          if (start !== -1) {
+            let end = lines.findIndex((line, index) => index > start && line.startsWith('## '));
+            if (end === -1) end = lines.length;
+            notes = lines.slice(start + 1, end).join('\n').trim();
+          }
+          if (!notes) notes = 'Release ' + version + '. See CHANGELOG.md for details.';
+          fs.writeFileSync('artifacts/notes.md', notes + '\n');
+          NOTES
+          cat artifacts/notes.md
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${TAG}" \
+            "artifacts/nuget/Mordex.Windows.${VERSION}.nupkg" \
+            "artifacts/nuget/Mordex.Windows.${VERSION}.nupkg.sha256" \
+            --title "Mordex Components ${VERSION}" \
+            --notes-file artifacts/notes.md \
+            --verify-tag

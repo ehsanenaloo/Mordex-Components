@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IncludeWinFormsDesignReferences>true</IncludeWinFormsDesignReferences>
+    <AssemblyName>Mordex.Windows.Timeline.Design</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Mordex.Windows.Common.Design/Mordex.Windows.Common.Design.csproj" />
+    <ProjectReference Include="../Mordex.Windows.Timeline/Mordex.Windows.Timeline.csproj" />
+    <ProjectReference Include="../Mordex.Data/Mordex.Data.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WinForms.Designer.SDK" Version="1.6.0" PrivateAssets="all" />
+  </ItemGroup>
+</Project>

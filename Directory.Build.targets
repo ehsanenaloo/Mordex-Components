@@ -1,0 +1,13 @@
+<Project>
+  <!-- Library projects keep their attributes in Properties/AssemblyInfo.cs; the version attributes come from build/Version.props. -->
+  <PropertyGroup>
+    <MordexVersionInfoFile>$(IntermediateOutputPath)MordexVersionInfo.g.cs</MordexVersionInfoFile>
+  </PropertyGroup>
+  <Target Name="MordexVersionInfo" BeforeTargets="BeforeCompile" Condition="'$(GenerateAssemblyInfo)' != 'true' and Exists('$(MSBuildProjectDirectory)/Properties/AssemblyInfo.cs')">
+    <WriteLinesToFile File="$(MordexVersionInfoFile)" Lines="[assembly: System.Reflection.AssemblyFileVersion(&quot;$(MordexFileVersion)&quot;)];[assembly: System.Reflection.AssemblyVersion(&quot;$(MordexAssemblyVersion)&quot;)]" Overwrite="true" WriteOnlyWhenDifferent="true" />
+    <ItemGroup>
+      <Compile Include="$(MordexVersionInfoFile)" />
+      <FileWrites Include="$(MordexVersionInfoFile)" />
+    </ItemGroup>
+  </Target>
+</Project>

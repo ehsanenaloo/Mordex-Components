@@ -1,0 +1,3012 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mordex.Windows.Navigation</name>
+    </assembly>
+    <members>
+        <member name="T:Mordex.Windows.Navigation.MxNavigationBar">
+            <summary>
+            Mordex NavigationBar control for Microsoft.Net
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.MxNavigationBar.AlphaEmpty">
+            <summary>
+            Represents the empty alpha value. This field is read-only.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.#ctor">
+            <summary>
+            Initializes a new instance of the NavigationBar control.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.LoadComponentSettings">
+            <summary>
+            Reads the control's application settings into their corresponding properties and updates the control's state.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ResetComponentSettings">
+            <summary>
+            Resets the control's application settings properties to their default values. 
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.SaveComponentSettings">
+            <summary>
+            Persists the control's application settings properties. 
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.GetNavigationBarVersion">
+            <summary>
+            Gets a string representing with the version number.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.LoadLayout(Mordex.Windows.Navigation.NavigationBarLayout)">
+            <summary>
+            Loads the settings preserved in a NavigationBarLayout object without setting it as the current layout.
+            </summary>
+            <param name="layout">The NavigationBarLayout with the NavigationBar control settings.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.GetLayout">
+            <summary>
+            Creates a NavigationBarLayout object containing settings of the NavigationBar control.
+            </summary>
+            <returns>The NavigationBarLayout created.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.LoadLayoutFile(System.IO.Stream)">
+            <summary>
+            Loads a NavigationBar control settings persisted in a stream.
+            </summary>
+            <param name="stream">A Stream object with the NavigationBar control settings.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.SaveLayoutFile(System.IO.Stream)">
+            <summary>
+            Persist in a stream all the NavigationBar control settings.
+            </summary>
+            <param name="stream">A Stream object where settings will be persisted.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.Dispose(System.Boolean)">
+            <summary>
+            Releases the unmanaged resources used by the System.ComponentModel.Component and optionally releases the managed resources.
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.SetNavigationBarStyle(Mordex.Windows.Navigation.NavigationBarStyle)">
+            <summary>
+            Changes appearance properties to display the control as the specified pattern.
+            </summary>
+            <param name="style">The style desired for the NavigationBar control.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.HitTest">
+            <summary>
+            Determines which element of the NavigationBar control is at the current position of the cursor.
+            </summary>
+            <returns>One of the HitTest values that contains information about the specified location in the NavigationBar.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.HitTest(System.Int32,System.Int32)">
+            <summary>
+            Determines which element of the NavigationBar control is at the specified coordinates.
+            </summary>
+            <param name="x">The x coordinate of the point to be hit-tested.</param>
+            <param name="y">The y coordinate of the point to be hit-tested.</param>
+            <returns>One of the HitTest values that contains information about the specified location in the NavigationBar.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.HitTest(System.Drawing.Point)">
+            <summary>
+            Determines which element of the NavigationBar control is at the specified point.
+            </summary>
+            <param name="point">A Point containing the x and y coordinates of the point to be hit-tested.</param>
+            <returns>One of the HitTest values that contains information about the specified point in the NavigationBar.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.GetItemFromPoint">
+            <summary>
+            Retrieves the NavigationItem object that is located at the current position of the cursor.
+            </summary>
+            <returns>A NavigationItem object that represents the item that is located at the curren position of the cursor.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.GetItemFromPoint(System.Int32,System.Int32)">
+            <summary>
+            Retrieves the NavigationItem object that is located at the specified coordinates.
+            </summary>
+            <param name="x">The x-coordinate where you want to look for the NavigationItem.</param>
+            <param name="y">The y-coordinate where you want to look for the NavigationItem.</param>
+            <returns>A NavigationItem object that represents the item that is located at the specified coordinates.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.GetItemFromPoint(System.Drawing.Point)">
+            <summary>
+            Retrieves the NavigationItem object that is located at the specified point.
+            </summary>
+            <param name="point">A Point that contains the coordinates where you want to look for the NavigationItem.</param>
+            <returns>A NavigationItem object that represents the item that is located at the specified point.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.GetGroupFromPoint">
+            <summary>
+            Retrieves the NavigationGroup object that is located at the current position of the cursor.
+            </summary>
+            <returns>A NavigationGroup object that represents the group that is located at the current position of the cursors.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.GetGroupFromPoint(System.Int32,System.Int32)">
+            <summary>
+            Retrieves the NavigationGroup object that is located at the specified coordinates.
+            </summary>
+            <param name="x">An int that contains the x-coordinate where you want to look for the NavigationGroup. Coordinates are expressed relative to the upper-left corner of the control's client area.</param>
+            <param name="y">An int that contains the y-coordinate where you want to look for the NavigationGroup. Coordinates are expressed relative to the upper-left corner of the control's client area. </param>
+            <returns>A NavigationGroup object that represents the group that is located at the specified coordinates.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.GetGroupFromPoint(System.Drawing.Point)">
+            <summary>
+            Retrieves the NavigationGroup object that is located at the specified point.
+            </summary>
+            <param name="point">A Point that contains the coordinates where you want to look for the NavigationGroup. Coordinates are expressed relative to the upper-left corner of the control's client area.</param>
+            <returns>A NavigationGroup object that represents the group that is located at the specified point.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnParentVisibleChanged(System.EventArgs)">
+            <summary>
+            Overrides Control.OnParentVisibleChanged
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnDragDrop(System.Windows.Forms.DragEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.DragDrop event.
+            </summary>
+            <param name="e"> A System.Windows.Forms.DragEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ResetDropLineColor">
+            <summary>
+            Resets the DropLineColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ShouldSerializeDropLineColor">
+            <summary>
+            Gets a value indicating whether the DropLineColor property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnDragLeave(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.DragLeave event.
+            </summary>
+            <param name="e"> A System.Windows.Forms.DragEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnDragOver(System.Windows.Forms.DragEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.DragOver event.
+            </summary>
+            <param name="e">A System.Windows.Forms.DragEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnDragEnter(System.Windows.Forms.DragEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.DragEnter event.
+            </summary>
+            <param name="e">A System.Windows.Forms.DragEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnQueryContinueDrag(System.Windows.Forms.QueryContinueDragEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.QueryContinueDrag event.
+            </summary>
+            <param name="e">A System.Windows.Forms.QueryContinueDragEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnMouseLeave(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseLeave event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnEnabledChanged(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.EnabledChanged event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ResetUseCompatibleTextRendering">
+            <summary>
+            Resets the UseCompatibleTextRendering property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ShouldSerializeUseCompatibleTextRendering">
+            <summary>
+            Gets a value indicating whether the UseCompatibleTextRendering property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseMove event.
+            </summary>
+            <param name="e">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.RenameItem(Mordex.Windows.Navigation.NavigationItem)">
+            <summary>
+            Displays a textbox control over the item's area to let the user rename the item. 
+            </summary>
+            <param name="item">The NavigationItem to be renamed</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.RenameGroup(Mordex.Windows.Navigation.NavigationGroup)">
+            <summary>
+            Displays a textbox control over the group's header area to let the user rename the group.
+            </summary>
+            <param name="group">The NavigationGroup to be renamed.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnLeave(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.Leave event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            Processes a dialog key.
+            </summary>
+            <param name="key">One of the System.Windows.Forms.Keys values that represents the key to process.</param>
+            <returns>true if the key was processed by the control; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnMouseWheel(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Overrides Control.OnMouseWheel
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnFontChanged(System.EventArgs)">
+            <summary>
+            Overrides Control.OnFontChanged
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseDown event.
+            </summary>
+            <param name="e">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseUp event.
+            </summary>
+            <param name="e">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ShouldSerializeFlatBorderColor">
+            <summary>
+            Gets a value indicating whether the FlatBorderColor property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ResetFlatBorderColor">
+            <summary>
+            Resets the FlatBorderColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.CreateAccessibilityInstance">
+            <summary>
+            Overrides Control.CreateAccessibilityInstance
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.EnsureVisible(Mordex.Windows.Navigation.NavigationItem)">
+            <summary>
+            Ensures that the specified item is visible within the NavigationBar , scrolling the contents of the control if necessary.
+            </summary>
+            <param name="item">The NavigationItem to scroll into view.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.Paint event.
+            </summary>
+            <param name="e">A System.Windows.Forms.PaintEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnResize(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.Resize event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnPaintBackground(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.PaintBackground event.
+            </summary>
+            <param name="e">A System.Windows.Forms.PintEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ShouldSerializeSmallImageSize">
+            <summary>
+            Gets a value indicating whether the SmallImageSize property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ResetSmallImageSize">
+            <summary>
+            Resets the SmallImageSize property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ShouldSerializeLargeImageSize">
+            <summary>
+            Gets a value indicating whether the LargeImageSize property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ResetLargeImageSize">
+            <summary>
+            Resets the LargeImageSize property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.FindLayout(System.String)">
+            <summary>
+            Finds the first layout with the key specified in the layout hierarchy.
+            </summary>
+            <param name="key">A String that specifies the key to search.</param>
+            <returns>The first layout which key is equal to the key specified or null if no layout is found.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnSelectingGroup(Mordex.Windows.Navigation.GroupCancelEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.Navigation.MxNavigationBar.SelectingGroup event.
+            </summary>
+            <param name="e">A Mordex.Windows.Navigation.GroupCancelEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnGroupSelected(System.EventArgs)">
+            <summary>
+            Raises the Mordex.Windows.Navigation.MxNavigationBar.GroupSelected event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnSelectingItem(Mordex.Windows.Navigation.ItemCancelEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.Navigation.MxNavigationBar.SelectingItem event.
+            </summary>
+            <param name="e">A Mordex.Windows.Navigation.ItemCancelEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnItemSelected(System.EventArgs)">
+            <summary>
+            Raises the Mordex.Windows.Navigation.MxNavigationBar.ItemSelected event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnItemClick(Mordex.Windows.Navigation.ItemEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.Navigation.MxNavigationBar.ItemClick event.
+            </summary>
+            <param name="e">A Mordex.Windows.Navigation.ItemEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnGroupClick(Mordex.Windows.Navigation.GroupEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.Navigation.MxNavigationBar.GroupClick event.
+            </summary>
+            <param name="e">A Mordex.Windows.Navigation.GroupEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnGroupRenamed(Mordex.Windows.Navigation.GroupEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.Navigation.MxNavigationBar.GroupRenamed event.
+            </summary>
+            <param name="e">A Mordex.Windows.Navigation.GroupEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnItemRenamed(Mordex.Windows.Navigation.ItemEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.Navigation.MxNavigationBar.ItemRenamed event.
+            </summary>
+            <param name="e">A Mordex.Windows.Navigation.ItemEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnDrawNavigationBarArea(Mordex.Windows.Navigation.DrawNavigationBarAreaEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.Navigation.MxNavigationBar.DrawNavigationBarAreaEventArgs event.
+            </summary>
+            <param name="e">A Mordex.Windows.Navigation.DrawNavigationBarAreaEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnLayoutLoad(System.EventArgs)">
+            <summary>
+            Raises the LayoutLoad event.
+            </summary>
+            <param name="e">An EventArgs that contain the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnCurrentLayoutChanged(System.EventArgs)">
+            <summary>
+            Raises the CurrentLayoutChanged event.
+            </summary>
+            <param name="e">A CancelEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnCurrentLayoutChanging(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Raises the CurrentLayoutChanging event.
+            </summary>
+            <param name="e">A CancelEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.OnSystemColorsChanged(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.SystemColorsChanged.Paint event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ProcessMnemonic(System.Char)">
+            <summary>
+            Overrides Control.ProcessMnemonic
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ResetBlendColor">
+            <summary>
+            Resets the BlendColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ShouldSerializeBlendColor">
+            <summary>
+            Gets a value indicating whether the BlendColor property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ShouldSerializeGroupsFormatStyle">
+            <summary>
+            Gets a value indicating whether the GroupsFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ResetGroupsFormatStyle">
+            <summary>
+            Resets the GroupsFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ShouldSerializeGroupsBackgroundFormatStyle">
+            <summary>
+            Gets a value indicating whether the GroupsBackgroundFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ResetGroupsBackgroundFormatStyle">
+            <summary>
+            Resets the GroupsBackgroundFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ShouldSerializeItemsFormatStyle">
+            <summary>
+            Gets a value indicating whether the ItemsFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ResetItemsFormatStyle">
+            <summary>
+            Resets the ItemsFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ShouldSerializeSelectedItemFormatStyle">
+            <summary>
+            Gets a value indicating whether the SelectedItemFormatStyle property should be persisted.
+            </summary>
+            <returns>Gets a value indicating whether the ItemsFormatStyle property should be persisted.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ResetSelectedItemFormatStyle">
+            <summary>
+            Resets the SelectedItemFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ShouldSerializeHoverItemFormatStyle">
+            <summary>
+            Gets a value indicating whether the HoverItemFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ResetHoverItemFormatStyle">
+            <summary>
+            Resets the HoverItemFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ShouldSerializeHoverGroupFormatStyle">
+            <summary>
+            Gets a value indicating whether the HoverGroupFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.MxNavigationBar.ResetHoverGroupFormatStyle">
+            <summary>
+            Resets the HoverGroupFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.SaveSettings">
+            <summary>
+            Gets or sets a value indicating whether the control should automatically persist its application settings properties.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.SettingsKey">
+            <summary>
+            Gets or sets the value of the application settings key for the current instance of the control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.UnfoldEffect">
+            <summary>
+            Gets or sets a value specifying which effect is used when groups are expanded/collapsed.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.Layouts">
+            <summary>
+            Gets the collection of NavigationBarLayout objects in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.CurrentLayout">
+            <summary>
+            Gets or sets the current NavigationBarLayout.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.DragStyle">
+            <summary>
+            Gets or sets a velue specifying how the drop target will be represented in a drag operation.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.KeepSelection">
+            <summary>
+            Gets or sets a value indicating if the NavigationItem appears sunken while its selected.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.Site">
+            <summary>
+            Overrides Component.Site
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.SmallImageList">
+            <summary>
+            Gets or sets the ImageList that contains the Image objects used by the NavigationGroup objects and NavigationItem objects with small icons.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.ScrollLocation">
+            <summary>
+            Gets or sets a value indicating the location of the scroll buttons in the NavigationBar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.LargeImageList">
+            <summary>
+            Gets or sets the ImageList that contains the Image objects to use when displaying NavigationItems as large icons in the NavigationBar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.HeaderGroupVisible">
+            <summary>
+            Gets or sets a value indicating whether the header of the groups are visible.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.DefaultGroupImageIndex">
+            <summary>
+            Gets or sets a value specifying the default image list index value of the image displayed in the groups.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.DefaultGroupImageKey">
+            <summary>
+            Gets or sets a value specifying the default key accessor for the image in the ImageList displayed in the groups.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.DefaultItemSmallImageIndex">
+            <summary>
+            Gets or sets a value specifying the default image list index value of the image displayed by the items when thy are in small icons view.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.DefaultItemSmallImageKey">
+            <summary>
+            Gets or sets a value specifying the default key accessor for the image in the ImageList displayed by the items when thy are in small icons view.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.DefaultItemLargeImageIndex">
+            <summary>
+            Gets or sets a value specifying the default image list index value of the image displayed by the items when thy are in large icons view.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.DefaultItemLargeImageKey">
+            <summary>
+            Gets or sets a value specifying the default key accessor for the image in the ImageList displayed by the items when thy are in large icons view.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.DropLineColor">
+            <summary>
+            Gets or sets a value specifying the color of the line indicating the drop target.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.ShowToolTips">
+            <summary>
+            Gets or sets a value indicating whether a ToolTip is shown when the mouse passes over a group or item.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.UseCompatibleTextRendering">
+            <summary>
+            Gets or sets a value specifying whether the text rendering should be compatible with previous release of Windows Forms.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.UseMnemonic">
+            <summary>
+            Gets or sets a value indicating whether an ampersand is included in the text of the control. 
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.AllowDragGroups">
+            <summary>
+            Gets or sets a value indicating whether the user can drag groups to change their position in the NavigationBar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.OwnerDrawnArea">
+            <summary>
+            Gets or sets a value specifying which area of a NavigationBar control needs to be drawn manually.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.Groups">
+            <summary>
+            Gets an object representing the collection of the NavigationGroup objects contained in this NavigationBar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.FlatBorderColor">
+            <summary>
+            Gets or sets the color of the border of the control and headers when its border style is flat.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.SelectedItem">
+            <summary>
+            Gets or sets the NavigationItem object currently selected.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.DragMode">
+            <summary>
+            Gets or sets a value that indicates how the control handles an item drag operation.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.SelectedGroup">
+            <summary>
+            Get or sets the NavigationGroup object currently selected.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.GroupAppearance">
+            <summary>
+            Gets or sets the value that determines the appearance of the groups' headers in the NavigationBar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.BorderStyle">
+            <summary>
+            Gets or sets the NavigationBar's border style.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.DefaultBlend">
+            <summary>
+            Gets or sets a value indicating the default percentage of the BlendColor to use with the NavigationBarFormatStyle objects associated with this NavigationBar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.Orientation">
+            <summary>
+            Gets or sets a value specifying the orientation of the NavigationBar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.SmallImageSize">
+            <summary>
+            Gets or sets a System.Drawing.Size that determines the size that images will have when drawing a group or an item in small icons view.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.LargeImageSize">
+            <summary>
+            Gets or sets a System.Drawing.Size that determines the size that images will have when drawing an item in large icons view.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.ShadowOnHover">
+            <summary>
+            Gets or sets a value indicating whether the image of the items should be painted with a shadow when the mouse hovers over them.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.Navigation.MxNavigationBar.SelectingGroup">
+            <summary>
+            Occurs when a new NavigationGroup is about to be selected by either a programmatic modification or user interaction.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.Navigation.MxNavigationBar.GroupSelected">
+            <summary>
+            Occurs when a new NavigationGroup is selected by either a programmatic modification or user interaction.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.Navigation.MxNavigationBar.SelectingItem">
+            <summary>
+            Occurs when a new NavigationItem is about to be selected by either a programmatic modification or user interaction.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.Navigation.MxNavigationBar.ItemSelected">
+            <summary>
+            Occurs when a new NavigationItem is selected by either a programmatic modification or user interaction.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.Navigation.MxNavigationBar.ItemClick">
+            <summary>
+            Occurs when the user clicks on a NavigationItem.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.Navigation.MxNavigationBar.GroupClick">
+            <summary>
+            Occurs when the user clicks on a NavigationGroup.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.Navigation.MxNavigationBar.GroupRenamed">
+            <summary>
+            Occurs when the user renames a NavigationGroup.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.Navigation.MxNavigationBar.ItemRenamed">
+            <summary>
+            Occurs when the user renames a NavigationItem.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.Navigation.MxNavigationBar.DrawNavigationBarArea">
+            <summary>
+            Occurs when a visual owner draw area needs to be painted.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.Navigation.MxNavigationBar.LayoutLoad">
+            <summary>
+            Occurs after a layout is loaded.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.Navigation.MxNavigationBar.CurrentLayoutChanged">
+            <summary>
+            Occurs after the CurrentLayout property has changed.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.Navigation.MxNavigationBar.CurrentLayoutChanging">
+            <summary>
+            Occurs after the CurrentLayout property changes.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.BackgroundImageDrawMode">
+            <summary>
+            Gets or sets a value specifying how the background image of the NavigationBar is drawn.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.SelectionArea">
+            <summary>
+            Gets or sets a value specifying which part of the NavigationItem objects will be selected when the mouse pointer moves over them.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.ItemAppearance">
+            <summary>
+            Gets or set a value indicating the appearance of the NavigationItem objects in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.BlendColor">
+            <summary>
+            Gets or sets the color that blends with the BackColor and BackColorGradient properties of the NavigationBarFormatStyle when its Blend or BlendGradient properties are not zero.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.GroupsStateStyles">
+            <summary>
+            Gets the TaskPaneStateStyles that holds the format styles used to draw the groups' header in their different states.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.GroupsFormatStyle">
+            <summary>
+            Returns the NavigationBarFormatStyle object used to draw the groups' header in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.GroupsBackgroundFormatStyle">
+            <summary>
+            Returns the NavigationBarFormatStyle object used to draw the groups' background in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.ItemsStateStyles">
+            <summary>
+            Gets the TaskPaneStateStyles that holds the format styles used to draw the items in their different states.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.ItemsFormatStyle">
+            <summary>
+            Returns the NavigationBarFormatStyle object used to draw the items in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.SelectedItemFormatStyle">
+            <summary>
+            Returns the NavigationBarFormatStyle object used to draw the selected item in the NavigationBar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.HoverItemFormatStyle">
+            <summary>
+            Returns the NavigationBarFormatStyle object used to draw the items in the NavigationBar control when the mouse is over them.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.HoverGroupFormatStyle">
+            <summary>
+            Returns the NavigationBarFormatStyle object used to draw the groups' header in the NavigationBar control when the mouse is over them.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.Alpha">
+            <summary>
+            Gets or sets a value specifying the level of alpha (transparency) used to draw the objects in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.AlphaMode">
+            <summary>
+            Gets or sets a value specifying the level of alpha to use in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.BackColorAlphaMode">
+            <summary>
+            Gets or sets a value specifying the level of alpha (transparency) to use in the background.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.MxNavigationBar.ForeColorAlphaMode">
+            <summary>
+            Gets or sets a value specifying the level of alpha (transparency) to use in the foreground.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.NavigationBarContainerControl">
+            <summary>
+            Summary description for NavigationBarContainerControl.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarContainerControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarContainerControl.#ctor">
+            <summary>
+            Initialize a new instance of the NavigationBarContainerControl class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarContainerControl.OnPaintBackground(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.PaintBackground event.
+            </summary>
+            <param name="e">A System.Windows.Forms.PaintEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarContainerControl.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.Paint event.
+            </summary>
+            <param name="e">A System.Windows.Forms.PaintEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarContainerControl.OnVisibleChanged(System.EventArgs)">
+            <summary>
+            See Control.OnVisibleChanged
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarContainerControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarContainerControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarContainerControl.NavigationBar">
+            <summary>
+            Gets the NavigationBar control that this NavigationBarContainerControl is assigned to.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarContainerControl.Group">
+            <summary>
+            Gets the NavigationGroup control that this NavigationBarContainerControl is assigned to.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.NavigationBarFormatStyle">
+            <summary>
+            Specifies the appearance and text formatting of the NavigationBar, NavigationGroup and NavigationItem classes.
+            </summary>
+            
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarFormatStyle.AlphaEmpty">
+            <summary>
+            Represents the empty alpha value. This field is read-only.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarFormatStyle.Reset">
+            <summary>
+            Resets all the properties of this NavigationBarFormatStyle to its default values.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarFormatStyle.ShouldSerialize">
+            <summary>
+            Indicates whether the ButtonbarFormatStyle object has changed from its default value.
+            </summary>
+            <returns>true if the one of the properties of the NavigationBarFormatStyle has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarFormatStyle.#ctor(Mordex.Windows.Navigation.NavigationBarFormatStyle)">
+            <summary>
+            Initializes a new instance of the NavigationBarFormatStyle class based on the given NavigationBarFormatStyle.
+            </summary>
+            <param name="baseStyle">A NavigationBarFormatStyle which properties will be copied to create a new NavigationBarFormatStyle class.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarFormatStyle.ResetBackColor">
+            <summary>
+            Resets the BackColor property to its default color.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarFormatStyle.ShouldSerializeBackColor">
+            <summary>
+            Indicates whether the BackColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarFormatStyle.ResetForeColor">
+            <summary>
+            Resets the ForeColor property to its default color.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarFormatStyle.ShouldSerializeForeColor">
+            <summary>
+            Indicates whether the ForeColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarFormatStyle.ResetBackColorGradient">
+            <summary>
+            Resets the BackColorGradient property to its default color.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarFormatStyle.ShouldSerializeBackColorGradient">
+            <summary>
+            Indicates whether the BackColorGradient property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarFormatStyle.ShouldSerializeBackgroundGradientMode">
+            <summary>
+            Indicates whether the BackgroundGradientMode property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarFormatStyle.ResetBackgroundGradientMode">
+            <summary>
+            Resets the BackgroundGradientMode property to its default color.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarFormatStyle.NavigationBar">
+            <summary>
+            Get the NavigationBar control that this NavigationBarFormatStyle is assigned to. 
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarFormatStyle.Alpha">
+            <summary>
+            Gets or sets a value specifying the level of alpha (transparency).
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarFormatStyle.BackColor">
+            <summary>
+            Gets or sets the background color for this NavigationBarFormatStyle.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarFormatStyle.BackColorAlphaMode">
+            <summary>
+            Gets or sets a value specifying the level of alpha (transparency) to use in the background.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarFormatStyle.BackColorGradientAlphaMode">
+            <summary>
+            Gets or sets a value specifying the level of alpha (transparency) to use in the background of the second color in a linear gradient pattern.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarFormatStyle.ForeColor">
+            <summary>
+            Gets or sets the foreground color for this NavigationBarFormatStyle.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarFormatStyle.ForeColorAlphaMode">
+            <summary>
+            Gets or sets a value specifying the level of alpha (transparency) to use in the foreground.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarFormatStyle.Font">
+            <summary>
+            Gets or sets the Font object used by this NavigationBarFormatStyle.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarFormatStyle.FontBold">
+            <summary>
+            Gets or sets a value indicating whether the Font object of this NavigationBarFormatStyle is bold.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarFormatStyle.FontItalic">
+            <summary>
+            Gets or sets a value indicating whether the Font object of this NavigationBarFormatStyle is italic.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarFormatStyle.FontUnderline">
+            <summary>
+            Gets or sets a value indicating whether the Font object of this NavigationBarFormatStyle is underlined.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarFormatStyle.FontStrikeout">
+            <summary>
+            Gets or sets a value indicating whether the Font object of this NavigationBarFormatStyle specifies a horizontal line through the font.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarFormatStyle.FontName">
+            <summary>
+            Gets or sets the face name of the font used by the NavigationBarFormatSrtyle class.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarFormatStyle.FontSize">
+            <summary>
+            Gets or sets the size of the Font object used by this NavigationBarFormatStyle object.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarFormatStyle.Blend">
+            <summary>
+            Gets or sets a value indicating the percentage of the BlendColor to blend with the BackColor.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarFormatStyle.BackColorGradient">
+            <summary>
+            Gets or sets a value specifying the background color used in a linear gradient pathern.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarFormatStyle.BackgroundGradientMode">
+            <summary>
+            Gets or sets a value specifying if a linear gradient will be applied and its direction.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarFormatStyle.BlendGradient">
+            <summary>
+            Gets or sets a value indicating the percentage of the BlendColor to blend with the BackColorGradient.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.NavigationGroup">
+            <summary>
+            Represents a group in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroup.#ctor">
+            <summary>
+            Initializes a new instance of the NavigationGroup class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroup.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the NavigationGroup class and displays the assigned text on the group.
+            </summary>
+            <param name="text">The text to display on the new NavigationGroup.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroup.ShouldSerializeFormatStyle">
+            <summary>
+            Indicates whether the FormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroup.ResetFormatStyle">
+            <summary>
+            Resets the FormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroup.ShouldSerializeBackgroundFormatStyle">
+            <summary>
+            Indicates whether the BackgroundFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroup.ResetBackgroundFormatStyle">
+            <summary>
+            Resets the BackgroundFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroup.ShouldSerializeItemsFormatStyle">
+            <summary>
+            Indicates whether the ItemsFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroup.ResetItemsFormatStyle">
+            <summary>
+            Resets the ItemsFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.Cursor">
+            <summary>
+            Gets or sets the cursor that is displayed when the mouse pointer is over the group.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.Tag">
+            <summary>
+            Gets or sets an object that contains data to associate with the NavigationGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.TagString">
+            <summary>
+            Gets or sets a string that contains data to associate with the NavigationGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.Index">
+            <summary>
+            Gets the position of the NavigationGroup in the NavigationGroupCollection.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.AccessibleRole">
+            <summary>
+            Gets or sets a value representing the role that will be reported to accessibility clients.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.AccessibleName">
+            <summary>
+            Gets or sets a string representing the name that will be reported to accessibility clients.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.AccessibleDescription">
+            <summary>
+            Gets or sets a string representing the description that will be reported to accessibility clients.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.Key">
+            <summary>
+            Gets or sets a string that uniquely identifies this NavigationGroup in a collection.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.View">
+            <summary>
+            Gets or sets an object specifying how NavigationItem objects whitin this group are displayed in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.TextAlignment">
+            <summary>
+            Gets or sets the alignment of the text in the NavigationGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.ImageAlignment">
+            <summary>
+            Gets or sets the alignment of the image in the NavigationGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.Enabled">
+            <summary>
+            Gets or sets a value indicating whether the NavigationGroup is enabled.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.Visible">
+            <summary>
+            Gets or sets a value indicating whether the NavigationGroup is visble.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.Bounds">
+            <summary>
+            Gets or sets the size and location of the group in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.HeaderHeight">
+            <summary>
+            Gets the height of the header of NavigationBarBarGroup in pixels.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.Items">
+            <summary>
+            Gets a collection containing all the items in this group.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.Icon">
+            <summary>
+            Gets or sets the icon that is displayed on the NavigationGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.Image">
+            <summary>
+            Gets or sets the image that is displayed on the NavigationGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.FocusImageIndex">
+            <summary>
+            Gets or sets the image list index value of the image displayed by the NavigationGroup when the mouse moves over it.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.FocusImageKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the NavigationGroup when the mouse moves over it.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.DisabledImageIndex">
+            <summary>
+            Gets or sets the image list index value of the image displayed by the NavigationGroup when it is disabled.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.DisabledImageKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the NavigationGroup when it is disabled.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.ImageIndex">
+            <summary>
+            Gets or sets the image list index value of the image displayed by the NavigationGroup. 
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.ImageKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the NavigationGroup. 
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.Text">
+            <summary>
+            Gets or sets the text displayed on the NavigationGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.ToolTipText">
+            <summary>
+            Gets or sets the text that appears as a ToolTip for the NavigationGroup.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.Selected">
+            <summary>
+            Gets or sets a value indicating whether this NavigationGroup is selected.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.BackgroundImage">
+            <summary>
+            Gets or sets the background image displayed by the NavigationBar when this NavigationGroup is selected.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.BackGroundImageDrawMode">
+            <summary>
+            Gets or sets a value specifying how the background image is draw on the NavigationBar.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.Container">
+            <summary>
+            Gets or sets a value that indicates whether the group should act as a container for other controls.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.ContainerControl">
+            <summary>
+            Gets or sets the NavigationBarContainerControl associated to a NavigationGroup acting as container for other controls.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.NavigationBar">
+            <summary>
+            Gets the NavigationBar control that this NavigationGroup object is assigned to.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.FormatStyle">
+            <summary>
+            Gets the NavigationBarFormatStyle used to draw this NavigationGroup in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.StateStyles">
+            <summary>
+            Gets the TaskPaneStateStyles that holds the format styles used to draw the header in its different states.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.ItemsFormatStyle">
+            <summary>
+            Gets the NavigationBarFormatStyle used to draw the NavigationItem objects whitin this group.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.ItemsStateStyles">
+            <summary>
+            Gets the NavigationBarStateStyles that holds the format styles used to draw the items whitin this group in their different states.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroup.BackgroundFormatStyle">
+            <summary>
+            Gets the NavigationBarFormatStyle used to draw background of this NavigationGroup in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.NavigationGroupConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroupConverter.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroupConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroupConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.NavigationGroupCollection">
+            <summary>
+            Encapsulates a collection of NavigationGroup objects for use by the NavigationBar control.
+            </summary>
+            
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroupCollection.Contains(Mordex.Windows.Navigation.NavigationGroup)">
+            <summary>
+            Determines if the specified NavigationGroup object is a member of the collection.
+            </summary>
+            <param name="group">The NavigationGroup object to locate in the collection.</param>
+            <returns>true if the group is found in the NavigationGroupCollection; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroupCollection.Insert(System.Int32,Mordex.Windows.Navigation.NavigationGroup)">
+            <summary>
+            Inserts a new NavigationGroup object in the collection at the specified location.
+            </summary>
+            <param name="index">The indexed location within the collection to insert the NavigationGroup object.</param>
+            <param name="group">The NavigationGroup object to insert.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroupCollection.AddRange(Mordex.Windows.Navigation.NavigationGroup[])">
+            <summary>
+            Adds an array of type NavigationGroup to the collection.
+            </summary>
+            <param name="groups">An array of NavigationGroup objects to add to the collection.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroupCollection.Add(Mordex.Windows.Navigation.NavigationGroup)">
+            <summary>
+            Adds the NavigationGroup object to the end of the NavigationGroupCollection.
+            </summary>
+            <param name="group">The NavigationGroup to be added after all existing groups.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroupCollection.Add(System.String)">
+            <summary>
+            Creates a new NavigationGroup using the specified value and adds it to the end of the NavigationGroupCollection.
+            </summary>
+            <param name="text">The text of the new NavigationGroup.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroupCollection.Remove(Mordex.Windows.Navigation.NavigationGroup)">
+            <summary>
+            Removes a given NavigationGroup from the collection.
+            </summary>
+            <param name="group">The NavigationGroup object to remove from the collection.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroupCollection.OnClear">
+            <summary>
+            Performs additional custom processes when clearing the contents of the NavigationGroupCollection class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationGroupCollection.OnClearComplete">
+            <summary>
+            Performs additional custom processes after clearing the contents of the NavigationGroupCollection class.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroupCollection.Item(System.String)">
+            <summary>
+            Gets the NavigationGroup object with the specified key in the NavigationGroupCollection.
+            </summary>
+            <param name="key">The key of the NavigationGroup in the collection.</param>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationGroupCollection.Item(System.Int32)">
+            <summary>
+            Gets the NavigationGroup object at the specified indexed location in the NavigationGroupCollection.
+            </summary>
+            <param name="index">The indexed location of the NavigationGroup in the collection.</param>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.NavigationItem">
+            <summary>
+            Represents a item in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItem.#ctor">
+            <summary>
+            Initializes a new intance of the NavigationItem class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItem.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the NavigationItem class and displays the assigned text on the item.
+            </summary>
+            <param name="text">The text of the new NavigationItem.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItem.#ctor(System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the NavigationItem class and sets the Text and SmallImageIndex properties to the specified values.
+            </summary>
+            <param name="text">The text of the new NavigationItem.</param>
+            <param name="smallImageIndex">The image list index value of the image displayed when the item is in small icons view.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItem.InvokeOnClick">
+            <summary>
+            Raises the ItemClick event
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItem.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the NavigationItem class and sets the Text, SmallImageIndex and LargeImageIndex properties to the specified values.
+            </summary>
+            <param name="text">The text of the new NavigationItem.</param>
+            <param name="smallImageIndex">The image list index value of the image displayed when the item is in small icons view.</param>
+            <param name="largeImageIndex">The image list index value of the image displayed when the item is in large icons view.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItem.ShouldSerializeFormatStyle">
+            <summary>
+            Indicates whether the FormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItem.ResetFormatStyle">
+            <summary>
+            Resets the FormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItem.OnClick(Mordex.Windows.Navigation.ItemEventArgs)">
+            <summary>
+            Raises the Mordex.Windows.Navigation.NavigationItem.Click event
+            </summary>
+            <param name="e">A ItemEventArgs that contains the event data</param>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.Cursor">
+            <summary>
+            Gets or sets the cursor that is displayed when the mouse pointer is over the item.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.AccessibleRole">
+            <summary>
+            Gets or sets a value representing the role that will be reported to accessibility clients.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.AccessibleName">
+            <summary>
+            Gets or sets a string representing the name that will be reported to accessibility clients.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.AccessibleDescription">
+            <summary>
+            Gets or sets a string representing the description that will be reported to accessibility clients.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.Key">
+            <summary>
+            Gets or sets a string that uniquely identifies this NavigationItem in a collection.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.Tag">
+            <summary>
+            Gets or sets an object that contains data to associate with the NavigationItem.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.TagString">
+            <summary>
+            Gets or sets a string that contains data to associate with the NavigationItem.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.Text">
+            <summary>
+            Gets or sets the text displayed on the NavigationItem.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.ToolTipText">
+            <summary>
+            Gets or sets the text that appears as a ToolTip for the NavigationItem.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.Index">
+            <summary>
+            Gets the position of the NavigationItem in the NavigationItemCollection.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.Enabled">
+            <summary>
+            Gets or sets a value indicating whether the NavigationItem is enabled.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.Visible">
+            <summary>
+            Gets or sets a value indicating whether the NavigationItem is visible.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.ImageAlignment">
+            <summary>
+            Gets or sets the alignment of the image in the NavigationItem.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.TextAlignment">
+            <summary>
+            Gets or sets the alignment of the text in the NavigationItem.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.Bounds">
+            <summary>
+            Gets or sets the size and location of the item in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.Icon">
+            <summary>
+            Gets or sets the icon that is displayed on the NavigationItem.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.Image">
+            <summary>
+            Gets or sets the image that is displayed on the NavigationItem.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.LargeImageIndex">
+            <summary>
+            Gets or sets the image list index value of the image displayed by the NavigationItem when it is in large icons view.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.LargeImageKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the NavigationItem when it is in large icons view.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.LargeImageDisabledIndex">
+            <summary>
+            Gets or sets the image list index value of the image displayed by the NavigationItem when it is in large icons view and disabled.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.LargeImageDisabledKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the NavigationItem when it is in large icons view and disabled.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.LargeImageFocusIndex">
+            <summary>
+            Gets or sets the image list index value of the image displayed by the NavigationItem when it is in large icons view and the mouse is over it.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.LargeImageFocusKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the NavigationItem when it is in large icons view and the mouse is over it.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.SmallImageDisabledIndex">
+            <summary>
+            Gets or sets the image list index value of the image displayed by the NavigationItem when it is in small icons view and disabled.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.SmallImageDisabledKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the NavigationItem when it is in small icons view and disabled.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.SmallImageFocusIndex">
+            <summary>
+            Gets or sets the image list index value of the image displayed by the NavigationItem when it is in small icons view and the mouse is over it.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.SmallImageFocusKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the NavigationItem when it is in small icons view and the mouse is over it.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.SmallImageIndex">
+            <summary>
+            Gets or sets the image list index value of the image displayed by the NavigationItem when it is in small view.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.SmallImageKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the NavigationItem when it is in small view.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.Selected">
+            <summary>
+            Gets a value indicating whether this NavigationItem is selected.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.NavigationBar">
+            <summary>
+            Gets the NavigationBar control that this NavigationItem object is assigned to.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.Group">
+            <summary>
+            Gets the NavigationGroup object that this NavigationItem is assigned to.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.StateStyles">
+            <summary>
+            Gets the TaskPaneStateStyles that holds the format styles used to draw the item in its different states.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItem.FormatStyle">
+            <summary>
+            Gets the NavigationBarFormatStyle object used to draw this item in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="E:Mordex.Windows.Navigation.NavigationItem.Click">
+            <summary>
+            Occurs when the NavigationItem is clicked.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.NavigationItemConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItemConverter.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItemConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItemConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.NavigationItemCollection">
+            <summary>
+            Represents a collection of NavigationItem objects.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItemCollection.OnClear">
+            <summary>
+            Performs additional custom processes when clearing the contents of the NavigationItemCollection class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItemCollection.OnClearComplete">
+            <summary>
+            Performs additional custom processes after clearing the contents of the NavigationGroupCollection class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItemCollection.Contains(Mordex.Windows.Navigation.NavigationItem)">
+            <summary>
+            Determines if the specified NavigationItem object is a member of the collection.
+            </summary>
+            <param name="item">The NavigationItem object to locate in the collection.</param>
+            <returns>true if the item is found in the NavigationItemCollection; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItemCollection.Insert(System.Int32,Mordex.Windows.Navigation.NavigationItem)">
+            <summary>
+            Inserts a new NavigationItem object in the NavigationItemCollection at the specified location.
+            </summary>
+            <param name="index">The indexed location within the collection to insert the NavigationItem object.</param>
+            <param name="item">The NavigationItem object to insert.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItemCollection.RemoveAt(System.Int32)">
+            <summary>
+            Removes the NavigationItem at the specified index of the collection.
+            </summary>
+            <param name="index">The indexed location of the NavigationItem object in the collection.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItemCollection.Remove(Mordex.Windows.Navigation.NavigationItem)">
+            <summary>
+            Removes a given NavigationItem from the collection.
+            </summary>
+            <param name="item">The NavigationItem object to remove from the collection.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItemCollection.Clear">
+            <summary>
+            Overrides CollectionBase.Clear
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItemCollection.Add(Mordex.Windows.Navigation.NavigationItem)">
+            <summary>
+            Adds a new NavigationItem object to the end of the NavigationItemCollection.
+            </summary>
+            <param name="item">The NavigationItem to be added after all existing items.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItemCollection.AddRange(Mordex.Windows.Navigation.NavigationItem[])">
+            <summary>
+            Adds an array of NavigationItem objects to the collection.
+            </summary>
+            <param name="items">An array of NavigationItem objects to add to the collection.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItemCollection.Add(System.String)">
+            <summary>
+            Creates a new NavigationItem using the specified value and adds it to the end of the NavigationItemCollection.
+            </summary>
+            <param name="text">The text of the new NavigationItem.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationItemCollection.Add(System.String,System.Int32)">
+            <summary>
+            Creates a new NavigationItem using the specified values and adds it to the end of the NavigationItemCollection. 
+            </summary>
+            <param name="text">The text of the new NavigationItem.</param>
+            <param name="imageIndex">The index for the SmallImageIndex property of the new NavigationItem.</param>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItemCollection.Item(System.Int32)">
+            <summary>
+            Gets the NavigationItem  object at the specified indexed location in the NavigationItemCollection.
+            </summary>
+            <param name="index">The indexed location of the NavigationItem in the collection.</param>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationItemCollection.Item(System.String)">
+            <summary>
+            Gets the NavigationItem object with the specified key in the NavigationItemCollection.
+            </summary>
+            <param name="key">The key of the NavigationItem in the collection.</param>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.NavigationBarLayout">
+            <summary>
+            Contains persisted properties of a NavigationBar control.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayout.FromStream(System.IO.Stream)">
+            <summary>
+            Creates an NavigationBarLayout object from the specified data stream.
+            </summary>
+            <param name="stream">A Stream object that contains the data for this NavigationBarLayout object.</param>
+            <returns>The NavigationBarLayout object created.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayout.FromXMLString(System.String)">
+            <summary>
+            Creates an NavigationBarLayout object from the specified string.
+            </summary>
+            <param name="xmlString">A string that contains the data for this NavigationBarLayout object.</param>
+            <returns>The NavigationBarLayout object created.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayout.FromXMLReader(System.Xml.XmlReader)">
+            <summary>
+            Creates an NavigationBarLayout object from the specified Xml reader.
+            </summary>
+            <param name="xmlReader">An XmlReader object that contains the data for this NavigationBarLayout object.</param>
+            <returns>The NavigationBarLayout object created.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayout.#ctor">
+            <summary>
+            Initializes a new instance of tho NavigationBarLayout class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayout.Update">
+            <summary>
+            Updates the layout with the changes in the NavigationBar properties when it is the current layout.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayout.Save(System.IO.Stream)">
+            <summary>
+            Saves this NavigationBarLayout object to the specified Stream object.
+            </summary>
+            <param name="stream">The Stream object to which to save this NavigationBarLayout object.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayout.Save(System.Xml.XmlWriter)">
+            <summary>
+            Saves this NavigationBarLayout object to the specified XmlWriter object.
+            </summary>
+            <param name="xmlWriter">The XmlWriter object to which to save this NavigationBarLayout object.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayout.GetXmlString">
+            <summary>
+            Saves this NavigationBarLayout object as an Xml string.
+            </summary>
+            <returns>A Xml string containing the NavigationBarLayout object persisted properties.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayout.Clone">
+            <summary>
+            Creates a new object that is a copy of the current instance.
+            </summary>
+            <returns>A NavigationBarLayout that is the copy of the current instance.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayout.CloneLayout(System.Boolean)">
+            <summary>
+            Creates a new object that is a copy of the current instance.
+            </summary>
+            <param name="includeChildren">A Boolean that specifies whether the ChildLayouts are copied or not.</param>
+            <returns>A NavigationBarLayout that is the copy of the current instance.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayout.IsDirty">
+            <summary>
+            Indicates whether the properties in the NavigationBar control differ from the persisted information.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayout.ConvertToStandAlone">
+            <summary>
+            Creates a new NavigationBarLayout that can be used as a stand alone layout.
+            </summary>
+            <returns>A NavigationBarLayout that can be used a stand alone layout</returns>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarLayout.ParentLayout">
+            <summary>
+            Gets the parent NavigationBarLayout instance.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarLayout.Key">
+            <summary>
+            Gets or sets the key used to identify an object in a collection.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarLayout.Tag">
+            <summary>
+            Gets or sets an object that contains data to associate with the field.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarLayout.LayoutString">
+            <summary>
+            Gets or sets an Xml string containing the persisted properties in a NavigationBar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarLayout.IsCurrentLayout">
+            <summary>
+            Gets or sets a value indicating whether this instance is the current layout in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarLayout.Description">
+            <summary>
+            Gets or sets a string that can be used to store an informational description in the layout.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarLayout.ChildLayouts">
+            <summary>
+            Gets the collection of NavigationBarLayout objects that inherit their values from the layout.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarLayout.StandAlone">
+            <summary>
+            Gets a value that determines whether the layout is a stand alone layout or if it is a child of another layout.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarLayout.LayoutReferences">
+            <summary>
+            Design time support property.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.NavigationBarLayoutConverter">
+            <summary>
+            NavigationBarLayoutConverter class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayoutConverter.#ctor">
+            <summary>
+            Initializes a new instance of the NavigationBarLayoutConverter class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayoutConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Overrides TypeConverter.CanConvertTo
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayoutConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Overrides TypeConverter.ConvertTo
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.NavigationBarLayoutCollection">
+            <summary>
+            Summary description for NavigationBarLayoutCollection.
+            </summary>
+            
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayoutCollection.Add(Mordex.Windows.Navigation.NavigationBarLayout)">
+            <summary>
+            Appends the specified NavigationBarLayout object at the end of the collection.
+            </summary>
+            <param name="layout">The NavigationBarLayout object to add.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayoutCollection.AddRange(Mordex.Windows.Navigation.NavigationBarLayout[])">
+            <summary>
+            Copies the elements of the specified NavigationBarLayout array to the end of the collection.
+            </summary>
+            <param name="layouts">The array of NavigationBarLayout objects to add to the collection.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayoutCollection.OnInsert(System.Int32,System.Object)">
+            <summary>
+            Overrides CollectionBase.OnInsert
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayoutCollection.OnInsertComplete(System.Int32,System.Object)">
+            <summary>
+            Overrides CollectionBase.OnInsertComplete
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayoutCollection.Remove(Mordex.Windows.Navigation.NavigationBarLayout)">
+            <summary>
+            Removes the specified NavigationBarLayout object from the collection.
+            </summary>
+            <param name="layout">The NavigationBarLayout object to remove.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayoutCollection.OnRemoveComplete(System.Int32,System.Object)">
+            <summary>
+            Overrides CollectionBase.OnRemoveComplete
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayoutCollection.OnClear">
+            <summary>
+            Overrides CollectionBase.OnClear
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayoutCollection.IndexOf(Mordex.Windows.Navigation.NavigationBarLayout)">
+            <summary>
+            Retrieves the index of the specified NavigationBarLayout in the collection.
+            </summary>
+            <param name="layout">The NavigationBarLayout to locate in the collection.</param>
+            <returns>A zero-based index value that represents the position of the specified NavigationBarLayout in the collection.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayoutCollection.Contains(Mordex.Windows.Navigation.NavigationBarLayout)">
+            <summary>
+            Determines whether a NavigationBarLayout is in the collection.
+            </summary>
+            <param name="layout">The NavigationBarLayout to locate in the collection.</param>
+            <returns>true if item is found in the collection; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarLayoutCollection.Contains(System.String)">
+            <summary>
+            Determines whether a NavigationBarLayout with the specified key is in the collection.
+            </summary>
+            <param name="layoutKey">The Key of the NavigationBarLayout to locate in the collection.</param>
+            <returns>true if item is found in the collection; otherwise, false.</returns>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarLayoutCollection.Item(System.Int32)">
+            <summary>
+            Gets a NavigationBarLayout object from the collection at the specified index.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarLayoutCollection.Item(System.String)">
+            <summary>
+            Gets a NavigationBarLayout object from the collection with the specified key.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.ControlStyle">
+            <summary>
+            Summary description for ControlStyle.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Design.AboutBox">
+            <summary>
+            Summary description for Form1.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.Design.AboutBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.AboutBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.AboutBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.AboutBox.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.AboutBox.OnLoad(System.EventArgs)">
+            <summary>
+            Overrides Form.OnLoad
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Design.AutoFormatDialog">
+            <summary>
+            This class is not intended to be used directly from your code.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.AutoFormatDialog.#ctor">
+            <summary>
+            Initialize a new instance of the AutoFormatDialogClass.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.AutoFormatDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.AutoFormatDialog.OnLoad(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Form.Load event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.AutoFormatDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.Design.AutoFormatDialog.NavigationBar">
+            <summary>
+            Gets or sets the NavigationBar that this form is assigned to.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Design.FlagsEnumConverter">
+            <summary>
+            This class is not intended to be used directly from your code.
+            </summary>
+            
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.FlagsEnumConverter.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.FlagsEnumConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.FlagsEnumConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Design.FlagsEnumEditor">
+            <summary>
+            This class is not intended to be used directly from your code.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.FlagsEnumEditor.#ctor">
+            <summary>
+            Initialize a new instance of the FlagsEnumEditor class
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.FlagsEnumEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Overrides UITypeEditor.EditValue
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Design.GroupEditor">
+            <summary>
+            This class is not intended to be used directly from your code.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.GroupEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="provider"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.GroupEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Design.GroupsDesigner">
+            <summary>
+            Summary description for GroupsDesigner.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.GroupsDesigner.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.GroupsDesigner.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.GroupsDesigner.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.GroupsDesigner.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.Design.GroupsDesigner.NavigationBar">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Design.ImageEditor">
+            <summary>
+            Summary description for ImageEditor.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.ImageEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            This class is not intended to be used directly from your code.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.ImageEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.ImageEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.ImageEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Design.ImageIndexConverter">
+            <summary>
+            This class is not intended to be used directly from your code.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.ImageIndexConverter.#ctor">
+            <summary>
+            Initialize a new instance of the ImageIndexConverter.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.ImageIndexConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Overrides TypeConverter.CanConvertTo
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.ImageIndexConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Overrides TypeConverter.ConvertTo
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Design.ImageKeyConverter">
+            <summary>
+            This class is not intended to be used directly from your code.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.ImageKeyConverter.#ctor">
+            <summary>
+            Initialize a new instance of the ImageKeyConverter.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.ImageKeyConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Overrides TypeConverter.CanConvertTo
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.ImageKeyConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Overrides TypeConverter.ConvertTo
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Design.SmallImageIndexEditor">
+            <summary>
+            Provides a user interface for selecting images from an ImageList.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.SmallImageIndexEditor.#ctor">
+            <summary>
+            Initialize a new instance of the SmallImageIndexEditor.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.SmallImageIndexEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Overrides UITypeEditor.EditValue
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.SmallImageIndexEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Overrides UITypeEditor.GetEditStyle
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.SmallImageIndexEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Overrides UITypeEditor.GetPaintValueSupported
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.SmallImageIndexEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)">
+            <summary>
+            Overrides UITypeEditor.GetPaintValueSupported
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Design.LargeImageIndexEditor">
+            <summary>
+            Provides a user interface for selecting images from an ImageList.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.LargeImageIndexEditor.#ctor">
+            <summary>
+            Initialize a new instance of the LargeImageIndexEditor.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.LargeImageIndexEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Overrides UITypeEditor.EditValue
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.LargeImageIndexEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Overrides UITypeEditor.GetEditStyle
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.LargeImageIndexEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Overrides UITypeEditor.GetPaintValueSupported
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.LargeImageIndexEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)">
+            <summary>
+            Overrides UITypeEditor.PaintValue
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Design.SmallImageKeyEditor">
+            <summary>
+            Provides a user interface for selecting images from an ImageList.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.SmallImageKeyEditor.#ctor">
+            <summary>
+            Initialize a new instance of the SmallImageKeyEditor.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.SmallImageKeyEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Overrides UITypeEditor.EditValue
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.SmallImageKeyEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Overrides UITypeEditor.GetEditStyle
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.SmallImageKeyEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Overrides UITypeEditor.GetPaintValueSupported
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.SmallImageKeyEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)">
+            <summary>
+            Overrides UITypeEditor.GetPaintValueSupported
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Design.LargeImageKeyEditor">
+            <summary>
+            Provides a user interface for selecting images from an ImageList.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.LargeImageKeyEditor.#ctor">
+            <summary>
+            Initialize a new instance of the LargeImageKeyEditor.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.LargeImageKeyEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Overrides UITypeEditor.EditValue
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.LargeImageKeyEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Overrides UITypeEditor.GetEditStyle
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.LargeImageKeyEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Overrides UITypeEditor.GetPaintValueSupported
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.LargeImageKeyEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)">
+            <summary>
+            Overrides UITypeEditor.PaintValue
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Design.LayoutNameDialog">
+            <summary>
+            Summary description for LayoutNameDialog.
+            </summary>
+            
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Design.LayoutTreePage">
+            <summary>
+            Summary description for LayoutTreePage.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.LayoutTreePage.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.Design.LayoutTreePage.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.AlphaMode">
+            <summary>
+            Specifies the alpha level to use.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.AlphaMode.Empty">
+            <summary>
+            Indicates that the value for this property should be inherited from the parent object.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.AlphaMode.Opaque">
+            <summary>
+            Indicates an alpha level of 255.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.AlphaMode.Transparent">
+            <summary>
+            Indicates an alpha level of 0.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.AlphaMode.UseAlpha">
+            <summary>
+            Use the value of the Alpha property.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.UnfoldEffect">
+            <summary>
+            Specifies which effect is used when groups are expanded/collapsed.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.UnfoldEffect.Slide">
+            <summary>
+            Groups are expanded/collapsed using smoth scrolling.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.UnfoldEffect.None">
+            <summary>
+            No effect is used when a group is expanded/collapsed
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.OwnerDrawnArea">
+            <summary>
+            Specifies which area of a NavigationBar control needs to be drawn manually.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.OwnerDrawnArea.None">
+            <summary>
+            The control won't be drawn manually.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.OwnerDrawnArea.Background">
+            <summary>
+            Specifies that the area to be manually drawn is the control's background.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.OwnerDrawnArea.GroupHeader">
+            <summary>
+            Specifies that the area to be manually drawn is the header of the groups.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.OwnerDrawnArea.GroupBackground">
+            <summary>
+            Specifies that the area to be manually drawn is the background of the groups.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.OwnerDrawnArea.Items">
+            <summary>
+            Specifies that the area to be manually drawn are the NavigationItem ojects of the control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.OwnerDrawnArea.All">
+            <summary>
+            All flags except None are set.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.NavigationBarArea">
+            <summary>
+            Specifies the type of an area in a NavigationBar control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarArea.Background">
+            <summary>
+            Represents the background of the NavigationBar control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarArea.GroupHeader">
+            <summary>
+            Represents the header of a NavigationGroup.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarArea.GroupBackground">
+            <summary>
+            Represents the background of a NavigationGroup.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarArea.Item">
+            <summary>
+            Represents a NavigationItem.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.TriState">
+            <summary>
+            Represents a boolean value for a property that can inherit its value from a base or parent object.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.TriState.Empty">
+            <summary>
+            Indicates that the value for this property should be inherited from the parent object.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.TriState.False">
+            <summary>
+            Specifies that False should be used in a property ignoring settings in the parent object.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.TriState.True">
+            <summary>
+            Specifies that True should be used in a property ignoring settings in the parent object.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.BackgroundGradientMode">
+            <summary>
+            Specifies how the background of an object will be filled.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.BackgroundGradientMode.Empty">
+            <summary>
+            Indicates that the value for this property should be inherited from the parent object.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.BackgroundGradientMode.Solid">
+            <summary>
+            Specifies a solid background.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.BackgroundGradientMode.Horizontal">
+            <summary>
+            Specifies a gradient from left to right.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.BackgroundGradientMode.Vertical">
+            <summary>
+            Specifies a gradient from top to bottom.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.BackgroundGradientMode.Diagonal">
+            <summary>
+            Specifies a gradient from upper left to lower right.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.BackgroundGradientMode.DiagonalBackwards">
+            <summary>
+            Specifies a gradient from upper right to lower left.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.NavigationBarStyle">
+            <summary>
+            Specifies which apperance style a NavigationBar is formatted after.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarStyle.Default">
+            <summary>
+            Unspecified. The value of the property is inherited from the settings specified in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarStyle.OfficeXP">
+            <summary>
+            The NavigationBar control is formatted as the Bar used in Office XP.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarStyle.Office2000">
+            <summary>
+            The NavigationBar control is formatted as the Bar used in Office 2000.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarStyle.OutlookExpress">
+            <summary>
+            The NavigationBar control is formatted as the Bar used in Outlook Express.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarStyle.VisualStudio">
+            <summary>
+            The NavigationBar control is formatted as the Bar used in Visual Studio .Net.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarStyle.CommonDialog">
+            <summary>
+            The NavigationBar control is formatted as the Bar used in Windows Common Dialogs.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarStyle.Office2003">
+            <summary>
+            The NavigationBar control is formatted as the controls in Office 2003.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarStyle.VS2005">
+            <summary>
+            The NavigationBar control is formatted as its related control in VS 2005.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarStyle.Office2007">
+            <summary>
+            The NavigationBar control is formatted as its related control in Office 2007.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarStyle.Office2010">
+            <summary>
+            The NavigationBar control is formatted as its related control in Office 2010.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarStyle.VS2010">
+            <summary>
+            The NavigationBar control is formatted as its related control in VS 2010.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.ImageDrawMode">
+            <summary>
+            Specifies how the background image is positioned within the NavigationBar.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.ImageDrawMode.Stretched">
+            <summary>
+            The image is stretched or shrunk to fit the size of the NavigationBar.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.ImageDrawMode.Tiled">
+            <summary>
+            The image is tiled.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.ImageDrawMode.Centered">
+            <summary>
+            The image is displayed in the center if the NavigationBar is larger than the image. If the image is larger than the NavigationBar, the picture is placed in the center of the NavigationBar and the outside edges are clipped.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.DragMode">
+            <summary>
+            Specifies how the control handles an item drag operation.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.DragMode.Manual">
+            <summary>
+            Drag can only be done in code using DoDragDrop method.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.DragMode.Automatic">
+            <summary>
+            The NavigationBar control handles the drag operation allowing the user to move an item in the same group as well as in other groups of the same control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.DragMode.MoveInSameGroup">
+            <summary>
+            The NavigationBar control handles the drag operation allowing the user to move an item in the same group but not in other groups.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.DragMode.AutomaticNoMove">
+            <summary>
+            The NavigationBar control starts a drag operation but it doesn't allow the user to move the dragged item in the control. The drag events are handled by the developer.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.DragStyle">
+            <summary>
+            Specifies how the drop target will be represented in a drag operation.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.DragStyle.DropLine">
+            <summary>
+            A line will be representing the drop target.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.DragStyle.InvertedRect">
+            <summary>
+            The colors of item in the position of the drop target will be inverted.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.SelectionArea">
+            <summary>
+            Specifies which part of the NavigationItem objects will be selected when the mouse pointer moves over them.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.SelectionArea.Image">
+            <summary>
+            Only the boundaries of the image will be selected.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.SelectionArea.FullItem">
+            <summary>
+            All the NavigationItem, including the text, will be selected.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.ItemAppearance">
+            <summary>
+            Specifies the appearance of the NavigationItem objects.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.ItemAppearance.PopUp">
+            <summary>
+            The NavigationItem appear flat, but the items change to three-dimensional as the mouse pointer moves over them.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.ItemAppearance.Flat">
+            <summary>
+            The NavigationItem's border has no three-dimensional effects.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.NavigationBarOrientation">
+            <summary>
+            Specifies the orientation of the NavigationBar.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarOrientation.Vertical">
+            <summary>
+            The orientation of the NavigationBar will be vertical.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarOrientation.Horizontal">
+            <summary>
+            The orientation of the NavigationBar will be horizontal.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.GroupAppearance">
+            <summary>
+            Specifies the appearance of the NavigationGroup objects in the NavigationBar.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.GroupAppearance.Light3D">
+            <summary>
+            The NavigationGroup header has a raised inner edge and no outer edge.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.GroupAppearance.Standard">
+            <summary>
+            The NavigationGroup headers has raised inner and outer edges.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.GroupAppearance.Flat">
+            <summary>
+            The NavigationGroup headers has no three-dimensional effects.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.GroupAppearance.PopUp">
+            <summary>
+            The NavigationGroup header appears flat until the mouse pointer moves over it, at which point it appears three-dimensional.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.BorderStyle">
+            <summary>
+            Specify the border style for the  NavigationBar control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.BorderStyle.Light3D">
+            <summary>
+            The border has a sunken outer edge and no inner edge.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.BorderStyle.Standard">
+            <summary>
+            The border has sunken inner and outer edges.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.BorderStyle.Flat">
+            <summary>
+            The border has no three-dimensional effects.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.BorderStyle.None">
+            <summary>
+            The NavigationBar control has no border.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.HitTest">
+            <summary>
+            Determines which element of the NavigationBar control is at a specified location.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.HitTest.NavigationItem">
+            <summary>
+            A NavigationItem in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.HitTest.NavigationGroup">
+            <summary>
+            A NavigationGroup in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.HitTest.None">
+            <summary>
+            The background area, visible when the control contains few NavigationItem objects, or when the NavigationBar is scrolled to its bottom.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Alignment">
+            <summary>
+            Specifies the alignment of a text or an image relative to its layout rectangle.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.Alignment.Near">
+            <summary>
+            Specifies that the text or the image is aligned in near of the layout rectangle.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.Alignment.Center">
+            <summary>
+            Specifies that the text or the image is aligned in the center of the layout rectangle.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.Alignment.Far">
+            <summary>
+            Specifies that the text or the image is aligned far from the origin position of the layout rectangle.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.ScrollLocation">
+            <summary>
+            Specifies the location of the scroll buttons in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.ScrollLocation.GroupsLevel">
+            <summary>
+            The scroll buttons will be placed at the same level of the NavigationGroup headers.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.ScrollLocation.ItemsLevel">
+            <summary>
+            The scroll buttons will be placed inside the boundaries of the selected NavigationGroup.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.NavigationBarView">
+            <summary>
+            Specifies how NavigationItem objects are displayed in the NavigationBar control.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarView.SmallIcons">
+            <summary>
+            Each NavigationItem appears as a small icon with a label to its right.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.NavigationBarView.LargeIcons">
+            <summary>
+            Each NavigationItem appears as a full-sized icon with a label below it.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.ItemCancelEventArgs">
+            <summary>
+            Provides date for the SelectingItem event.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.ItemCancelEventArgs.Item">
+            <summary>
+            Gets the NavigationItem containig the data.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.ItemCancelEventArgs.Cancel">
+            <summary>
+            Gets or sets a value indicating whether the event should be canceled.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.GroupCancelEventArgs">
+            <summary>
+            Provides data for the SelectingGroup event.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.GroupCancelEventArgs.Group">
+            <summary>
+            Gets the NavigationGroup containing the data.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.GroupCancelEventArgs.Cancel">
+            <summary>
+            Gets or sets a value indicating whether the event should be canceled.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.DrawNavigationBarAreaEventArgs">
+            <summary>
+            Provides data for the DrawNavigationBarArea event.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.DrawNavigationBarAreaEventArgs.PaintBackground">
+            <summary>
+            Draws the background of the area being painted.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.DrawNavigationBarAreaEventArgs.Graphics">
+            <summary>
+            Gets the graphics surface to draw the NavigationBar area on.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.DrawNavigationBarAreaEventArgs.Bounds">
+            <summary>
+            Gets the rectangle that represents the bounds of the area being drawn.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.DrawNavigationBarAreaEventArgs.Group">
+            <summary>
+            Gets the NavigationGroup object being painted.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.DrawNavigationBarAreaEventArgs.Item">
+            <summary>
+            Gets the NavigationItem object being painted.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.DrawNavigationBarAreaEventArgs.BackBrush">
+            <summary>
+            Gets a Brush object that can be used to draw the background.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.DrawNavigationBarAreaEventArgs.ForeBrush">
+            <summary>
+            Gets a Brush object that can be used to draw the foreground.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.DrawNavigationBarAreaEventArgs.BackColor">
+            <summary>
+            Gets the background color of the area being draw.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.DrawNavigationBarAreaEventArgs.ForeColor">
+            <summary>
+            Gets the foreground color of the area being drawn.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.DrawNavigationBarAreaEventArgs.NavigationBarArea">
+            <summary>
+            Gets the type of the NavigationBar area being drawn.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.DrawNavigationBarAreaEventArgs.Handled">
+            <summary>
+            Gets or sets a value that specifies whether the area was drawn by the owner.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.GroupEventArgs">
+            <summary>
+            Provides data for the GroupClick event.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.GroupEventArgs.#ctor(Mordex.Windows.Navigation.NavigationGroup)">
+            <summary>
+            Initialize a new instance of the GroupEventArgs class
+            </summary>
+            <param name="group"></param>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.GroupEventArgs.Group">
+            <summary>
+            Gets the NavigationGroup containing the data.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.ItemEventArgs">
+            <summary>
+            Provides data for the ItemClick event.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.ItemEventArgs.#ctor(Mordex.Windows.Navigation.NavigationItem)">
+            <summary>
+            Initialize a new instance of the ItemEventArgs class
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.ItemEventArgs.Item">
+            <summary>
+            Gets the NavigationItem containing the data.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.ItemEventHandler">
+            <summary>
+            Represents the method that will handle the ItemClick event of the NavigationBar.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.GroupEventHandler">
+            <summary>
+            Represents the method that will handle the GroupClick event of the NavigationBar.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.GroupCancelEventHandler">
+            <summary>
+            Represents the method that will handle the SelectingGroup event of the NavigationBar.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.ItemCancelEventHandler">
+            <summary>
+            Represents the method that will handle the SelectingItem event of the NavigationBar.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.DrawNavigationBarAreaEventHandler">
+            <summary>
+            Represents the method that will handle the DrawNavigationBarArea event of the NavigationBar.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.NavigationBarStateStyles">
+            <summary>
+            Encapsulates the NavigationBarFormatStyle for the different states of an item.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarStateStyles.#ctor">
+            <summary>
+            Initialize a new instance of the NavigationBarStateStyles class.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarStateStyles.ShouldSerialize">
+            <summary>
+            Indicates whether the NavigationBarFormatStateStyle class should be persisted.
+            </summary>
+            <returns>true if the class has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.NavigationBarStateStyles.Reset">
+            <summary>
+            Resets all the property values in the object to their default values.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarStateStyles.FormatStyle">
+            <summary>
+            Gets the NavigationBarFormatStyle used to draw the items.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarStateStyles.HotFormatStyle">
+            <summary>
+            Gets the NavigationBarFormatStyle used to draw the items when the mouse is over them.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarStateStyles.DisabledFormatStyle">
+            <summary>
+            Gets the NavigationBarFormatStyle used to draw the disabled items.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarStateStyles.SelectedFormatStyle">
+            <summary>
+            Returns the NavigationBarFormatStyle object used to draw the selected items.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.NavigationBarStateStyles.PressedFormatStyle">
+            <summary>
+            Gets the NavigationBarFormatStyle used to draw the items when they are pressed or when the item is selected and the mouse is over them.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Global">
+            <summary>
+            Summary description for Global.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.ON">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.ON.#ctor(System.Object,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <param name="name"></param>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.ON.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.ON.Object">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.ON.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Internal.DrawHelper">
+            <summary>	
+               Summary description for ImageDrag.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.Internal.ThemeHeader">
+            <summary>
+            Summary description for ThemeHeader.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.ResourceFile">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.ResourceFile.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.ResourceFile.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.ResourceFile2.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Mordex.Windows.Navigation.ResourceFile2.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Mordex.Windows.Navigation.ScrollButton">
+            <summary>
+               Summary description for ScrollButton.
+            </summary>
+        </member>
+        <member name="F:Mordex.Windows.Navigation.ScrollButton.components">
+            <summary> 
+               Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.ScrollButton.Dispose(System.Boolean)">
+            <summary> 
+               Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.ScrollButton.CreateAccessibilityInstance">
+            <summary>
+            Overrides Control.CreateAccessibilityInstance
+            </summary>
+        </member>
+        <member name="M:Mordex.Windows.Navigation.ScrollButton.InitializeComponent">
+            <summary> 
+               Required method for Designer support - do not modify 
+               the contents of this method with the code editor.
+            </summary>
+            
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,97 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Mordex.Windows</PackageId>
+    <Version>$(MordexVersion)</Version>
+    <Authors>Ehsan Enaloo</Authors>
+    <Copyright>Copyright (c) 2006 - 2026 Ehsan Enaloo.</Copyright>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/ehsanenaloo/Mordex-Components</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ehsanenaloo/Mordex-Components</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Description>Mordex WinForms controls for .NET 10 with out-of-process designer support.</Description>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <IncludeSymbols>false</IncludeSymbols>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+    <NoWarn>$(NoWarn);NU5128;NU5100</NoWarn>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" PackagePath="" Visible="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Mordex.Data/Mordex.Data.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.Navigation/Mordex.Windows.Navigation.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.Navigation.Design/Mordex.Windows.Navigation.Design.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.DatePicker/Mordex.Windows.DatePicker.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.DatePicker.Design/Mordex.Windows.DatePicker.Design.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.Common/Mordex.Windows.Common.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.Common.Design/Mordex.Windows.Common.Design.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.TaskPane/Mordex.Windows.TaskPane.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.TaskPane.Design/Mordex.Windows.TaskPane.Design.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.FilterBuilder/Mordex.Windows.FilterBuilder.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.FilterBuilder.Design/Mordex.Windows.FilterBuilder.Design.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.DataGrid/Mordex.Windows.DataGrid.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.DataGrid.Design/Mordex.Windows.DataGrid.Design.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.Ribbon/Mordex.Windows.Ribbon.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.Ribbon.Design/Mordex.Windows.Ribbon.Design.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.Scheduler/Mordex.Windows.Scheduler.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.Scheduler.Design/Mordex.Windows.Scheduler.Design.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.Timeline/Mordex.Windows.Timeline.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.Timeline.Design/Mordex.Windows.Timeline.Design.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.UI/Mordex.Windows.UI.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Mordex.Windows.UI.Design/Mordex.Windows.UI.Design.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../designer/Mordex.Designer.Client/Mordex.Designer.Client.csproj" ReferenceOutputAssembly="false" SkipGetTargetFrameworkProperties="true" />
+    <ProjectReference Include="../../designer/Mordex.Designer.Server/Mordex.Designer.Server.csproj" ReferenceOutputAssembly="false" SkipGetTargetFrameworkProperties="true" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../src/Mordex.Data/bin/$(Configuration)/net10.0-windows/Mordex.Data.dll" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" />
+    <None Include="../../src/Mordex.Data/bin/$(Configuration)/net10.0-windows/Mordex.Data.xml" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" Condition="Exists('../../src/Mordex.Data/bin/$(Configuration)/net10.0-windows/Mordex.Data.xml')" />
+    <None Include="../../src/Mordex.Windows.Navigation/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Navigation.dll" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" />
+    <None Include="../../src/Mordex.Windows.Navigation/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Navigation.xml" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" Condition="Exists('../../src/Mordex.Windows.Navigation/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Navigation.xml')" />
+    <None Include="../../src/Mordex.Windows.DatePicker/bin/$(Configuration)/net10.0-windows/Mordex.Windows.DatePicker.dll" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" />
+    <None Include="../../src/Mordex.Windows.DatePicker/bin/$(Configuration)/net10.0-windows/Mordex.Windows.DatePicker.xml" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" Condition="Exists('../../src/Mordex.Windows.DatePicker/bin/$(Configuration)/net10.0-windows/Mordex.Windows.DatePicker.xml')" />
+    <None Include="../../src/Mordex.Windows.Common/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Common.dll" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" />
+    <None Include="../../src/Mordex.Windows.Common/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Common.xml" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" Condition="Exists('../../src/Mordex.Windows.Common/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Common.xml')" />
+    <None Include="../../src/Mordex.Windows.TaskPane/bin/$(Configuration)/net10.0-windows/Mordex.Windows.TaskPane.dll" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" />
+    <None Include="../../src/Mordex.Windows.TaskPane/bin/$(Configuration)/net10.0-windows/Mordex.Windows.TaskPane.xml" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" Condition="Exists('../../src/Mordex.Windows.TaskPane/bin/$(Configuration)/net10.0-windows/Mordex.Windows.TaskPane.xml')" />
+    <None Include="../../src/Mordex.Windows.FilterBuilder/bin/$(Configuration)/net10.0-windows/Mordex.Windows.FilterBuilder.dll" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" />
+    <None Include="../../src/Mordex.Windows.FilterBuilder/bin/$(Configuration)/net10.0-windows/Mordex.Windows.FilterBuilder.xml" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" Condition="Exists('../../src/Mordex.Windows.FilterBuilder/bin/$(Configuration)/net10.0-windows/Mordex.Windows.FilterBuilder.xml')" />
+    <None Include="../../src/Mordex.Windows.DataGrid/bin/$(Configuration)/net10.0-windows/Mordex.Windows.DataGrid.dll" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" />
+    <None Include="../../src/Mordex.Windows.DataGrid/bin/$(Configuration)/net10.0-windows/Mordex.Windows.DataGrid.xml" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" Condition="Exists('../../src/Mordex.Windows.DataGrid/bin/$(Configuration)/net10.0-windows/Mordex.Windows.DataGrid.xml')" />
+    <None Include="../../src/Mordex.Windows.Ribbon/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Ribbon.dll" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" />
+    <None Include="../../src/Mordex.Windows.Ribbon/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Ribbon.xml" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" Condition="Exists('../../src/Mordex.Windows.Ribbon/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Ribbon.xml')" />
+    <None Include="../../src/Mordex.Windows.Scheduler/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Scheduler.dll" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" />
+    <None Include="../../src/Mordex.Windows.Scheduler/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Scheduler.xml" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" Condition="Exists('../../src/Mordex.Windows.Scheduler/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Scheduler.xml')" />
+    <None Include="../../src/Mordex.Windows.Timeline/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Timeline.dll" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" />
+    <None Include="../../src/Mordex.Windows.Timeline/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Timeline.xml" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" Condition="Exists('../../src/Mordex.Windows.Timeline/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Timeline.xml')" />
+    <None Include="../../src/Mordex.Windows.UI/bin/$(Configuration)/net10.0-windows/Mordex.Windows.UI.dll" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" />
+    <None Include="../../src/Mordex.Windows.UI/bin/$(Configuration)/net10.0-windows/Mordex.Windows.UI.xml" Pack="true" PackagePath="lib/net10.0-windows7.0" Visible="false" Condition="Exists('../../src/Mordex.Windows.UI/bin/$(Configuration)/net10.0-windows/Mordex.Windows.UI.xml')" />
+    <None Include="../../src/Mordex.Windows.Navigation.Design/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Navigation.Design.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.DatePicker.Design/bin/$(Configuration)/net10.0-windows/Mordex.Windows.DatePicker.Design.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.Common.Design/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Common.Design.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.TaskPane.Design/bin/$(Configuration)/net10.0-windows/Mordex.Windows.TaskPane.Design.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.FilterBuilder.Design/bin/$(Configuration)/net10.0-windows/Mordex.Windows.FilterBuilder.Design.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.DataGrid.Design/bin/$(Configuration)/net10.0-windows/Mordex.Windows.DataGrid.Design.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.Ribbon.Design/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Ribbon.Design.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.Scheduler.Design/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Scheduler.Design.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.Timeline.Design/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Timeline.Design.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.UI.Design/bin/$(Configuration)/net10.0-windows/Mordex.Windows.UI.Design.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Data/bin/$(Configuration)/net10.0-windows/Mordex.Data.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.Navigation/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Navigation.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.DatePicker/bin/$(Configuration)/net10.0-windows/Mordex.Windows.DatePicker.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.Common/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Common.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.TaskPane/bin/$(Configuration)/net10.0-windows/Mordex.Windows.TaskPane.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.FilterBuilder/bin/$(Configuration)/net10.0-windows/Mordex.Windows.FilterBuilder.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.DataGrid/bin/$(Configuration)/net10.0-windows/Mordex.Windows.DataGrid.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.Ribbon/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Ribbon.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.Scheduler/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Scheduler.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.Timeline/bin/$(Configuration)/net10.0-windows/Mordex.Windows.Timeline.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../src/Mordex.Windows.UI/bin/$(Configuration)/net10.0-windows/Mordex.Windows.UI.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../designer/Mordex.Designer.Client/bin/$(Configuration)/net472/Mordex.Designer.Client.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms" Visible="false" />
+    <None Include="../../designer/Mordex.Designer.Client/bin/$(Configuration)/net472/Mordex.Designer.Protocol.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms" Visible="false" />
+    <None Include="../../designer/Mordex.Designer.Server/bin/$(Configuration)/net10.0-windows/Mordex.Designer.Server.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+    <None Include="../../designer/Mordex.Designer.Server/bin/$(Configuration)/net10.0-windows/Mordex.Designer.Protocol.dll" Pack="true" PackagePath="lib/net10.0-windows7.0/Design/WinForms/Server" Visible="false" />
+  </ItemGroup>
+</Project>

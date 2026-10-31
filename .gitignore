@@ -1,0 +1,23 @@
+**/bin/
+**/obj/
+.packages/
+.vs/
+*.user
+artifacts/bin/
+artifacts/
+*.pdb
+TestResults/
+.shots/
+.packages-consumer/
+
+# Local tooling and scratch
+build/public-repo/
+build/public-clone/
+*.nupkg
+*.snupkg
+.env
+.env.*
+*.pem
+*.key
+*.snk
+*.pfx

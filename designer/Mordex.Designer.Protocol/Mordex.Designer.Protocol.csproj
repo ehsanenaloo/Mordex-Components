@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net10.0-windows;net472</TargetFrameworks>
+    <AssemblyName>Mordex.Designer.Protocol</AssemblyName>
+    <RootNamespace>Mordex.Designer.Protocol</RootNamespace>
+  </PropertyGroup>
+</Project>

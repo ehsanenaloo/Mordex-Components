@@ -1,0 +1,49 @@
+name: Feature request
+description: Suggest an improvement or a new capability.
+title: "[Feature]: "
+labels: ["enhancement", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Mordex Components is a small set of WinForms controls for .NET 10. Describing the problem you have helps more than describing a solution.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe your situation and what is hard today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you considered
+  - type: dropdown
+    id: control
+    attributes:
+      label: Which control is this about?
+      options:
+        - MxDataGrid
+        - MxRibbon
+        - MxNavigationBar
+        - MxTaskPane
+        - MxDatePicker
+        - MxScheduler
+        - MxTimeline
+        - Docking, command bars or tabs
+        - Basic controls
+        - A new control
+        - The designer
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and did not find this request.
+          required: true

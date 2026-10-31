@@ -1,0 +1,90 @@
+name: Bug report
+description: A control or the designer does not work as expected.
+title: "[Bug]: "
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. A small project or a code snippet that shows the problem is the best help.
+        For security problems, use the private link on the issue chooser instead of this form.
+  - type: input
+    id: version
+    attributes:
+      label: Package version
+      description: The version of the Mordex.Windows package you use.
+      placeholder: "6.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: control
+    attributes:
+      label: Which control?
+      options:
+        - MxDataGrid
+        - MxRibbon
+        - MxNavigationBar
+        - MxTaskPane
+        - MxDatePicker
+        - MxScheduler
+        - MxTimeline
+        - Docking, command bars or tabs
+        - Basic controls
+        - Visual styles or themes
+        - Not tied to one control
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where does the problem happen?
+      options:
+        - At run time
+        - In the Visual Studio designer
+        - When building or restoring the package
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Say what you saw and what you expected instead. Add the exception text and stack trace if there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Add an MxDataGrid to a new form
+        2. Set ...
+        3. Run the form
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Windows, .NET and Visual Studio versions
+      placeholder: "Windows 11, .NET 10.0, Visual Studio 2026"
+    validations:
+      required: true
+  - type: input
+    id: dpi
+    attributes:
+      label: Display scale
+      description: Only if the problem looks related to high DPI.
+      placeholder: "150 %"
+  - type: textarea
+    id: extra
+    attributes:
+      label: Code, screenshots or logs
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and did not find this problem.
+          required: true
+        - label: I did not include secrets or personal data.
+          required: true
