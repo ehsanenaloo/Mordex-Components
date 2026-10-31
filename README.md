@@ -35,9 +35,9 @@ Free and open source under the MIT License.
 
 ## Screenshots
 
-![Data grid, scheduler, timeline and docking](assets/screenshots/controls.png)
+![Ribbon, data grid, scheduler, timeline, docking and more](assets/screenshots/controls.png)
 
-![The same window in six of the 35 themes](assets/screenshots/themes.png)
+![The ribbon and the data grid in six of the 35 themes](assets/screenshots/themes.png)
 
 ## Themes
 

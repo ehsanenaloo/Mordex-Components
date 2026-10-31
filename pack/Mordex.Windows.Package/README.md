@@ -8,9 +8,9 @@ The package has a data grid, ribbon, navigation bar, task pane, date picker, sch
 
 ## Screenshots
 
-![Data grid, scheduler, timeline and docking](https://raw.githubusercontent.com/ehsanenaloo/Mordex-Components/main/assets/screenshots/controls.png)
+![Ribbon, data grid, scheduler, timeline, docking and more](https://raw.githubusercontent.com/ehsanenaloo/Mordex-Components/main/assets/screenshots/controls.png)
 
-![The same window in six of the 35 themes](https://raw.githubusercontent.com/ehsanenaloo/Mordex-Components/main/assets/screenshots/themes.png)
+![The ribbon and the data grid in six of the 35 themes](https://raw.githubusercontent.com/ehsanenaloo/Mordex-Components/main/assets/screenshots/themes.png)
 
 ## Themes
 
