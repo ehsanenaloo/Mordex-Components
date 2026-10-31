@@ -14,9 +14,11 @@ Free and open source under the MIT License.
 ![Windows Forms](https://img.shields.io/badge/UI-Windows%20Forms-informational)
 [![CI](https://github.com/ehsanenaloo/Mordex-Components/actions/workflows/build.yml/badge.svg)](https://github.com/ehsanenaloo/Mordex-Components/actions/workflows/build.yml)
 
-[Controls](#controls) · [Themes](#themes) · [Install](#install) · [Build](#build) · [Demo](#demo-and-smoke-test) · [Contributing](#contributing)
+[Controls](#controls) · [Screenshots](#screenshots) · [Themes](#themes) · [Install](#install) · [Build](#build) · [Demo](#demo-and-smoke-test) · [Contributing](#contributing)
 
 </div>
+
+![Mordex Components: themed WinForms controls for .NET 10](assets/screenshots/hero.png)
 
 ## Controls
 
@@ -30,6 +32,12 @@ Free and open source under the MIT License.
 | **MxScheduler** | A scheduler for appointments. |
 | **MxTimeline** | A timeline for dated events. |
 | **Docking, command bars, tabs** | Docking panels, command bars, tab controls and the basic controls in `Mordex.Windows.UI`. |
+
+## Screenshots
+
+![Data grid, scheduler, timeline and docking](assets/screenshots/controls.png)
+
+![The same window in six of the 35 themes](assets/screenshots/themes.png)
 
 ## Themes
 

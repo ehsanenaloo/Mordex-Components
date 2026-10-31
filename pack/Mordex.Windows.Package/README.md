@@ -1,8 +1,16 @@
 # Mordex Components
 
+![Mordex Components: themed WinForms controls for .NET 10](https://raw.githubusercontent.com/ehsanenaloo/Mordex-Components/main/assets/screenshots/hero.png)
+
 WinForms controls for .NET 10 with Visual Studio designer support.
 
 The package has a data grid, ribbon, navigation bar, task pane, date picker, scheduler, timeline, docking panels, command bars, tab controls and basic controls. It includes the out-of-process designer, so the controls appear in the Visual Studio toolbox.
+
+## Screenshots
+
+![Data grid, scheduler, timeline and docking](https://raw.githubusercontent.com/ehsanenaloo/Mordex-Components/main/assets/screenshots/controls.png)
+
+![The same window in six of the 35 themes](https://raw.githubusercontent.com/ehsanenaloo/Mordex-Components/main/assets/screenshots/themes.png)
 
 ## Themes
 
